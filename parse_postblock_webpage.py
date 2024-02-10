@@ -1,3 +1,4 @@
+import os
 import requests
 from bs4 import BeautifulSoup
 import json
@@ -56,10 +57,15 @@ if response.status_code == 200:
     # Create a dictionary for the final JSON structure
     json_data = {"blocks": blocks}
 
-    # Write the JSON data to a file
-    with open("postBlocks.json", "w", encoding="utf-8") as json_file:
+    # Create a folder named "data" if it doesn't exist
+    data_folder = 'data'
+    os.makedirs(data_folder, exist_ok=True)
+
+    # Write the JSON data to a file inside the "data" folder
+    json_file_path = os.path.join(data_folder, 'post_blocks.json')
+    with open(json_file_path, "w", encoding="utf-8") as json_file:
         json.dump(json_data, json_file, indent=2)
 
-    print("JSON file created successfully.")
+    print(f"JSON file created successfully. Check '{json_file_path}' file.")
 else:
     print("Failed to retrieve the webpage. Status code:", response.status_code)
