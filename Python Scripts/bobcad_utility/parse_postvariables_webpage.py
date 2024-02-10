@@ -44,7 +44,7 @@ data_folder = 'data'
 os.makedirs(data_folder, exist_ok=True)
 
 # Write to JSON file inside the "data" folder
-output_json_path = os.path.join(data_folder, 'post_variables.json')
+output_json_path = os.path.join(data_folder, 'postVariables.json')
 with open(output_json_path, 'w') as json_file:
     json.dump({"postVariables": post_variables}, json_file, indent=2)
 

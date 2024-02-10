@@ -62,7 +62,7 @@ if response.status_code == 200:
     os.makedirs(data_folder, exist_ok=True)
 
     # Write the JSON data to a file inside the "data" folder
-    json_file_path = os.path.join(data_folder, 'post_blocks.json')
+    json_file_path = os.path.join(data_folder, 'postBlocks.json')
     with open(json_file_path, "w", encoding="utf-8") as json_file:
         json.dump(json_data, json_file, indent=2)
 
