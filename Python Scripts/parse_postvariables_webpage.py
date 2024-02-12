@@ -4,6 +4,9 @@ from bs4 import BeautifulSoup
 import json
 import re
 
+# TODO: I need Besel to fix the anchor names for the GetDoubleOfPostVariable post variables.
+#       They are currently set to "length_offset"
+
 url = "https://bobcad.com/components/webhelp/PostProcessorHelpSystemFiles/Topics/Post%20Variables%20and%20API%20Reference.html"
 response = requests.get(url)
 soup = BeautifulSoup(response.text, 'html.parser')
