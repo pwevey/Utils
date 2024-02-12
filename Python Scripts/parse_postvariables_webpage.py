@@ -114,6 +114,11 @@ for table in soup.find_all('table'):
                 if extra_var:
                     new_entry = post_variable.copy()  # Copy the existing entry
                     new_entry['postVariableName'] = extra_var  # Replace postVariableName with the new one
+
+                    # Additional check to set postVariableName to None if it starts with "LATHE" or "MILL"
+                    if new_entry['postVariableName'] and new_entry['postVariableName'].upper().startswith(('LATHE', 'MILL')):
+                        new_entry['postVariableName'] = None
+
                     post_variables.append(new_entry)
 
         break
