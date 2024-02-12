@@ -38,22 +38,26 @@ for table in soup.find_all('table'):
 
         post_variable['jobTypes'] = job_types
 
+        # Find all descriptions in the second table data of the second table row of each table
         description_row = table.find_all('tr')[1]
         if description_row:
             tds = description_row.find_all('td')
+            # Description found in the second td
             if len(tds) >= 2:
                 # Description found in the second td
                 description = tds[1].get_text(strip=True)
                 
-                # Remove \u00a0 from descriptions
+                # Remove \u00a0 and \u00e2\u0080\u0093 from descriptions
                 description = description.replace('\u00a0', '')
-                
                 post_variable['description'] = description.replace('\u00e2\u0080\u0093', '')
 
                 # Manually set postVariableName if description matches the specified text
+                # There is a typo for this post var
                 if description == "Signals the output of the stock definition":
                     post_variable['postVariableName'] = "output_stock_definition"
-                    
+
+                # if post_variable['postVariableName'] == "arc_center":
+                #     print(description)
 
                 if "API:" in description or "TCPAPI" in description or re.search(r'\bAPI\b', description):
                     # Extract API calls from the description
@@ -73,10 +77,43 @@ for table in soup.find_all('table'):
                     # Remove instances of '\u00e2\u0080\u009c' and '\u00e2\u0080\u009d' from each API call
                     api_calls = [api.replace('\u00e2\u0080\u009c', '').replace('\u00e2\u0080\u009d', '') for api in api_calls]            
 
+        try:
+            extra_apis_row = table.find_all('tr')[2]
+            if extra_apis_row:
+                tds_extra = extra_apis_row.find_all('td')
+                if len(tds_extra) >= 2:
+                    description_extra = tds_extra[1].get_text(strip=True)
+
+                    # if post_variable['postVariableName'] == "arc_center":
+                    #     print(description_extra)
+
+                    if "API:" in description_extra or "TCPAPI" in description_extra or re.search(r'\bAPI\b', description_extra):
+                        # Extract API calls from the description
+                        api_pattern = re.compile(r'\b((MILL|LATHE|TURN|Get)\w*\([^)]*\))', re.IGNORECASE)
+
+                        api_calls_extra = [
+                            api for api_tuple in set(api_pattern.findall(description_extra))
+                            if not any(char.isdigit() for char in api_tuple)
+                            for api in api_tuple
+                        ]
+
+                        # Remove single-word entries
+                        api_calls_extra = [api for api in api_calls_extra if not api.lower() in ["get", "lathe", "mill"]]
+
+                        # Remove instances of '\u00e2\u0080\u009c' and '\u00e2\u0080\u009d' from each API call
+                        api_calls_extra = [api.replace('\u00e2\u0080\u009c', '').replace('\u00e2\u0080\u009d', '') for api in api_calls_extra]
+
+                        api_calls += api_calls_extra
+
+
+        except IndexError:
+            pass
+
         # print(api_calls)
 
         post_variable['bobcadAPIs'] = api_calls
         post_variables.append(post_variable)
+
 
 # Create a folder named "data" if it doesn't exist
 data_folder = 'data'
