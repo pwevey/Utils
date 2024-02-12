@@ -4,8 +4,6 @@ from bs4 import BeautifulSoup
 import json
 import re
 
-# TODO: I need Besel to fix the anchor names for the GetDoubleOfPostVariable post variables.
-#       They are currently set to "length_offset"
 
 url = "https://bobcad.com/components/webhelp/PostProcessorHelpSystemFiles/Topics/Post%20Variables%20and%20API%20Reference.html"
 response = requests.get(url)
@@ -20,17 +18,21 @@ for table in soup.find_all('table'):
 
     for anchor_name in anchor_names:
         post_variable = {}
+        api_calls = []
 
         # Check if postVariableName starts with "LATHE" or "MILL"
         if anchor_name and anchor_name.upper().startswith(('LATHE', 'MILL')):
             post_variable['postVariableName'] = None
+        elif anchor_name and anchor_name.startswith(('GetDoubleOfPostVariable(')):
+            post_variable['postVariableName'] = None
+            edge_case_GetDouble = anchor_name
+            # print(f"Edge case found: {edge_case_GetDouble}")
         else:
             post_variable['postVariableName'] = anchor_name if anchor_name else None
 
         # Extract jobTypes and description from other tr tags
         job_types = []
         description = None
-        api_calls = []
 
         for tr in table.find_all('tr')[1:]:
             tds = tr.find_all('td')
@@ -103,7 +105,11 @@ for table in soup.find_all('table'):
         except IndexError:
             pass
 
-        post_variable['bobcadAPIs'] = api_calls
+        try:
+            post_variable['bobcadAPIs'] = [edge_case_GetDouble]
+        except NameError:
+            post_variable['bobcadAPIs'] = api_calls
+        
         post_variables.append(post_variable)
 
     # Cases where there are multiple p tags in one table for each post variable
