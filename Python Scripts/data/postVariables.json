@@ -277,8 +277,8 @@
       ],
       "description": "Output the part length with NO prefix.API:short MILL_GetPartLength()short MILLTURN_GetPartLength()",
       "bobcadAPIs": [
-        "MILL_GetPartLength()",
-        "MILLTURN_GetPartLength()"
+        "MILLTURN_GetPartLength()",
+        "MILL_GetPartLength()"
       ]
     },
     {
@@ -289,8 +289,8 @@
       ],
       "description": "Output the part width with NO prefix.API:short MILL_GetPartWidth()short MILLTURN_GetPartWidth()",
       "bobcadAPIs": [
-        "MILLTURN_GetPartWidth()",
-        "MILL_GetPartWidth()"
+        "MILL_GetPartWidth()",
+        "MILLTURN_GetPartWidth()"
       ]
     },
     {
@@ -313,9 +313,9 @@
       ],
       "description": "Outputs the work coordinate string value for a specific work coordinate. Work offset string values are assigned for each work offset starting a post question:900and go through post question999.API:short MILL_GetWorkCoordNumberCode(int)short MILLTURN_GetWorkCoordNumberCode(int)int=1 through 99Example:var = MILL_GetWorkCoordNumberCode(1)",
       "bobcadAPIs": [
-        "MILL_GetWorkCoordNumberCode(int)",
         "MILL_GetWorkCoordNumberCode(1)",
-        "MILLTURN_GetWorkCoordNumberCode(int)"
+        "MILLTURN_GetWorkCoordNumberCode(int)",
+        "MILL_GetWorkCoordNumberCode(int)"
       ]
     },
     {
@@ -373,8 +373,8 @@
       ],
       "description": "Returns the Y axis rapid location with the prefix defined by post question:685API:double MILL_GetYRapid()double LATHE_GetYRapid()",
       "bobcadAPIs": [
-        "LATHE_GetYRapid()",
-        "MILL_GetYRapid()"
+        "MILL_GetYRapid()",
+        "LATHE_GetYRapid()"
       ]
     },
     {
@@ -735,8 +735,8 @@
       ],
       "description": "Returns the value of the previous X axis feed move. Rapid moves are not included. Prefix comes from the post question:684API:double MILL_GetPreviousXFeed()double LATHE_GetPrefiousXFeed()",
       "bobcadAPIs": [
-        "MILL_GetPreviousXFeed()",
-        "LATHE_GetPrefiousXFeed()"
+        "LATHE_GetPrefiousXFeed()",
+        "MILL_GetPreviousXFeed()"
       ]
     },
     {
@@ -773,8 +773,8 @@
       ],
       "description": "Returns the value of the current X axis feed move. Prefix comes from the post question:684API:double MILL_GetXFeed()double LATHE_GetXFeed()",
       "bobcadAPIs": [
-        "MILL_GetXFeed()",
-        "LATHE_GetXFeed()"
+        "LATHE_GetXFeed()",
+        "MILL_GetXFeed()"
       ]
     },
     {
@@ -786,8 +786,8 @@
       ],
       "description": "Returns the value of the current Y axis feed move. Prefix comes from the post question:685API:double MILL_GetYFeed()double LATHE_GetYFeed()",
       "bobcadAPIs": [
-        "LATHE_GetYFeed()",
-        "MILL_GetYFeed()"
+        "MILL_GetYFeed()",
+        "LATHE_GetYFeed()"
       ]
     },
     {
@@ -799,8 +799,8 @@
       ],
       "description": "Returns the value of the current Z axis feed move. Prefix comes from the post question:686API:double MILL_GetZFeed()double LATHE_GetZFeed()",
       "bobcadAPIs": [
-        "LATHE_GetZFeed()",
-        "MILL_GetZFeed()"
+        "MILL_GetZFeed()",
+        "LATHE_GetZFeed()"
       ]
     },
     {
@@ -1728,11 +1728,11 @@
       ],
       "description": "Outputs the arc center value based on the current arc being cut using prefixes frompost questions:640through post question:643.API:double MILL_GetArcCenterX()double MILL_GetArcCenterY()double MILL_GetArcCenterZ()",
       "bobcadAPIs": [
+        "MILL_GetArcCenterX()",
         "MILL_GetArcCenterZ()",
         "MILL_GetArcCenterY()",
-        "MILL_GetArcCenterX()",
-        "LATHE_GetArcCenterZ()",
-        "LATHE_GetArcCenterX()"
+        "LATHE_GetArcCenterX()",
+        "LATHE_GetArcCenterZ()"
       ]
     },
     {
@@ -1845,8 +1845,8 @@
       ],
       "description": "Outputs the line number at the end of the profile that is used to define the cannedfinish cycle.The prefix is defined on post question:1791API:string LATHE_GetLineNumberLastFinish()string LATHE GetLastFinishLineNumberPrefix()",
       "bobcadAPIs": [
-        "GetLastFinishLineNumberPrefix()",
-        "LATHE_GetLineNumberLastFinish()"
+        "LATHE_GetLineNumberLastFinish()",
+        "GetLastFinishLineNumberPrefix()"
       ]
     },
     {
@@ -2808,8 +2808,8 @@
       ],
       "description": "Used to return the value of the transform plane related variables only.API: GetDoubleOfPostVariable(\u00e2\u0080\u009cvariable_name\u00e2\u0080\u009d)Example : GetDoubleOfPostVariable(\u00e2\u0080\u009ceuler_angle_intrinsic_zxz_1\u00e2\u0080\u009d)Note: For a list of all variables which work with this API, see theGetDoubleOfPostVariabletopic.",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(variable_name)",
-        "GetDoubleOfPostVariable(euler_angle_intrinsic_zxz_1)"
+        "GetDoubleOfPostVariable(euler_angle_intrinsic_zxz_1)",
+        "GetDoubleOfPostVariable(variable_name)"
       ]
     },
     {
@@ -4731,8 +4731,8 @@
       ],
       "description": "Outputs the X axis value for the bottom of the groove with prefix.The prefix isdefined on post question:1813API:double LATHE_GetGrooveXBottom()double MILLTURN_GetGrooveXBottom()",
       "bobcadAPIs": [
-        "MILLTURN_GetGrooveXBottom()",
-        "LATHE_GetGrooveXBottom()"
+        "LATHE_GetGrooveXBottom()",
+        "MILLTURN_GetGrooveXBottom()"
       ]
     },
     {
@@ -4743,8 +4743,8 @@
       ],
       "description": "Outputs the Z axis value for the bottom of the groove with prefix.The prefix isdefined on post question:1814API:double LATHE_GetGrooveZBottom()double MILLTURN_GetGrooveZBottom()",
       "bobcadAPIs": [
-        "MILLTURN_GetGrooveZBottom()",
-        "LATHE_GetGrooveZBottom()"
+        "LATHE_GetGrooveZBottom()",
+        "MILLTURN_GetGrooveZBottom()"
       ]
     },
     {
@@ -4755,8 +4755,8 @@
       ],
       "description": "Outputs the peck increment for the groove with prefix. The prefix is defined on postquestion:1816API:double LATHE_GetGroovePeckIncrement()double MILLTURN_GetGroovePeckIncrement()",
       "bobcadAPIs": [
-        "LATHE_GetGroovePeckIncrement()",
-        "MILLTURN_GetGroovePeckIncrement()"
+        "MILLTURN_GetGroovePeckIncrement()",
+        "LATHE_GetGroovePeckIncrement()"
       ]
     },
     {
@@ -4779,8 +4779,8 @@
       ],
       "description": "Outputs the retract amount for the groove cycle with prefix. The prefix is definedon post question:1812The value output is defined on post question:1412API:double LATHE_GetGrooveCycleRetract()double MILLTURN_GetGrooveDepthOfCut()",
       "bobcadAPIs": [
-        "MILLTURN_GetGrooveDepthOfCut()",
-        "LATHE_GetGrooveCycleRetract()"
+        "LATHE_GetGrooveCycleRetract()",
+        "MILLTURN_GetGrooveDepthOfCut()"
       ]
     },
     {
@@ -4824,8 +4824,8 @@
       ],
       "description": "Outputs the peck clearance value with the prefix defined on post question:1826.API:double LATHE_GetPeckClearance()double MILLTURN_GetPeckClearance()",
       "bobcadAPIs": [
-        "MILLTURN_GetPeckClearance()",
-        "LATHE_GetPeckClearance()"
+        "LATHE_GetPeckClearance()",
+        "MILLTURN_GetPeckClearance()"
       ]
     },
     {
@@ -5157,8 +5157,8 @@
       ],
       "description": "Outputs the angle in value for thread operations with prefix.The prefix is definedon post question:1794.API:double LATHE_GetAngleIn()double MILLTURN_GetAngleIn()",
       "bobcadAPIs": [
-        "LATHE_GetAngleIn()",
-        "MILLTURN_GetAngleIn()"
+        "MILLTURN_GetAngleIn()",
+        "LATHE_GetAngleIn()"
       ]
     },
     {
@@ -5211,8 +5211,8 @@
       ],
       "description": "Outputs the thread last cut amount with prefix.The prefix is defined on post question:1795.API:double LATHE_GetThreadLastCut()double MILLTURN_GetThreadLastCut()",
       "bobcadAPIs": [
-        "LATHE_GetThreadLastCut()",
-        "MILLTURN_GetThreadLastCut()"
+        "MILLTURN_GetThreadLastCut()",
+        "LATHE_GetThreadLastCut()"
       ]
     },
     {
@@ -5223,8 +5223,8 @@
       ],
       "description": "Outputs the thread machine allowance value with prefix.The prefix is defined onpost question:1796. The allowance value is defined on post question:1413.API:double LATHE_GetThreadMachineAllowance()double MILLTURN_GetThreadMachineAllowance()",
       "bobcadAPIs": [
-        "MILLTURN_GetThreadMachineAllowance()",
-        "LATHE_GetThreadMachineAllowance()"
+        "LATHE_GetThreadMachineAllowance()",
+        "MILLTURN_GetThreadMachineAllowance()"
       ]
     },
     {
@@ -5315,8 +5315,8 @@
       ],
       "description": "Outputs the reference height for the Heidenhain machines with prefix.The prefixis set to \u00e2\u0080\u009cP01\u00e2\u0080\u009dAPI:double MILL_GetHeidenReferenceHeight()double MILLTURN_GetHeidenReferenceHeight()",
       "bobcadAPIs": [
-        "MILL_GetHeidenReferenceHeight()",
-        "MILLTURN_GetHeidenReferenceHeight()"
+        "MILLTURN_GetHeidenReferenceHeight()",
+        "MILL_GetHeidenReferenceHeight()"
       ]
     },
     {
@@ -5327,8 +5327,8 @@
       ],
       "description": "Outputs the depth value for the Heidenhain machines with prefix.The prefix is setto \u00e2\u0080\u009cP02\u00e2\u0080\u009dAPI:double MILL_GetHeidenDepth()double MILLTURN_GetHeidenDepth()",
       "bobcadAPIs": [
-        "MILL_GetHeidenDepth()",
-        "MILLTURN_GetHeidenDepth()"
+        "MILLTURN_GetHeidenDepth()",
+        "MILL_GetHeidenDepth()"
       ]
     },
     {
@@ -5377,8 +5377,8 @@
       "description": "Outputs the spindle speed for milling with prefix.The prefix is defined on postquestion:605.API:short MILL_GetSpindleSpeed()",
       "bobcadAPIs": [
         "MILL_GetSpindleSpeed()",
-        "LATHE_GetFinishSpindleSpeed()",
         "LATHE_GetFinishCssRpm()",
+        "LATHE_GetFinishSpindleSpeed()",
         "LATHE_GetCssRpm()"
       ]
     },
@@ -5641,9 +5641,9 @@
       ],
       "description": "Outputs the next tool number with NO prefix.API:double MILL_GetNextToolNumber()double LATHE_GetNextToolNumber()double MILLTURN_GetNextToolNumber()",
       "bobcadAPIs": [
+        "MILLTURN_GetNextToolNumber()",
         "LATHE_GetNextToolNumber()",
-        "MILL_GetNextToolNumber()",
-        "MILLTURN_GetNextToolNumber()"
+        "MILL_GetNextToolNumber()"
       ]
     },
     {
@@ -5845,8 +5845,8 @@
       ],
       "description": "Outputs the string containing the tool name.The names that are output are the tooltypes that can be seen in the tool crib.API:string MILL_GetToolName()string MILLTURN_GetToolName()",
       "bobcadAPIs": [
-        "MILLTURN_GetToolName()",
-        "MILL_GetToolName()"
+        "MILL_GetToolName()",
+        "MILLTURN_GetToolName()"
       ]
     },
     {
@@ -5977,8 +5977,8 @@
       ],
       "description": "Outputs the strings that will put the machine in Feed Per Minute or Inverse Timemode on the machine. The strings output depend on the current mode determined bythe operation.The strings are defined as follows:Unit Per Minute = String defined on post question:715Inverse Time Feed = String defined on post question:714API:short MILL_Get_FeedMode()short MILLTURN_Get_FeedMode()0 = UPM1 = Inverse Feed",
       "bobcadAPIs": [
-        "MILLTURN_Get_FeedMode()",
-        "MILL_Get_FeedMode()"
+        "MILL_Get_FeedMode()",
+        "MILLTURN_Get_FeedMode()"
       ]
     },
     {
@@ -6924,8 +6924,8 @@
       ],
       "description": "Outputs the code used to open the stead rest on the machine for a specific steadrest device.The output string is defined on the defined stead rest\u00e2\u0080\u0099s post question:40x01API:string MILLTURN_GetSteadRestOpenCode1()throughstring MILLTURN_GetSteadyRestOpenCode10()",
       "bobcadAPIs": [
-        "MILLTURN_GetSteadyRestOpenCode10()",
-        "MILLTURN_GetSteadRestOpenCode1()"
+        "MILLTURN_GetSteadRestOpenCode1()",
+        "MILLTURN_GetSteadyRestOpenCode10()"
       ]
     },
     {
@@ -6935,8 +6935,8 @@
       ],
       "description": "Outputs the code used to open the stead rest on the machine for a specific steadrest device.The output string is defined on the defined stead rest\u00e2\u0080\u0099s post question:40x01API:string MILLTURN_GetSteadRestOpenCode1()throughstring MILLTURN_GetSteadyRestOpenCode10()",
       "bobcadAPIs": [
-        "MILLTURN_GetSteadyRestOpenCode10()",
-        "MILLTURN_GetSteadRestOpenCode1()"
+        "MILLTURN_GetSteadRestOpenCode1()",
+        "MILLTURN_GetSteadyRestOpenCode10()"
       ]
     },
     {
@@ -6946,8 +6946,8 @@
       ],
       "description": "Outputs the code used to close the stead rest on the machine for a specific steadrest device.The output string is defined on the defined stead rest\u00e2\u0080\u0099s post question:40x02API:string MILLTURN_GetSteadRestCloseCode1()throughstring MILLTURN_GetSteadyRestCloseCode10()",
       "bobcadAPIs": [
-        "MILLTURN_GetSteadRestCloseCode1()",
-        "MILLTURN_GetSteadyRestCloseCode10()"
+        "MILLTURN_GetSteadyRestCloseCode10()",
+        "MILLTURN_GetSteadRestCloseCode1()"
       ]
     },
     {
@@ -6957,8 +6957,8 @@
       ],
       "description": "Outputs the code used to close the stead rest on the machine for a specific steadrest device.The output string is defined on the defined stead rest\u00e2\u0080\u0099s post question:40x02API:string MILLTURN_GetSteadRestCloseCode1()throughstring MILLTURN_GetSteadyRestCloseCode10()",
       "bobcadAPIs": [
-        "MILLTURN_GetSteadRestCloseCode1()",
-        "MILLTURN_GetSteadyRestCloseCode10()"
+        "MILLTURN_GetSteadyRestCloseCode10()",
+        "MILLTURN_GetSteadRestCloseCode1()"
       ]
     },
     {
@@ -7068,8 +7068,8 @@
       ],
       "description": "Outputs the command from the define parts catcher device to advance the parts catcher on the machine. The output string is defined on each parts catcher device\u00e2\u0080\u0099s post question:50x01API:string MILLTURN_GetPartsCatcherAdvanceCode_1()throughstring MILLTURN_GetPartsCatcherAdvanceCode_10()",
       "bobcadAPIs": [
-        "MILLTURN_GetPartsCatcherAdvanceCode_10()",
-        "MILLTURN_GetPartsCatcherAdvanceCode_1()"
+        "MILLTURN_GetPartsCatcherAdvanceCode_1()",
+        "MILLTURN_GetPartsCatcherAdvanceCode_10()"
       ]
     },
     {
@@ -7079,8 +7079,8 @@
       ],
       "description": "Outputs the command from the define parts catcher device to advance the parts catcher on the machine. The output string is defined on each parts catcher device\u00e2\u0080\u0099s post question:50x01API:string MILLTURN_GetPartsCatcherAdvanceCode_1()throughstring MILLTURN_GetPartsCatcherAdvanceCode_10()",
       "bobcadAPIs": [
-        "MILLTURN_GetPartsCatcherAdvanceCode_10()",
-        "MILLTURN_GetPartsCatcherAdvanceCode_1()"
+        "MILLTURN_GetPartsCatcherAdvanceCode_1()",
+        "MILLTURN_GetPartsCatcherAdvanceCode_10()"
       ]
     },
     {
@@ -7090,8 +7090,8 @@
       ],
       "description": "Outputs the command from the define parts catcher device to retract the parts catcheron the machine. The output string is defined on each parts catcher device\u00e2\u0080\u0099s postquestion:50x02API:string MILLTURN_GetPartsCatcherRetractCode_1()throughstring MILLTURN_GetPartsCatcherRetractCode_10()",
       "bobcadAPIs": [
-        "MILLTURN_GetPartsCatcherRetractCode_10()",
-        "MILLTURN_GetPartsCatcherRetractCode_1()"
+        "MILLTURN_GetPartsCatcherRetractCode_1()",
+        "MILLTURN_GetPartsCatcherRetractCode_10()"
       ]
     },
     {
@@ -7101,8 +7101,8 @@
       ],
       "description": "Outputs the command from the define parts catcher device to retract the parts catcheron the machine. The output string is defined on each parts catcher device\u00e2\u0080\u0099s postquestion:50x02API:string MILLTURN_GetPartsCatcherRetractCode_1()throughstring MILLTURN_GetPartsCatcherRetractCode_10()",
       "bobcadAPIs": [
-        "MILLTURN_GetPartsCatcherRetractCode_10()",
-        "MILLTURN_GetPartsCatcherRetractCode_1()"
+        "MILLTURN_GetPartsCatcherRetractCode_1()",
+        "MILLTURN_GetPartsCatcherRetractCode_10()"
       ]
     },
     {
@@ -10287,8 +10287,8 @@
       ],
       "description": "Returns the total number of operations in the program that is set to post. This APIwill not consider the operations that were patterned using toolpath pattern.For versions V26 or earlier, there were 2 APIs MILL_GetNumberOfFeatures() & MILL_GetCurrentFeatureNumber()which are deprecated and when used in versions after V26 will return the same valueas the MILL_GetNumberOfOperations() APIAPI:short MILL_GetNumberOfOperations()",
       "bobcadAPIs": [
-        "MILL_GetNumberOfOperations()",
         "MILL_GetCurrentFeatureNumber()",
+        "MILL_GetNumberOfOperations()",
         "MILL_GetNumberOfFeatures()"
       ]
     },
@@ -10540,8 +10540,8 @@
       ],
       "description": "Sets the memory location at the specified index to the value specified for SetInteger.Note that both share the same memory locationsAPI:MILL_SetIntMemoryLoc(Index, SetInteger)LATHE_SetIntMemoryLoc(Index, SetInteger)",
       "bobcadAPIs": [
-        "LATHE_SetIntMemoryLoc(Index, SetInteger)",
-        "MILL_SetIntMemoryLoc(Index, SetInteger)"
+        "MILL_SetIntMemoryLoc(Index, SetInteger)",
+        "LATHE_SetIntMemoryLoc(Index, SetInteger)"
       ]
     },
     {
@@ -10553,8 +10553,8 @@
       ],
       "description": "Sets the memory location at the specified index to the value specified for SetInteger.Note that both share the same memory locationsAPI:MILL_SetIntMemoryLoc(Index, SetInteger)LATHE_SetIntMemoryLoc(Index, SetInteger)",
       "bobcadAPIs": [
-        "LATHE_SetIntMemoryLoc(Index, SetInteger)",
-        "MILL_SetIntMemoryLoc(Index, SetInteger)"
+        "MILL_SetIntMemoryLoc(Index, SetInteger)",
+        "LATHE_SetIntMemoryLoc(Index, SetInteger)"
       ]
     },
     {
@@ -10566,8 +10566,8 @@
       ],
       "description": "Returns the integer value stored in the specified index. Note that both share thesame memory locationsAPI:variable_name = MILL_GetIntMemoryLoc(short index)variable_name = LATHE_GetIntMemoryLoc(short index)",
       "bobcadAPIs": [
-        "LATHE_GetIntMemoryLoc(short index)",
-        "MILL_GetIntMemoryLoc(short index)"
+        "MILL_GetIntMemoryLoc(short index)",
+        "LATHE_GetIntMemoryLoc(short index)"
       ]
     },
     {
@@ -10579,8 +10579,8 @@
       ],
       "description": "Returns the integer value stored in the specified index. Note that both share thesame memory locationsAPI:variable_name = MILL_GetIntMemoryLoc(short index)variable_name = LATHE_GetIntMemoryLoc(short index)",
       "bobcadAPIs": [
-        "LATHE_GetIntMemoryLoc(short index)",
-        "MILL_GetIntMemoryLoc(short index)"
+        "MILL_GetIntMemoryLoc(short index)",
+        "LATHE_GetIntMemoryLoc(short index)"
       ]
     },
     {
@@ -10618,8 +10618,8 @@
       ],
       "description": "Returns the double value stored in the specified index. Note that both share thesame memory locationsAPI:variable_name = MILL_GetDoubleMemoryLoc(short index)variable_name = LATHE_GetDoubleMemoryLoc(short index)",
       "bobcadAPIs": [
-        "MILL_GetDoubleMemoryLoc(short index)",
-        "LATHE_GetDoubleMemoryLoc(short index)"
+        "LATHE_GetDoubleMemoryLoc(short index)",
+        "MILL_GetDoubleMemoryLoc(short index)"
       ]
     },
     {
@@ -10631,8 +10631,8 @@
       ],
       "description": "Returns the double value stored in the specified index. Note that both share thesame memory locationsAPI:variable_name = MILL_GetDoubleMemoryLoc(short index)variable_name = LATHE_GetDoubleMemoryLoc(short index)",
       "bobcadAPIs": [
-        "MILL_GetDoubleMemoryLoc(short index)",
-        "LATHE_GetDoubleMemoryLoc(short index)"
+        "LATHE_GetDoubleMemoryLoc(short index)",
+        "MILL_GetDoubleMemoryLoc(short index)"
       ]
     },
     {
@@ -10765,8 +10765,8 @@
       ],
       "description": "Outputs a string into the posted program with a line feed character.API:void MILL_OutputText(string var)void MILL_OutputText(\u00e2\u0080\u009cSample String\u00e2\u0080\u009d)",
       "bobcadAPIs": [
-        "MILL_OutputText(string var)",
-        "MILL_OutputText(Sample String)"
+        "MILL_OutputText(Sample String)",
+        "MILL_OutputText(string var)"
       ]
     },
     {
