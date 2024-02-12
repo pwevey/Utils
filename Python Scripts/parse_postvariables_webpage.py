@@ -20,9 +20,10 @@ for table in soup.find_all('table'):
         post_variable = {}
         api_calls = []
 
-        # Check if postVariableName starts with "LATHE" or "MILL"
+        # Check if postVariableName starts with "LATHE" or "MILL". These are APIs and should not be int he post variable key
         if anchor_name and anchor_name.upper().startswith(('LATHE', 'MILL')):
             post_variable['postVariableName'] = None
+        # There are GetDoubleOfPostVariable() calls in the anchor. This is to move it down to the bobcadAPIs
         elif anchor_name and anchor_name.startswith(('GetDoubleOfPostVariable(')):
             post_variable['postVariableName'] = None
             edge_case_GetDouble = anchor_name
