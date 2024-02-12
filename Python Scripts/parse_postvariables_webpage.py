@@ -18,24 +18,18 @@ for table in soup.find_all('table'):
 
     for anchor_name in anchor_names:
         post_variable = {}
-        api_calls = []
 
-        # Check if postVariableName starts with "LATHE" or "MILL". These are APIs and should not be int he post variable key
+        # Check if postVariableName starts with "LATHE" or "MILL"
         if anchor_name and anchor_name.upper().startswith(('LATHE', 'MILL')):
             post_variable['postVariableName'] = None
-        # There are GetDoubleOfPostVariable() calls in the anchor. This is to move it down to the bobcadAPIs
-        elif anchor_name and anchor_name.startswith(('GetDoubleOfPostVariable(')):
-            post_variable['postVariableName'] = None
-            edge_case_GetDouble = anchor_name
-            # print(f"Edge case found: {edge_case_GetDouble}")
         else:
             post_variable['postVariableName'] = anchor_name if anchor_name else None
 
         # Extract jobTypes and description from other tr tags
         job_types = []
         description = None
+        api_calls = []
 
-        # Find all job types in the first table data of each table
         for tr in table.find_all('tr')[1:]:
             tds = tr.find_all('td')
             if tds:
@@ -107,13 +101,7 @@ for table in soup.find_all('table'):
         except IndexError:
             pass
 
-        # Add the API calls to the post_variable dictionary
-        # If there are no API calls, the list will be empty
-        try:
-            post_variable['bobcadAPIs'] = [edge_case_GetDouble]
-        except NameError:
-            post_variable['bobcadAPIs'] = api_calls
-        
+        post_variable['bobcadAPIs'] = api_calls
         post_variables.append(post_variable)
 
     # Cases where there are multiple p tags in one table for each post variable

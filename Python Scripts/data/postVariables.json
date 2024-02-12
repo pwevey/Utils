@@ -265,8 +265,8 @@
       ],
       "description": "Output the part height with prefix from post question:648API:short MILL_GetPartHeight()short MILLTURN_GetPartHeight()",
       "bobcadAPIs": [
-        "MILL_GetPartHeight()",
-        "MILLTURN_GetPartHeight()"
+        "MILLTURN_GetPartHeight()",
+        "MILL_GetPartHeight()"
       ]
     },
     {
@@ -301,8 +301,8 @@
       ],
       "description": "Outputs the work coordinate string value based on the selected work offset. Maximum work offsets are defined by post question:258. Work offset string values are assigned for each work offset starting at post question:900and go through post question999.API:short MILL_GetWorkCoordNumber()short MILLTURN_GetWorkCoordNumber()",
       "bobcadAPIs": [
-        "MILL_GetWorkCoordNumber()",
-        "MILLTURN_GetWorkCoordNumber()"
+        "MILLTURN_GetWorkCoordNumber()",
+        "MILL_GetWorkCoordNumber()"
       ]
     },
     {
@@ -314,8 +314,8 @@
       "description": "Outputs the work coordinate string value for a specific work coordinate. Work offset string values are assigned for each work offset starting a post question:900and go through post question999.API:short MILL_GetWorkCoordNumberCode(int)short MILLTURN_GetWorkCoordNumberCode(int)int=1 through 99Example:var = MILL_GetWorkCoordNumberCode(1)",
       "bobcadAPIs": [
         "MILLTURN_GetWorkCoordNumberCode(int)",
-        "MILL_GetWorkCoordNumberCode(1)",
-        "MILL_GetWorkCoordNumberCode(int)"
+        "MILL_GetWorkCoordNumberCode(int)",
+        "MILL_GetWorkCoordNumberCode(1)"
       ]
     },
     {
@@ -360,8 +360,8 @@
       ],
       "description": "Returns the X axis rapid location with the prefix defined by post question:684API:double MILL_GetXRapid()double LATHE_GetXRapid()",
       "bobcadAPIs": [
-        "LATHE_GetXRapid()",
-        "MILL_GetXRapid()"
+        "MILL_GetXRapid()",
+        "LATHE_GetXRapid()"
       ]
     },
     {
@@ -735,8 +735,8 @@
       ],
       "description": "Returns the value of the previous X axis feed move. Rapid moves are not included. Prefix comes from the post question:684API:double MILL_GetPreviousXFeed()double LATHE_GetPrefiousXFeed()",
       "bobcadAPIs": [
-        "LATHE_GetPrefiousXFeed()",
-        "MILL_GetPreviousXFeed()"
+        "MILL_GetPreviousXFeed()",
+        "LATHE_GetPrefiousXFeed()"
       ]
     },
     {
@@ -760,8 +760,8 @@
       ],
       "description": "Returns the value of the previous Z axis feed move. Rapid moves are not included. Prefix comes from the post question:686API:double MILL_GetPreviousZFeed()double LATHE_GetPrefiousZFeed()",
       "bobcadAPIs": [
-        "LATHE_GetPrefiousZFeed()",
-        "MILL_GetPreviousZFeed()"
+        "MILL_GetPreviousZFeed()",
+        "LATHE_GetPrefiousZFeed()"
       ]
     },
     {
@@ -1728,11 +1728,11 @@
       ],
       "description": "Outputs the arc center value based on the current arc being cut using prefixes frompost questions:640through post question:643.API:double MILL_GetArcCenterX()double MILL_GetArcCenterY()double MILL_GetArcCenterZ()",
       "bobcadAPIs": [
-        "MILL_GetArcCenterY()",
         "MILL_GetArcCenterX()",
         "MILL_GetArcCenterZ()",
-        "LATHE_GetArcCenterZ()",
-        "LATHE_GetArcCenterX()"
+        "MILL_GetArcCenterY()",
+        "LATHE_GetArcCenterX()",
+        "LATHE_GetArcCenterZ()"
       ]
     },
     {
@@ -1845,8 +1845,8 @@
       ],
       "description": "Outputs the line number at the end of the profile that is used to define the cannedfinish cycle.The prefix is defined on post question:1791API:string LATHE_GetLineNumberLastFinish()string LATHE GetLastFinishLineNumberPrefix()",
       "bobcadAPIs": [
-        "LATHE_GetLineNumberLastFinish()",
-        "GetLastFinishLineNumberPrefix()"
+        "GetLastFinishLineNumberPrefix()",
+        "LATHE_GetLineNumberLastFinish()"
       ]
     },
     {
@@ -4731,8 +4731,8 @@
       ],
       "description": "Outputs the X axis value for the bottom of the groove with prefix.The prefix isdefined on post question:1813API:double LATHE_GetGrooveXBottom()double MILLTURN_GetGrooveXBottom()",
       "bobcadAPIs": [
-        "MILLTURN_GetGrooveXBottom()",
-        "LATHE_GetGrooveXBottom()"
+        "LATHE_GetGrooveXBottom()",
+        "MILLTURN_GetGrooveXBottom()"
       ]
     },
     {
@@ -4755,8 +4755,8 @@
       ],
       "description": "Outputs the peck increment for the groove with prefix. The prefix is defined on postquestion:1816API:double LATHE_GetGroovePeckIncrement()double MILLTURN_GetGroovePeckIncrement()",
       "bobcadAPIs": [
-        "MILLTURN_GetGroovePeckIncrement()",
-        "LATHE_GetGroovePeckIncrement()"
+        "LATHE_GetGroovePeckIncrement()",
+        "MILLTURN_GetGroovePeckIncrement()"
       ]
     },
     {
@@ -4767,8 +4767,8 @@
       ],
       "description": "Outputs the depth of cut value for the groove with prefix. The prefix is definedon post question:1815API:double LATHE_GetGrooveDepthOfCut()double MILLTURN_GetGrooveDepthOfCut()",
       "bobcadAPIs": [
-        "LATHE_GetGrooveDepthOfCut()",
-        "MILLTURN_GetGrooveDepthOfCut()"
+        "MILLTURN_GetGrooveDepthOfCut()",
+        "LATHE_GetGrooveDepthOfCut()"
       ]
     },
     {
@@ -5157,8 +5157,8 @@
       ],
       "description": "Outputs the angle in value for thread operations with prefix.The prefix is definedon post question:1794.API:double LATHE_GetAngleIn()double MILLTURN_GetAngleIn()",
       "bobcadAPIs": [
-        "MILLTURN_GetAngleIn()",
-        "LATHE_GetAngleIn()"
+        "LATHE_GetAngleIn()",
+        "MILLTURN_GetAngleIn()"
       ]
     },
     {
@@ -5223,8 +5223,8 @@
       ],
       "description": "Outputs the thread machine allowance value with prefix.The prefix is defined onpost question:1796. The allowance value is defined on post question:1413.API:double LATHE_GetThreadMachineAllowance()double MILLTURN_GetThreadMachineAllowance()",
       "bobcadAPIs": [
-        "MILLTURN_GetThreadMachineAllowance()",
-        "LATHE_GetThreadMachineAllowance()"
+        "LATHE_GetThreadMachineAllowance()",
+        "MILLTURN_GetThreadMachineAllowance()"
       ]
     },
     {
@@ -5351,8 +5351,8 @@
       ],
       "description": "Outputs the dwell value for the Heidenhain machines with prefix.The prefix is setto \u00e2\u0080\u009cP04\u00e2\u0080\u009dAPI:double MILL_GetHeidenDwell()double MILLTURN_GetHeidenDwell()",
       "bobcadAPIs": [
-        "MILL_GetHeidenDwell()",
-        "MILLTURN_GetHeidenDwell()"
+        "MILLTURN_GetHeidenDwell()",
+        "MILL_GetHeidenDwell()"
       ]
     },
     {
@@ -5378,8 +5378,8 @@
       "bobcadAPIs": [
         "MILL_GetSpindleSpeed()",
         "LATHE_GetFinishCssRpm()",
-        "LATHE_GetFinishSpindleSpeed()",
-        "LATHE_GetCssRpm()"
+        "LATHE_GetCssRpm()",
+        "LATHE_GetFinishSpindleSpeed()"
       ]
     },
     {
@@ -5618,9 +5618,9 @@
       ],
       "description": "Outputs the first tool number with NO prefix.API:double MILL_GetFirstToolNumber()double LATHE_GetFirstToolNumber()double MILLTURN_GetFirstToolNumber()",
       "bobcadAPIs": [
-        "MILLTURN_GetFirstToolNumber()",
+        "MILL_GetFirstToolNumber()",
         "LATHE_GetFirstToolNumber()",
-        "MILL_GetFirstToolNumber()"
+        "MILLTURN_GetFirstToolNumber()"
       ]
     },
     {
@@ -5710,8 +5710,8 @@
       ],
       "description": "Outputs the orientation number in a 2 digit format with NO prefix. Used for Mazaktool numbering. The value output comes from the Tool Orientation Mapping questionsin the post (5200through5208). The Tool Orientation Control parameters in aturning feature is used to define the output.API:string MILLTURN_GetToolOrientation()This returns the mapped stringinteger MILLTURN_GetToolOrientationIndex()This returns the orientation index value",
       "bobcadAPIs": [
-        "MILLTURN_GetToolOrientation()",
-        "MILLTURN_GetToolOrientationIndex()"
+        "MILLTURN_GetToolOrientationIndex()",
+        "MILLTURN_GetToolOrientation()"
       ]
     },
     {
@@ -5743,8 +5743,8 @@
       ],
       "description": "Returns the tool number formatted with the offset canceled (T0100) The prefix isdefined on post question:1781API:string LATHE_GetSpecialToolNumber()string MILLTURN_GetSpecialToolNumber()",
       "bobcadAPIs": [
-        "MILLTURN_GetSpecialToolNumber()",
-        "LATHE_GetSpecialToolNumber()"
+        "LATHE_GetSpecialToolNumber()",
+        "MILLTURN_GetSpecialToolNumber()"
       ]
     },
     {
@@ -5821,8 +5821,8 @@
       ],
       "description": "Outputs the value of the diameter of the milling tool with NO prefix.API:double MILL_GetToolDiameter()double MILLTURN_GetToolDiameter()",
       "bobcadAPIs": [
-        "MILLTURN_GetToolDiameter()",
-        "MILL_GetToolDiameter()"
+        "MILL_GetToolDiameter()",
+        "MILLTURN_GetToolDiameter()"
       ]
     },
     {
@@ -5845,8 +5845,8 @@
       ],
       "description": "Outputs the string containing the tool name.The names that are output are the tooltypes that can be seen in the tool crib.API:string MILL_GetToolName()string MILLTURN_GetToolName()",
       "bobcadAPIs": [
-        "MILL_GetToolName()",
-        "MILLTURN_GetToolName()"
+        "MILLTURN_GetToolName()",
+        "MILL_GetToolName()"
       ]
     },
     {
@@ -5857,8 +5857,8 @@
       ],
       "description": "Outputs the protrusion length of the tool with NO prefix.API:double MILL_GetToolProtrusionLength()double MILLTURN_GetToolProtrusionLength()",
       "bobcadAPIs": [
-        "MILL_GetToolProtrusionLength()",
-        "MILLTURN_GetToolProtrusionLength()"
+        "MILLTURN_GetToolProtrusionLength()",
+        "MILL_GetToolProtrusionLength()"
       ]
     },
     {
@@ -5869,8 +5869,8 @@
       ],
       "description": "Outputs the length of the tool with NO prefix.API:double MILL_GetToolLength()double MILLTURN_GetToolName()",
       "bobcadAPIs": [
-        "MILL_GetToolLength()",
-        "MILLTURN_GetToolName()"
+        "MILLTURN_GetToolName()",
+        "MILL_GetToolLength()"
       ]
     },
     {
@@ -5977,8 +5977,8 @@
       ],
       "description": "Outputs the strings that will put the machine in Feed Per Minute or Inverse Timemode on the machine. The strings output depend on the current mode determined bythe operation.The strings are defined as follows:Unit Per Minute = String defined on post question:715Inverse Time Feed = String defined on post question:714API:short MILL_Get_FeedMode()short MILLTURN_Get_FeedMode()0 = UPM1 = Inverse Feed",
       "bobcadAPIs": [
-        "MILL_Get_FeedMode()",
-        "MILLTURN_Get_FeedMode()"
+        "MILLTURN_Get_FeedMode()",
+        "MILL_Get_FeedMode()"
       ]
     },
     {
@@ -6924,8 +6924,8 @@
       ],
       "description": "Outputs the code used to open the stead rest on the machine for a specific steadrest device.The output string is defined on the defined stead rest\u00e2\u0080\u0099s post question:40x01API:string MILLTURN_GetSteadRestOpenCode1()throughstring MILLTURN_GetSteadyRestOpenCode10()",
       "bobcadAPIs": [
-        "MILLTURN_GetSteadRestOpenCode1()",
-        "MILLTURN_GetSteadyRestOpenCode10()"
+        "MILLTURN_GetSteadyRestOpenCode10()",
+        "MILLTURN_GetSteadRestOpenCode1()"
       ]
     },
     {
@@ -6935,8 +6935,8 @@
       ],
       "description": "Outputs the code used to open the stead rest on the machine for a specific steadrest device.The output string is defined on the defined stead rest\u00e2\u0080\u0099s post question:40x01API:string MILLTURN_GetSteadRestOpenCode1()throughstring MILLTURN_GetSteadyRestOpenCode10()",
       "bobcadAPIs": [
-        "MILLTURN_GetSteadRestOpenCode1()",
-        "MILLTURN_GetSteadyRestOpenCode10()"
+        "MILLTURN_GetSteadyRestOpenCode10()",
+        "MILLTURN_GetSteadRestOpenCode1()"
       ]
     },
     {
@@ -7090,8 +7090,8 @@
       ],
       "description": "Outputs the command from the define parts catcher device to retract the parts catcheron the machine. The output string is defined on each parts catcher device\u00e2\u0080\u0099s postquestion:50x02API:string MILLTURN_GetPartsCatcherRetractCode_1()throughstring MILLTURN_GetPartsCatcherRetractCode_10()",
       "bobcadAPIs": [
-        "MILLTURN_GetPartsCatcherRetractCode_10()",
-        "MILLTURN_GetPartsCatcherRetractCode_1()"
+        "MILLTURN_GetPartsCatcherRetractCode_1()",
+        "MILLTURN_GetPartsCatcherRetractCode_10()"
       ]
     },
     {
@@ -7101,8 +7101,8 @@
       ],
       "description": "Outputs the command from the define parts catcher device to retract the parts catcheron the machine. The output string is defined on each parts catcher device\u00e2\u0080\u0099s postquestion:50x02API:string MILLTURN_GetPartsCatcherRetractCode_1()throughstring MILLTURN_GetPartsCatcherRetractCode_10()",
       "bobcadAPIs": [
-        "MILLTURN_GetPartsCatcherRetractCode_10()",
-        "MILLTURN_GetPartsCatcherRetractCode_1()"
+        "MILLTURN_GetPartsCatcherRetractCode_1()",
+        "MILLTURN_GetPartsCatcherRetractCode_10()"
       ]
     },
     {
@@ -8202,7 +8202,7 @@
       "bobcadAPIs": []
     },
     {
-      "postVariableName": null,
+      "postVariableName": "GetDoubleOfPostVariable(\"tapthread_majordiam\")",
       "jobTypes": [
         "Mill Job",
         "Lathe Job",
@@ -8210,11 +8210,11 @@
       ],
       "description": "Outputs themajor Diametervalue of the thread type used in tapping operation, only using the API GetDoubleOfPostVariable()NOTE- This variable cannot be directly used inside a post processor since its only a variable that is a valid input to the GetDoubleOfPostVariable() API function",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_majordiam\")"
+        "GetDoubleOfPostVariable()"
       ]
     },
     {
-      "postVariableName": null,
+      "postVariableName": "GetDoubleOfPostVariable(\"tapthread_minordiam\")",
       "jobTypes": [
         "Mill Job",
         "Lathe Job",
@@ -8222,11 +8222,11 @@
       ],
       "description": "Outputs theminor Diametervalue of the thread type used in tapping operation, only using the API GetDoubleOfPostVariable()NOTE- This variable cannot be directly used inside a post processor since its only a variable that is a valid input to the GetDoubleOfPostVariable() API function",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_minordiam\")"
+        "GetDoubleOfPostVariable()"
       ]
     },
     {
-      "postVariableName": null,
+      "postVariableName": "GetDoubleOfPostVariable(\"tapthread_pitch\")",
       "jobTypes": [
         "Mill Job",
         "Lathe Job",
@@ -8234,11 +8234,11 @@
       ],
       "description": "Outputs thepitchvalue of the thread type used in tapping operation, only using the API GetDoubleOfPostVariable()NOTE- This variable cannot be directly used inside a post processor since its only a variable that is a valid input to the GetDoubleOfPostVariable() API function",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_pitch\")"
+        "GetDoubleOfPostVariable()"
       ]
     },
     {
-      "postVariableName": null,
+      "postVariableName": "GetDoubleOfPostVariable(\"tapthread_threadangle\")",
       "jobTypes": [
         "Mill Job",
         "Lathe Job",
@@ -8246,11 +8246,11 @@
       ],
       "description": "Outputs thethread anglevalue of the thread type used in tapping operation, only using the API GetDoubleOfPostVariable()NOTE- This variable cannot be directly used inside a post processor since its only a variable that is a valid input to the GetDoubleOfPostVariable() API function",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_threadangle\")"
+        "GetDoubleOfPostVariable()"
       ]
     },
     {
-      "postVariableName": null,
+      "postVariableName": "GetDoubleOfPostVariable(\"tapthread_taperangle\")",
       "jobTypes": [
         "Mill Job",
         "Lathe Job",
@@ -8258,11 +8258,11 @@
       ],
       "description": "Outputs thetaper anglevalue of the thread type used in tapping operation, only using the API GetDoubleOfPostVariable()NOTE- This variable cannot be directly used inside a post processor since its only a variable that is a valid input to the GetDoubleOfPostVariable() API function",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_taperangle\")"
+        "GetDoubleOfPostVariable()"
       ]
     },
     {
-      "postVariableName": null,
+      "postVariableName": "GetDoubleOfPostVariable(\"tapthread_cuttingholesize\")",
       "jobTypes": [
         "Mill Job",
         "Lathe Job",
@@ -8270,11 +8270,11 @@
       ],
       "description": "Outputs the cutting hole sizevalue for the thread type used in tapping operation, only using the API GetDoubleOfPostVariable()NOTE- This variable cannot be directly used inside a post processor since its only a variable that is a valid input to the GetDoubleOfPostVariable() API function",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_cuttingholesize\")"
+        "GetDoubleOfPostVariable()"
       ]
     },
     {
-      "postVariableName": null,
+      "postVariableName": "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")",
       "jobTypes": [
         "Mill Job",
         "Lathe Job",
@@ -8282,7 +8282,7 @@
       ],
       "description": "Outputs the rolling hole sizevalue for the thread type used in tapping operation, only using the API GetDoubleOfPostVariable()NOTE- This variable cannot be directly used inside a post processor since its only a variable that is a valid input to the GetDoubleOfPostVariable() API function",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "GetDoubleOfPostVariable()"
       ]
     },
     {
@@ -8291,9 +8291,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4200used for calling a macro.Example String Values are:Fanuc - G65Haas - G65Mazak - G65Siemens - L9800 NOTE: Siemens does not have a specific call command.Okuma - \"CALL\"",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_on",
@@ -8301,9 +8299,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4201used for turning on the probe on the machine tool.Example String Values are:Fanuc - P9832Haas - P9832Mazak - P9809Siemens - L9832Okuma - O9832",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_off",
@@ -8311,9 +8307,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4202used for turning off the probe on the machine tool.Example String Values are:Fanuc - P9833Haas - P9833Mazak -Siemens - L9833Okuma - O9833",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_protected",
@@ -8321,9 +8315,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4203used for defining the code for moving the probe with the protection mode turned on.Example String Values are:Fanuc - P9810Haas - P9810Mazak - P9810Siemens - L9810Okuma - O9810",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_raw_text",
@@ -8331,9 +8323,7 @@
         "Mill Job"
       ],
       "description": "Outputs the string entered in the Raw Text tab of the measure, contact tool setter, non-contact tool setter operations. This is typically used in the end of the operation block to output any additional code at the end of the probing cycle.",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_x_single",
@@ -8341,9 +8331,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4204used for defining the cycle code for X axis single surface cycle.Example String Values are:Fanuc - P9811Haas - P9811Mazak - P9811Siemens - L9811Okuma - O9811",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_y_single",
@@ -8351,9 +8339,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4205used for defining the cycle code for Y axis single surface cycle.Example String Values are:Fanuc - P9811Haas - P9811Mazak - P9811Siemens - L9811Okuma - O9811",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_z_single",
@@ -8361,9 +8347,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4206used for defining the cycle code for Z axis single surface cycle.Example String Values are:Fanuc - P9811Haas - P9811Mazak - P9811Siemens - L9811Okuma - O9811",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_web",
@@ -8371,9 +8355,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4207used for defining the code for a web probing cycle.Example String Values are:Fanuc - P9812Haas - P9812Mazak - P9812Siemens - L9812Okuma - O9812",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_pocket",
@@ -8381,9 +8363,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4208used for defining the code for a pocket probing cycle.Example String Values are:Fanuc - P9812Haas - P9812Mazak - P9812Siemens - L9812Okuma - O9812",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_boss_4",
@@ -8391,9 +8371,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4209used for defining the code for a Boss probing cycle, using a 4 point method.Example String Values are:Fanuc - P9814Haas - P9814Mazak - P9814Siemens - L9814Okuma - O9814",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_bore_4",
@@ -8401,9 +8379,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4210used for defining the code for a Bore probing cycle, using a 4 point method.Example String Values are:Fanuc - P9814Haas - P9814Mazak - P9814Siemens - L9814Okuma - O9814",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_boss_3",
@@ -8411,9 +8387,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4211used for defining the code for a Boss probing cycle, using a 3 point method.Example String Values are:Fanuc - P9823Haas - P9823Mazak - P9823Siemens - L9823Okuma - O9823",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_bore_3",
@@ -8421,9 +8395,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4212used for defining the code for a Bore probing cycle, using a 3 point method.Example String Values are:Fanuc - P9823Haas - P9823Mazak - P9823Siemens - L9823Okuma - O9823",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_int_corner",
@@ -8431,9 +8403,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4213used for defining the code for an internal corner probing cycle.Example String Values are:Fanuc - P9815Haas - P9815Mazak - P9815Siemens - L9815Okuma - O9815",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_ext_corner",
@@ -8441,9 +8411,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4214used for defining the code for an external corner probing cycle.Example String Values are:Fanuc - P9816Haas - P9816Mazak - P9816Siemens - L9816Okuma - O9816",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_ext_5rect",
@@ -8451,9 +8419,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4215used for defining the code for an external rectangle probing cycle using a 5 point method.Example String Values are:Fanuc - P9817Haas - N/AMazak - N/ASiemens - N/AOkuma - N/A",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_int_5rect",
@@ -8461,9 +8427,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4216used for defining the code for an internal rectangle probing cycle using a 5 point method.Example String Values are:Fanuc - P9817Haas - N/AMazak - N/ASiemens - N/AOkuma - N/A",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_line",
@@ -8471,9 +8435,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4217used for defining the code for line probing cycle.Example String Values are:Fanuc - P9821Haas - P9821Mazak - P9821Siemens - L9821Okuma - O9821",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_surface",
@@ -8481,9 +8443,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4218used for defining the code for a surface probing cycle.Example String Values are:Fanuc - P9821Haas - N/AMazak - N/ASiemens - N/AOkuma - N/A",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_angled_web",
@@ -8491,9 +8451,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4219used for defining the code for web probing cycle where the web is on an angle and not aligned with an axis.Example String Values are:Fanuc - P9822Haas - P9822Mazak - P9822Siemens - L9822Okuma - O9822",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_angled_pocket",
@@ -8501,9 +8459,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4220used for defining the code for pocket probing cycle where the pocket is on an angle and not aligned with an axis.Example String Values are:Fanuc - P9822Haas - P9822Mazak - P9822Siemens - L9822Okuma - O9822",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_4th_axis",
@@ -8511,9 +8467,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4221used for defining the code for probing on a 4th axisExample String Values are:Fanuc - P9818Haas - P9817Mazak - P9817Siemens - L9817Okuma - O9817",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_4th_axis_2",
@@ -8521,9 +8475,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4222. used for defining the code for probing on a 4th axisExample String Values are:Fanuc - N/AHaas - P9818Mazak - P9818Siemens - L9818Okuma - O9818",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_boss_pcd",
@@ -8531,9 +8483,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4223. used for defining the code for a Pitch Circle Diameter Boss type probing cycle.Example String Values are:Fanuc - P9819Haas - P9819Mazak - P9819Siemens - L9819Okuma - O9819",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_bore_pcd",
@@ -8541,9 +8491,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4224. used for defining the code for a Pitch Circle Diameter Bore type probing cycle.Example String Values are:Fanuc - P9819Haas - P9819Mazak - P9819Siemens - L9819Okuma - O9819",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_angled_surf",
@@ -8551,9 +8499,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4225. used for defining the code for a surface probing cycle where the surfaces is on an angle.Example String Values are:Fanuc - P9843Haas - P9843Mazak - P9843Siemens - L9843Okuma - O9843",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "x_pos",
@@ -8561,9 +8507,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4250. used for defining the prefix for the X axis position moves when probing.Example String Values are:Fanuc - XHaas - XMazak - XSiemens - R24=Okuma - PX=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "y_pos",
@@ -8571,9 +8515,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4251. used for defining the prefix for the Y axis position moves when probing.Example String Values are:Fanuc - YHaas - YMazak - YSiemens - R25=Okuma - PY=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "z_pos",
@@ -8581,9 +8523,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4252. used for defining the prefix for the Z axis position moves when probing.Example String Values are:Fanuc - ZHaas - ZMazak - ZSiemens - R26=Okuma - PZ=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_b_dia",
@@ -8591,9 +8531,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4253. used for defining the prefix for the bore and boss diameter parameter when probing.Used In:BossBore4 PointsExample String Values are:Fanuc - DHaas - DMazak - DSiemens - R7=Okuma - PD=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_angle",
@@ -8601,9 +8539,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4254. used for defining the prefix for the angle parameter when probing.Used In:LineAngled WebAngled PocketBoss PCDBore PCDAngle Measure in X PlaneAngle Measure in Y PlaneExample String Values are:Fanuc - AHaas - AMazak - ASiemens - R1=Okuma - PA=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_angle1",
@@ -8611,9 +8547,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4255. used for defining the prefix for the angle parameter when probing.Used In:Boss 3 PointsBore 3 PointsExample String Values are:Fanuc - AHaas - AMazak - ASiemens - R1=Okuma - PA=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_angle2",
@@ -8621,9 +8555,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4256. used for defining the prefix for the angle parameter when probing.Used In:Boss 3 PointsBore 3 PointsExample String Values are:Fanuc - BHaas - BMazak - BSiemens - R2=Okuma - PB=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_angle3",
@@ -8631,9 +8563,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4257. used for defining the prefix for the angle parameter when probing.Used In:Boss 3 PointsBore 3 PointsExample String Values are:Fanuc - CHaas - CMazak - CSiemens - R3=Okuma - PC=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_dist",
@@ -8641,9 +8571,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4258. used for defining the prefix for the distance parameter when probing.Used In:LineAngled WebAngled PocketAngle Measure in XAngle Measure in YExample String Values are:Fanuc - DHaas - DMazak - DSiemens - R7=Okuma - PD=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_x_dist",
@@ -8651,9 +8579,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4259. used for defining the prefix for the X distance parameter when corner probing.Used In:Internal CornerExternal CornerExample String Values are:Fanuc - DHaas - DMazak - DSiemens - ??Okuma - PD=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_y_dist",
@@ -8661,9 +8587,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4260. used for defining the prefix for the Y distance parameter when corner probing.Used In:Internal CornerExternal CornerExample String Values are:Fanuc - EHaas - EMazak - ESiemens - ??Okuma - PE=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_x_dist2",
@@ -8671,9 +8595,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4261. used for defining the prefix for the second X distance parameter when corner probing.Used In:Internal CornerExternal CornerExample String Values are:Fanuc - IHaas - IMazak - ISiemens - ??Okuma - PI=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_y_dist2",
@@ -8681,9 +8603,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4262. used for defining the prefix for the second Y distance parameter when corner probing.Used In:Internal CornerExternal CornerExample String Values are:Fanuc - JHaas - JMazak - JSiemens - ??Okuma - PJ=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "x_dist",
@@ -8691,9 +8611,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4263. used for defining the prefix for the X distance parameter in 4th axis probing.Used In:4th AxisExample String Values are:Fanuc - XHaas - XMazak - XSiemens - R24=Okuma - PX=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "y_dist",
@@ -8701,9 +8619,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4264. used for defining the prefix for the Y distance parameter in 4th axis probing.Used In:4th AxisExample String Values are:Fanuc - YHaas - YMazak - YSiemens - R25=Okuma - PY=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "x_length",
@@ -8711,9 +8627,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4265. used for defining the prefix for the X length in rectangle probing.Used In:Internal 5 Point RectangleExternal 5 Point RectangleExample String Values are:Fanuc - DHaas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "y_length",
@@ -8721,9 +8635,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4266. used for defining the prefix for the Y length in rectangle probing.Used In:Internal 5 Point RectangleExternal 5 Point RectangleExample String Values are:Fanuc - EHaas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "z_pos_k",
@@ -8731,9 +8643,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4267. used for defining the prefix for the Z measure position parameter in a Pitch Circle Diameter Bore cycle.Used In:Bore Pitch Circle DiameterExample String Values are:Fanuc - KHaas - KMazak - KSiemens - R6=Okuma - PK=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "5rect_face",
@@ -8741,9 +8651,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4268. used for defining the prefix for the face for 2 measurements parameter in the rectangle probing cycle.Used In:5 Point RectangleExample String Values are:Fanuc - A (Permissible values: A11, A12, A13, A14)Haas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "5rect_p2_p4_pos",
@@ -8751,9 +8659,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4269. used for defining the prefix for the P2 & P4 measure position parameters in the rectangle probing cycle.Used In:5 Point RectangleExample String Values are:Fanuc - HHaas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "5rect_dist",
@@ -8761,9 +8667,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4270. used for defining the prefix for the distance between 2 points in the rectangle probing cycle.Used In:5 Point RectangleExample String Values are:Fanuc - THaas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "5rect_p1_p3_pos",
@@ -8771,9 +8675,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4271. used for defining the second distance parameter in rectangle probing cycle.Used In:5 Point RectangleExample String Values are:Fanuc - VHaas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_surf_output",
@@ -8781,9 +8683,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4272. used for defining the probe surface output parameter.Used In:Probe SurfaceExample String Values are:Fanuc - C (Permissible Values: C0, C1, C2)Haas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_rotary",
@@ -8791,9 +8691,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4273. used for defining the 4th axis probing type parameter.Used In:4th Axis CycleExample String Values are:Fanuc - K (Permissible Values: K1, K2, K3, K4)Haas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_pcd",
@@ -8801,9 +8699,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4274. used for defining the pitch circle diameter parameter in PCD cycles.Used In:Boss Pitch Circle DiameterBore Pitch Circle DiameterExample String Values are:Fanuc - CHaas - CMazak - CSiemens - R3=Okuma - PC=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_num_features",
@@ -8811,9 +8707,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4275. used for defining the number of features in PCD cycles.Used In:Boss Pitch Circle DiameterBore Pitch Circle DiameterExample String Values are:Fanuc - BHaas - BMazak - BSiemens - R2=Okuma - PB=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_angle_tol",
@@ -8821,9 +8715,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4276. used for defining the angle tolerance parameter in probing cycles.Used In:Angle ToleranceExample String Values are:Fanuc - BHaas - BMazak - BSiemens - R2=Okuma - PB=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_experience",
@@ -8831,9 +8723,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4277. used for defining the probe experience value parameter in probing cycles.Used In:Experience Value (Used from the tool offset table to be applied to measured size)Example String Values are:Fanuc - EHaas - EMazak - ESiemens - R8=Okuma - PE=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_feedback",
@@ -8841,9 +8731,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4278. used for defining the probe feedback parameter in probing cycles.Value from 0 to 1 (0% to 100%)Example String Values are:Fanuc - FHaas - FMazak - FSiemens - R9=Okuma - PF=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_feature_tol",
@@ -8851,9 +8739,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4279. used for defining the tolerance value of feature dimensioning in probing cycle.Example String Values are:Fanuc - HHaas - HMazak - HSiemens - R11=Okuma - PH=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_true_tol",
@@ -8861,9 +8747,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4280. used for defining the true position tolerance of a feature in probing cycle.Example String Values are:Fanuc - MHaas - MMazak - MSiemens - R13=Okuma - PM=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_overtravel",
@@ -8871,9 +8755,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4281. used for defining the probe overtravel distance in probing. (Default when excluded is 4mm in Z axis, and 10mm in X/Y axes.Example String Values are:Fanuc - QHaas - QMazak - QSiemens - R17=Okuma - PQ=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_inc_distance",
@@ -8881,9 +8763,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4282. used for defining the incremental distance for external features prior to Z moves. Default distance is 5mm.Example String Values are:Fanuc - RHaas - RMazak - RSiemens - R18=Okuma - PR=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_work_offset",
@@ -8891,9 +8771,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4283. used for defining the work offset that is to be updated (S1-S6 for G54-G59, S101-S400 for additional offsets.Example String Values are:Fanuc - SHaas - SMazak - SSiemens - R19=Okuma - PS=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_tool_offset",
@@ -8901,9 +8779,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4284. used for defining the tool offset that is to be updated.Example String Values are:Fanuc - IHaas - IMazak - ISiemens - R20=Okuma - PI=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_upper_tol",
@@ -8911,9 +8787,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4285. used for defining the upper tolerance limit used in tool setting.Example String Values are:Fanuc - UHaas - UMazak - USiemens - R21=Okuma - PU=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_null_band",
@@ -8921,9 +8795,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4286. used for defining the null band used in tool setting. (Tolerance limit for adjusting tool offset)Example String Values are:Fanuc - VHaas - VMazak - VSiemens - R22=Okuma - PV=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_print",
@@ -8931,9 +8803,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4287. used for printing the output data (W1 or W2)Example String Values are:Fanuc - WHaas - WMazak - WSiemens - R23=Okuma - PW=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_print_open",
@@ -8941,9 +8811,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4288. used for opening the print port on the machine.Example String Values are:W1NOTES:Fanuc and Mazak need to open and close the port with the probe on/off command before any cycles that use print. Siemens, Okuma, and Haas do not need the extra parameter as they do this automatically.The way the probe_print_open and probe_print_close variables work: The probe_print_open will open the port for the first cycle that uses print in the program, and the probe_print_close will close the port after the last probe cycle using print in the program.These variables are intended to be used in the4000. Probe On and4001. Probe Off postblocks.",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_print_close",
@@ -8951,9 +8819,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4289. used for closing the print port on the machine.Example String Values are:W1NOTES:Fanuc and Mazak need to open and close the port with the probe on/off command before any cycles that use print. Siemens, Okuma, and Haas do not need the extra parameter as they do this automatically.The way the probe_print_open and probe_print_close variables work: The probe_print_open will open the port for the first cycle that uses print in the program, and the probe_print_close will close the port after the last probe cycle using print in the program.These variables are intended to be used in the4000. Probe On and4001. Probe Off postblocks.",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_cts_auto_length",
@@ -8961,9 +8827,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4400. used for defining the automatic tool length cycle.Example String Values are:Fanuc - P9857Haas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_cts_auto_diameter",
@@ -8971,9 +8835,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4401. used for defining the automatic tool diameter cycle.Example String Values are:Fanuc - P9857Haas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_cts_auto_length_diam",
@@ -8981,9 +8843,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4402. used for defining the automatic tool length and diameter cycle.Example String Values are:Fanuc - P9857Haas - ??Mazak - ??Siemens - L9857Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_cts_auto_length_up",
@@ -8991,9 +8851,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4403. used for defining the automatic tool length up cycle.Example String Values are:Fanuc - P9857Haas - ??Mazak - ??Siemens - L9857Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_cts_broken_tool",
@@ -9001,9 +8859,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4404. used for defining the broken tool detection cycle.Example String Values are:Fanuc - P9858Haas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_cts_manual_length",
@@ -9011,9 +8867,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4405. used for defining the manual length cycle.Example String Values are:Fanuc - P9856Haas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_cts_manual_diam",
@@ -9021,9 +8875,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4406. used for defining the manual diameter cycle.Example String Values are:Fanuc - P9852Haas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_cts_thermal_comp",
@@ -9031,9 +8883,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4407. used for defining the thermal compensation cycle.Example String Values are:Fanuc - P9859Haas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_cts_tool_type",
@@ -9041,9 +8891,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4420. used for defining the measurement type in a CTS cycle.Example String Values are:Fanuc - BHaas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_cts_tool_diameter",
@@ -9051,9 +8899,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4421. used for defining the tool diameter in a CTS cycle. NOTE: This forces the rotation of the tool on some machines.Example String Values are:Fanuc - DHaas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_cts_tool__tol",
@@ -9061,9 +8907,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4422. used for defining the tool length tolerance value in CTS cycles.Example String Values are:Fanuc - HHaas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_cts_length_exper",
@@ -9071,9 +8915,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4423. used for defining the length experience value in CTS cycles.Example String Values are:Fanuc - KHaas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_cts_broken",
@@ -9081,9 +8923,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4424. used for defining the tool out of tolerance value in CTS cycles.Example String Values are:Fanuc - MHaas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_cts_overtravel",
@@ -9091,9 +8931,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4425. used for defining the overtravel parameter value in CTS cycles.Example String Values are:Fanuc - QHaas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_cts_tool_offset",
@@ -9101,9 +8939,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4426. used for defining the tool offset parameter value in CTS cycles.Example String Values are:Fanuc - THaas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_cts_tool_length",
@@ -9111,9 +8947,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4427. used for defining the tool length parameter value in CTS cycles.Example String Values are:Fanuc - YHaas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_cts_offset_typeA",
@@ -9121,9 +8955,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4428. used for defining the tool offset parameter value for Type A offset tables in CTS cycles.Example String Values are:Fanuc - EHaas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_cts_diam_exper",
@@ -9131,9 +8963,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4429. used for defining the diameter experience valuein CTS cycles.Example String Values are:Fanuc - JHaas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_cts_z_clearance",
@@ -9141,9 +8971,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4430. used for defining the extra z clearance parameter valuein CTS cycles.Example String Values are:Fanuc - WHaas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_cts_z_measure",
@@ -9151,9 +8979,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4431. used for defining the Z axis measure position parameter valuein CTS cycles.Example String Values are:Fanuc - ZHaas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_cts_inc_radial",
@@ -9161,9 +8987,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4432. used for defining the incremental radial distance parameter valuein the feed up cycle. .Example String Values are:Fanuc - UHaas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_cts_rapid_pos",
@@ -9171,9 +8995,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4433. used for defining the rapid position parameter in the Broken Tool cycle.Example String Values are:Fanuc - YHaas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_cts_clearance",
@@ -9181,9 +9003,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4434. used for defining the clearance position parameter in the Broken Tool cycle.Example String Values are:Fanuc - YHaas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_cts_thermal_type",
@@ -9191,9 +9011,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4435. used for defining the thermal comp cycle type parameter.Example String Values are:Fanuc - CHaas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_cts_thermal_meaure",
@@ -9201,9 +9019,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4436. used for defining the thermal comp measure position parameter.Example String Values are:Fanuc - WHaas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_cts_thermal_x_storage",
@@ -9211,9 +9027,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4437. used for defining the thermal compX storage location parameter.Example String Values are:Fanuc - XHaas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_cts_thermal_y_storage",
@@ -9221,9 +9035,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4438. used for defining the thermal comp Y storage location parameter.Example String Values are:Fanuc - YHaas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_cts_thermal_z_storage",
@@ -9231,9 +9043,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4439. used for defining the thermal compZ storage location parameter.Example String Values are:Fanuc - ZHaas - ??Mazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_cts_overtravel_radial",
@@ -9241,9 +9051,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4440. used for defining the overtravel distance and radial clearance.Example String Values are:Fanuc - ??Haas - HMazak - ??Siemens - ??Okuma - ??",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_length",
@@ -9251,9 +9059,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4500. used for defining the tool length cycle for NCTS.Example String Values are:Fanuc - P9862Haas - P9862Mazak - P9862Siemens - L9862Okuma - O9862",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_diameter",
@@ -9261,9 +9067,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4501. used for defining the tool diameter cycle for NCTS.Example String Values are:Fanuc - P9862Haas - P9862Mazak - P9862Siemens - L9862Okuma - O9862",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_length_diam",
@@ -9271,9 +9075,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4502. used for defining the tool length and diameter cycle for NCTS.Example String Values are:Fanuc - P9862Haas - P9862Mazak - P9862Siemens - L9862Okuma - O9862",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_cutting_edge",
@@ -9281,9 +9083,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4503. used for defining the cutting edge cycle for NCTS.Example String Values are:Fanuc - P9862Haas - P9862Mazak - P9862Siemens - L9862Okuma - O9862",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_broken_plunge",
@@ -9291,9 +9091,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4504. used for defining the broken tool plunge cycle for NCTS.Example String Values are:Fanuc - P9863Haas - P9863Mazak - P9863Siemens - L9863Okuma - O9863",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_broken_solid",
@@ -9301,9 +9099,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4505. used for defining the broken tool solid tool cycle for NCTS.Example String Values are:Fanuc - P9866Haas - P9866Mazak - P9866Siemens - L9866Okuma - O9866",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_radius_check",
@@ -9311,9 +9107,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4506. used for defining radius profile checking cycle for NCTS.Example String Values are:Fanuc - P9865Haas - P9865Mazak - P9865Siemens - L9865Okuma - O9865",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_linear_check",
@@ -9321,9 +9115,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4507. used for defining linear profile checking cycle for NCTS.Example String Values are:Fanuc - P9865Haas - P9865Mazak - P9865Siemens - L9865Okuma - O9865",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_thermal_full",
@@ -9331,9 +9123,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4508. used for defining full thermal compensation cycle for NCTS.Example String Values are:Fanuc - P9861Haas - P9861Mazak - P9861Siemens - L9861Okuma - O9861",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_thermal_spindle",
@@ -9341,9 +9131,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4509. used for defining spindle thermal compensation cycle for NCTS.Example String Values are:Fanuc - P9861Haas - P9861Mazak - P9861Siemens - L9861Okuma - O9861",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_thermal_radial",
@@ -9351,9 +9139,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4510. used for defining radial thermal compensation cycle for NCTS.Example String Values are:Fanuc - P9861Haas - P9861Mazak - P9861Siemens - L9861Okuma - O9861",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_corner_measure",
@@ -9361,9 +9147,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4511. used for defining the corner radius measure cycle for NCTS.Example String Values are:Fanuc - P9867Haas - P9867Mazak - P9867Siemens - L9867Okuma - O9867",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_tool_type",
@@ -9371,9 +9155,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4550. used for defining the prefix for the measurement type parameter in NTS cycles.Example String Values are:Fanuc - BHaas - BMazak - BSiemens - R02=Okuma - PB=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_tool_tol",
@@ -9381,9 +9163,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4551. used for defining the prefix for the tool length tolerance parameter in NTS cycles.Example String Values are:Fanuc - HHaas - HMazak - HSiemens - R11=Okuma - PH=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_length_exper",
@@ -9391,9 +9171,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4552. used for defining the prefix for the length experience parameter in NTS cycles.Example String Values are:Fanuc - JHaas - JMazak - JSiemens - R05=Okuma - PJ=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_broken",
@@ -9401,9 +9179,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4553. used for defining the prefix for the out of tolerance parameter in broken NTS cycles.Example String Values are:Fanuc - MHaas - MMazak - MSiemens - R13=Okuma - PM=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_overtravel",
@@ -9411,9 +9187,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4554. used for defining the prefix for the overtravel parameter in NTS cycles.Example String Values are:Fanuc - QHaas - QMazak - QSiemens - R17=Okuma - PQ=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_spindle_speed",
@@ -9421,9 +9195,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4555. used for defining the prefix for the spindle speed parameter in NTS cycles.Example String Values are:Fanuc - SHaas - SMazak - SSiemens - R19=Okuma - PS=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_tool_offset",
@@ -9431,9 +9203,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4556. used for defining the prefix for the tool offset parameter in NTS cycles.Example String Values are:Fanuc - THaas - TMazak - TSiemens - R14=Okuma - PT=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_stepover",
@@ -9441,9 +9211,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4557. used for defining the prefix for the radial step-over parameter in NTS cycles.Example String Values are:Fanuc - YHaas - YMazak - YSiemens - R25=Okuma - PY=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_solid_tool",
@@ -9451,9 +9219,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4558. used for defining the prefix for the solid tool parameter in NTS cycles.Example String Values are:Fanuc - AHaas - AMazak - ASiemens - R01=Okuma - PA=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_cutter_edge",
@@ -9461,9 +9227,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4559. used for defining the cutter edge parameter in NTS cycles. For when there are parts o f the tool or cutter edge, or when you want to use a slitting saw.Example String Values are:Fanuc - WHaas - WMazak - WSiemens - R23=Okuma - PW=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_diam_offset",
@@ -9471,9 +9235,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4560. used for defining the prefix for the diameter offset number parameter in NTS cycles.Example String Values are:Fanuc - DHaas - DMazak - DSiemens - ??Okuma - PD=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_diam_tol",
@@ -9481,9 +9243,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4561. used for defining the prefix for the diameter tolerance parameter in NTS cycles.Example String Values are:Fanuc - EHaas - EMazak - ESiemens -R08=Okuma - PE=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_step_dist",
@@ -9491,9 +9251,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4562. used for defining the prefix for the step distance parameter in radial measure NTS cycles.Example String Values are:Fanuc - FHaas - FMazak - FSiemens -R09=Okuma - PF=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_diam_exper",
@@ -9501,9 +9259,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4563. used for defining the prefix for the radius/diameter experience parameter NTS cycles.Example String Values are:Fanuc - IHaas - IMazak - ISiemens -R04=Okuma - PI=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_tool_diameter",
@@ -9511,9 +9267,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4564. used for defining the prefix for the tool diameter parameter NTS cycles.Example String Values are:Fanuc - RHaas - RMazak - RSiemens -R18=Okuma - PR=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_search_dist",
@@ -9521,9 +9275,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4565. used for defining the prefix for the search distance for high spot parameter NTS cycles.Example String Values are:Fanuc - XHaas - XMazak - XSiemens -R24=Okuma - PX=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_measure_z",
@@ -9531,9 +9283,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4566. used for defining the prefix for the measure height parameter NTS cycles.Example String Values are:Fanuc - ZHaas - ZMazak - ZSiemens -R26=Okuma - PZ=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_num_edges",
@@ -9541,9 +9291,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4567. used for defining the prefix for the number of cutting edges parameter NTS cycles.Example String Values are:Fanuc - CHaas - CMazak - CSiemens -R03=Okuma - PC=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_feed_rev",
@@ -9551,9 +9299,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4568. used for defining the prefix for the feed per rev parameter NTS cycles.Example String Values are:Fanuc - FHaas - FMazak - FSiemens -R09=Okuma - PF=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_runout_tol",
@@ -9561,9 +9307,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4569. used for defining the prefix for the run-out tolerance parameter NTS cycles.Example String Values are:Fanuc - KHaas - KMazak - KSiemens -R06=Okuma - PK=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_safety_z",
@@ -9571,9 +9315,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4570. used for defining the prefix for the safety plane parameter NTS cycles.Example String Values are:Fanuc - ZHaas - ZMazak - ZSiemens -R26=Okuma - PZ=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_start_angle",
@@ -9581,9 +9323,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4571. used for defining the prefix for the start angle for profile checking parameter NTS cycles.Example String Values are:Fanuc - JHaas - JMazak - JSiemens -R05=Okuma - PJ=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_end_angle",
@@ -9591,9 +9331,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4572. used for defining the prefix for the end angle for profile checking parameter NTS cycles.Example String Values are:Fanuc - QHaas - QMazak - QSiemens -R17=Okuma - PQ=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_check_height",
@@ -9601,9 +9339,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4573. used for defining the prefix for the profile checking height parameter NTS cycles.Example String Values are:Fanuc - HHaas - HMazak - HSiemens -R11=Okuma - PH=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_linear_dist",
@@ -9611,9 +9347,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4574. used for defining the prefix for the profile checking linear distance parameter NTS cycles.Example String Values are:Fanuc - XHaas - XMazak - XSiemens -R24=Okuma - PX=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_radial_dist",
@@ -9621,9 +9355,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4575. used for defining the prefix for the profile checking radial distance parameter NTS cycles.Example String Values are:Fanuc - YHaas - YMazak - YSiemens -R25=Okuma - PY=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_work_offset",
@@ -9631,9 +9363,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4576. used for defining the prefix for the work offset in thermal checking parameter NTS cycles.Example String Values are:Fanuc - CHaas - CMazak - CSiemens -R03=Okuma - PC=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_tool_length",
@@ -9641,9 +9371,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4577. used for defining the prefix for the tool length in thermal checking parameter NTS cycles.Example String Values are:Fanuc - KHaas - KMazak - KSiemens -R06=Okuma - PK=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_corner_rad",
@@ -9651,9 +9379,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4578. used for defining the prefix for the corner radius parameter NTS cycles.Example String Values are:Fanuc - CHaas - CMazak - CSiemens -R03=Okuma - PC=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_num_touch",
@@ -9661,9 +9387,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4579. used for defining the prefix for the corner measure number of touches parameter NTS cycles.Example String Values are:Fanuc - FHaas - FMazak - FSiemens -R09=Okuma - PF=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "probe_nts_radial_option",
@@ -9671,9 +9395,7 @@
         "Mill Job"
       ],
       "description": "This variable will output the string defined on post question:4580. used for defining the prefix for the corner measure radial measure option parameter NTS cycles.Example String Values are:Fanuc - VHaas - VMazak - VSiemens -R22=Okuma - PV=",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "Wrapping",
@@ -9682,7 +9404,7 @@
       ],
       "description": "Used to determine if wrapping is used for current operation.API:boolean MILLTURN_IsWrappingOperation()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILLTURN_IsWrappingOperation()"
       ]
     },
     {
@@ -9692,7 +9414,7 @@
       ],
       "description": "Used to determine if active drilling operation is cross drilling.API:boolean MILLTURN_IsCrossDrill()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILLTURN_IsCrossDrill()"
       ]
     },
     {
@@ -9703,7 +9425,8 @@
       ],
       "description": "Used to determine if current operation is on an index system.API:boolean MILL_IsOperationOnIndex()boolean MILLTURN_IsOperationOnIndex()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_IsOperationOnIndex()",
+        "MILLTURN_IsOperationOnIndex()"
       ]
     },
     {
@@ -9714,7 +9437,7 @@
       ],
       "description": "Returns the feature type for Lathe Features.0 = OD1 = ID2 = Front Face3 = Back FaceAPI:short LATHE_GetFeatureSubType()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "LATHE_GetFeatureSubType()"
       ]
     },
     {
@@ -9725,7 +9448,7 @@
       ],
       "description": "Returns the region defined on the Feature page of turning features.Region = Return Value1= 12= 2API:short LATHE_GetLatheRegion()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "LATHE_GetLatheRegion()"
       ]
     },
     {
@@ -9735,7 +9458,7 @@
       ],
       "description": "Used to return the string value from custom defined string blocks2400-2499API:string GetStringOfBlock(long BlockID)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "GetStringOfBlock(long BlockID)"
       ]
     },
     {
@@ -9745,7 +9468,7 @@
       ],
       "description": "Used to return the boolean value from blockAPI:string GetBoolOfBlock(long BlockID)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "GetBoolOfBlock(long BlockID)"
       ]
     },
     {
@@ -9755,7 +9478,7 @@
       ],
       "description": "Used to return the Integer value from custom defined integer blocks2200-2299API:string GetIntegerOfBlock(long BlockID)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "GetIntegerOfBlock(long BlockID)"
       ]
     },
     {
@@ -9765,7 +9488,7 @@
       ],
       "description": "Used to return the Double value from custom defined double blocks2300-2399API:string GetDoubleOfBlock(long BlockID)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "GetDoubleOfBlock(long BlockID)"
       ]
     },
     {
@@ -9776,7 +9499,7 @@
       ],
       "description": "Sets the current rapid location for the Z Axis using a Double variableAPI:MILL_SetZRapid(variable_name)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_SetZRapid(variable_name)"
       ]
     },
     {
@@ -9787,7 +9510,7 @@
       ],
       "description": "Sets the current feed location for the X Axis using a Double variableAPI:MILL_SetXFeed(variable_name)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_SetXFeed(variable_name)"
       ]
     },
     {
@@ -9798,7 +9521,7 @@
       ],
       "description": "Sets the current feed location for the Y Axis using a Double variableAPI:MILL_SetYFeed(variable_name)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_SetYFeed(variable_name)"
       ]
     },
     {
@@ -9809,7 +9532,7 @@
       ],
       "description": "Sets the current feed location for the Z Axis using a Double variableAPI:MILL_SetZFeed(variable_name)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_SetZFeed(variable_name)"
       ]
     },
     {
@@ -9820,7 +9543,7 @@
       ],
       "description": "Sets the previous feed location for the X Axis using a Double variableAPI:MILL_SetPreviousXFeed(variable_name)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_SetPreviousXFeed(variable_name)"
       ]
     },
     {
@@ -9831,7 +9554,7 @@
       ],
       "description": "Sets the previous feed location for the Y Axis using a Double variableAPI:MILL_SetPreviousYFeed(variable_name)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_SetPreviousYFeed(variable_name)"
       ]
     },
     {
@@ -9842,7 +9565,7 @@
       ],
       "description": "Sets the previous feed location for the Z Axis using a Double variableAPI:MILL_SetPreviousZFeed(variable_name)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_SetPreviousZFeed(variable_name)"
       ]
     },
     {
@@ -9853,7 +9576,7 @@
       ],
       "description": "Returns the relative X coordinate for the center of an arc.API:double MILL_GetArcRelCenterX()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetArcRelCenterX()"
       ]
     },
     {
@@ -9864,7 +9587,7 @@
       ],
       "description": "Returns the relative Y coordinate for the center of an arc.API:double MILL_GetArcRelCenterY()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetArcRelCenterY()"
       ]
     },
     {
@@ -9875,7 +9598,7 @@
       ],
       "description": "Returns the relative Z coordinate for the center of an arc.API:double MILL_GetArcRelCenterZ()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetArcRelCenterZ()"
       ]
     },
     {
@@ -9886,7 +9609,7 @@
       ],
       "description": "Returns the sweep of the current arc in radians.API:double MILL_GetCurrentArcAngle()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetCurrentArcAngle()"
       ]
     },
     {
@@ -9897,7 +9620,7 @@
       ],
       "description": "Returns the length of the current arc.API:double MILL_GetCurrentArcLength()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetCurrentArcLength()"
       ]
     },
     {
@@ -9908,7 +9631,7 @@
       ],
       "description": "Returns the direction of the current arc entity.2 = CW3 = CCWAPI:short MILL_GetArcDir()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetArcDir()"
       ]
     },
     {
@@ -9919,7 +9642,7 @@
       ],
       "description": "V25 Build 895 and later:Returns the sweep of an arc in degrees.V25 Build 769 and earlier:Returns the sweep of an arc in Radians.To get degrees, the value must be multipliedby 180 and divided by pi.API:double MILL_GetArcAngleDegrees()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetArcAngleDegrees()"
       ]
     },
     {
@@ -9930,7 +9653,7 @@
       ],
       "description": "Returns the current machining plane for arcs(i.e G17, G18, G19).The number returnsfrom this function is a reference to the plane and not the actual plane designation.0 = XY Plane1 = YZ Plane2 = XZ PlaneAPI:short MILL_GetArcMachiningPlane()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetArcMachiningPlane()"
       ]
     },
     {
@@ -9941,7 +9664,7 @@
       ],
       "description": "Returns the current index angle for the rotational axis.This returns the user-inputvalue from the Rotary Angle option within the feature.API:double MILL_GetRotaryIndexAngle()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetRotaryIndexAngle()"
       ]
     },
     {
@@ -9952,7 +9675,7 @@
       ],
       "description": "Returns the previous rotational index angleAPI:double MILL_GetPrevRotaryIndexAngle()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetPrevRotaryIndexAngle()"
       ]
     },
     {
@@ -9963,7 +9686,7 @@
       ],
       "description": "Returns the clearance distance for rotational index moves.API:double MILL_GetRotaryIndexClearance()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetRotaryIndexClearance()"
       ]
     },
     {
@@ -9974,7 +9697,7 @@
       ],
       "description": "Returns the previous angle of the rotational axis for wrapping, around the X axis.API:double MILL_GetPreviousXAngle()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetPreviousXAngle()"
       ]
     },
     {
@@ -9985,7 +9708,7 @@
       ],
       "description": "Returns the previous angle of the rotational axis for wrapping, around the Y axis.API:double MILL_GetPreviousYAngle()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetPreviousYAngle()"
       ]
     },
     {
@@ -9996,7 +9719,7 @@
       ],
       "description": "Returns the current index angle of the second rotary axis.API:double MILL_GetSecondRotaryIndexAngle()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetSecondRotaryIndexAngle()"
       ]
     },
     {
@@ -10007,7 +9730,7 @@
       ],
       "description": "Returns the previous index angle of the second rotary axis.API:double MILL_GetPrevSecondRotaryIndexAngle()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetPrevSecondRotaryIndexAngle()"
       ]
     },
     {
@@ -10018,7 +9741,7 @@
       ],
       "description": "Returns the current index angle of the third rotary axis.API:double MILL_GetThirdRotaryIndexAngle()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetThirdRotaryIndexAngle()"
       ]
     },
     {
@@ -10029,7 +9752,7 @@
       ],
       "description": "Returns the previous index angle of the third rotary axis.API:double MILL_GetPrevThirdRotaryIndexAngle()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetPrevThirdRotaryIndexAngle()"
       ]
     },
     {
@@ -10040,7 +9763,7 @@
       ],
       "description": "Returns the previous value for the primary axis of rotation.API:double MILL_Get_PrevPRot()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_Get_PrevPRot()"
       ]
     },
     {
@@ -10051,7 +9774,7 @@
       ],
       "description": "Returns the previous value for the secondary axis of rotation.API:double MILL_Get_PrevSRot()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_Get_PrevSRot()"
       ]
     },
     {
@@ -10062,7 +9785,7 @@
       ],
       "description": "Returns the value for the I vector of the toolpath position.API:double MILL_Get_IVec()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_Get_IVec()"
       ]
     },
     {
@@ -10073,7 +9796,7 @@
       ],
       "description": "Returns the previous value for the I vector of the toolpath position.API:double MILL_Get_PrevIVec()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_Get_PrevIVec()"
       ]
     },
     {
@@ -10084,7 +9807,7 @@
       ],
       "description": "Returns the value for the J vector of the toolpath position.API:double MILL_Get_JVec()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_Get_JVec()"
       ]
     },
     {
@@ -10095,7 +9818,7 @@
       ],
       "description": "Returns the previous value for the J vector of the toolpath position.API:double MILL_Get_PrevJVec()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_Get_PrevJVec()"
       ]
     },
     {
@@ -10106,7 +9829,7 @@
       ],
       "description": "Returns the value for the K vector of the toolpath position.API:double MILL_Get_KVec()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_Get_KVec()"
       ]
     },
     {
@@ -10117,7 +9840,7 @@
       ],
       "description": "Returns the previous value for the K vector of the toolpath position.API:double MILL_Get_PrevKVec()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_Get_PrevKVec()"
       ]
     },
     {
@@ -10127,7 +9850,7 @@
       ],
       "description": "Returns the status of the primary rotary axis clamp.0 = Not Clamped1 = ClampedAPI:short MILL_Get_PClampStatus()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_Get_PClampStatus()"
       ]
     },
     {
@@ -10137,7 +9860,7 @@
       ],
       "description": "Returns the status of the secondary rotary axis clamp.0 = Not Clamped1 = ClampedAPI:short MILL_Get_SClampStatus()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_Get_SClampStatus()"
       ]
     },
     {
@@ -10148,7 +9871,7 @@
       ],
       "description": "Returns the direction of the primary rotation axis.0 = Forward1 = ReverseAPI:short MILL_Get_PRotDirection()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_Get_PRotDirection()"
       ]
     },
     {
@@ -10159,7 +9882,7 @@
       ],
       "description": "Returns the direction of the secondary rotation axis.0 = Forward1 = ReverseAPI:short MILL_Get_SRotDirection()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_Get_SRotDirection()"
       ]
     },
     {
@@ -10170,7 +9893,7 @@
       ],
       "description": "Returns the (Top of Feature + Rapid Plane) value to give the return height for thefeature in relation to the machining origin.API:double MILL_ReturnHeightFeature()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_ReturnHeightFeature()"
       ]
     },
     {
@@ -10181,7 +9904,7 @@
       ],
       "description": "Returns the (Top of Stock + Clearance Plane) value to give the return height forthe feature in relation to the machining origin.API:double MILL_ReturnHeightStock()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_ReturnHeightStock()"
       ]
     },
     {
@@ -10192,7 +9915,7 @@
       ],
       "description": "Returns the user-specified pitch of the thread in tapping.API:double MILL_GetThreadPitch()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetThreadPitch()"
       ]
     },
     {
@@ -10203,7 +9926,7 @@
       ],
       "description": "Returns 99 or 98 to a variable based on the value applied to line516in the postprocessor.98 = G98 Mode99 = G99 ModeAPI:integer MILL_GetG98G99Mode()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetG98G99Mode()"
       ]
     },
     {
@@ -10214,7 +9937,7 @@
       ],
       "description": "Returns the return plane distance value.API:double MILL_GetReturnPlaneDistance()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetReturnPlaneDistance()"
       ]
     },
     {
@@ -10225,7 +9948,7 @@
       ],
       "description": "Returns the security plane distance value.API:double MILL_GetSecurityPlaneDistance()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetSecurityPlaneDistance()"
       ]
     },
     {
@@ -10236,7 +9959,7 @@
       ],
       "description": "Returns the system comment for the current feature.API:string MILL_GetSystemComment()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetSystemComment()"
       ]
     },
     {
@@ -10247,7 +9970,7 @@
       ],
       "description": "Returns the sequence number of the current line.API:short MILL_GetSequenceNumber()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetSequenceNumber()"
       ]
     },
     {
@@ -10258,7 +9981,7 @@
       ],
       "description": "Returns the current operation type.Drilling100 = Center Drill101 = Drill102 = Tap103 = Ream104 = Boring105 = Chamfer Drill106 = Counterbore Drill204 = Chamfer Mill206 = Counterbore MillMilling200 = Profile Rough201 = Profile Finish202 = Pocket203 = Facing204 = Chamfer Mill205 = 2 Axis Plunge Rough206 = Counterbore Mill208 = Tapered Pocket (V-Carve Rough)209 = 2 Axis Engraving210 = Thread Mill212= Drag Knife300 = Z Level Rough301 = Z Level Finish302 = Planar303 = Spiral304 = Radial305 = 3 Axis Plunge Rough306 = Advanced Rough307 = Flatlands308 = Equidistant309 = Pencil310 = 3 Axis Engrave Rough311 = 3 Axis Engrave Finish312 = V-Carve Finishing400 = 4 Axis Rotary500 = 5 Axis ToolpathsAPI:short MILL_GetOperationType()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetOperationType()"
       ]
     },
     {
@@ -10269,7 +9992,7 @@
       ],
       "description": "Returns the current drill cycle type.This function is used within the drill cycleblocks or the drill point blocks.0 = Standard Drill1 = Peck Drill2 = Fast Peck/Chip Break3 = Tap4 = Bore 15 = Bore 26 = Bore 3/Back Bore7 = Left Hand Tap8 = Fine BoreAPI:short MILL_GetDrillCycleType()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetDrillCycleType()"
       ]
     },
     {
@@ -10280,7 +10003,7 @@
       ],
       "description": "Returns the number for the current feature, based on the order in the CAM tree.API:short MILL_GetCurrentFeatureNumber()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetCurrentFeatureNumber()"
       ]
     },
     {
@@ -10291,7 +10014,7 @@
       ],
       "description": "Returns the number for the current feature, based on the order in the CAM tree.API:short MILL_GetCurrentFeatureNumber()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetCurrentFeatureNumber()"
       ]
     },
     {
@@ -10302,7 +10025,7 @@
       ],
       "description": "Returns the number for the current feature, based on the order in the CAM tree.API:short MILL_GetCurrentFeatureNumber()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetCurrentFeatureNumber()"
       ]
     },
     {
@@ -10313,7 +10036,7 @@
       ],
       "description": "Returns the current contour number.API:short MILL_GetCurrentContourNumber()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetCurrentContourNumber()"
       ]
     },
     {
@@ -10324,7 +10047,7 @@
       ],
       "description": "Returns the number of the entity currently being posted.API:short MILL_GetCurrentContourEntityNumber()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetCurrentContourEntityNumber()"
       ]
     },
     {
@@ -10335,7 +10058,7 @@
       ],
       "description": "Returns the first line number.API:short MILL_GetFirstLineNumber()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetFirstLineNumber()"
       ]
     },
     {
@@ -10346,7 +10069,7 @@
       ],
       "description": "Returns the current line number.API:short MILL_GetCurrentLineNumber()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetCurrentLineNumber()"
       ]
     },
     {
@@ -10356,7 +10079,7 @@
       ],
       "description": "Returns the current line number.API:short LATHE_GetCurrentLineNumber()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "LATHE_GetCurrentLineNumber()"
       ]
     },
     {
@@ -10367,7 +10090,7 @@
       ],
       "description": "Returns the current line number increment valueAPI:short MILL_GetLineNumberIncrement()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetLineNumberIncrement()"
       ]
     },
     {
@@ -10378,7 +10101,7 @@
       ],
       "description": "Returns the current line number increment valueAPI:short LATHE_GetLineNumberIncrement()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "LATHE_GetLineNumberIncrement()"
       ]
     },
     {
@@ -10389,7 +10112,7 @@
       ],
       "description": "Returns the tool number based on this formula:Tool Number * 100 + Sequence Number IncrementAPI:short LATHE_GetLineNumberWithToolNumber()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "LATHE_GetLineNumberWithToolNumber()"
       ]
     },
     {
@@ -10400,7 +10123,7 @@
       ],
       "description": "Returns the tool number based on this formula:Finish Tool Number * 100 + Sequence Number IncrementAPI:short LATHE_GetLineNumberWithFinishToolNumber()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "LATHE_GetLineNumberWithFinishToolNumber()"
       ]
     },
     {
@@ -10411,7 +10134,7 @@
       ],
       "description": "Returns the current feature type.1 = Center Hole2 = Hole3 = Tap4 = Ream5 = Counterbore Hole6 = Counterbore Tap7 = Counterbore Ream15 = Roll Tap16 = Counterbore Roll Tap18 = Facing19 = Pocketing, 2D Plunge Rough20 = Profile21 = Chamfer Mill22 = 2D Engrave23 = Boring24 = Thread Milling26 = 2D and 3D Engraving29 = Planar, 3D Plunge Roughing30 = Radial31 = Spiral32 = Z Level Rough, Advanced Rough33 = Z Level Finish34 = Equidistant37 = Flatlands, Pencil, 4 Axis Rotary, Multiaxis40 = V-CarveAPI:short MILL_GetFeatureType()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetFeatureType()"
       ]
     },
     {
@@ -10422,7 +10145,7 @@
       ],
       "description": "Returns the current feature type.1 = Center Hole2 = Hole3 = Tap4 = Ream5 = Counterbore Hole6 = Counterbore Tap7 = Counterbore Ream15 = Roll Tap16 = Counterbore Roll Tap18 = Facing19 = Pocketing, 2D Plunge Rough20 = Profile21 = Chamfer Mill22 = 2D Engrave23 = Boring24 = Thread Milling26 = 2D and 3D Engraving29 = Planar, 3D Plunge Roughing30 = Radial31 = Spiral32 = Z Level Rough, Advanced Rough33 = Z Level Finish34 = Equidistant37 = Flatlands, Pencil, 4 Axis Rotary, Multiaxis40 = V-CarveAPI:short MILL_GetFeatureType()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetFeatureType()"
       ]
     },
     {
@@ -10433,7 +10156,7 @@
       ],
       "description": "Returns the current operation type.1001 = Face Rough1002 = Turn Rough1003 = Face Pattern Repeat1004 = Turn Pattern Repeat1005 = Face Basic Finish1006 = Turn Basic Finish1007 = Face Groove1008 = Turn Groove1009 = Face Groove Finish1010 = Turn Groove Finish1011 = Lathe Thread1012 = Cut Off1013 = Stock FeedAPI:string LATHE_GetFeatureType()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "LATHE_GetFeatureType()"
       ]
     },
     {
@@ -10443,7 +10166,7 @@
       ],
       "description": "Returns a value that identifies the feature type.1 = Turning Rough2 = Turning Rough/Finish3 = Face Rough4 = Face Rough/FinishAPI:short LATHE_GetCycleType()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "LATHE_GetCycleType()"
       ]
     },
     {
@@ -10454,7 +10177,7 @@
       ],
       "description": "Returns the top of feature value for the current feature.API:double MILL_Get_TopOfPart()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_Get_TopOfPart()"
       ]
     },
     {
@@ -10465,7 +10188,7 @@
       ],
       "description": "Returns the feed plane value for the current feature.API:double MILL_Get_FeedPlane()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_Get_FeedPlane()"
       ]
     },
     {
@@ -10476,7 +10199,7 @@
       ],
       "description": "Returns the workpiece name.API:string MILL_GetWorkPieceName()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetWorkPieceName()"
       ]
     },
     {
@@ -10487,7 +10210,7 @@
       ],
       "description": "Returns wether the subprograms are ON or OFF.0 = Do Not Output Subs1 = Output SubsAPI:short MILL_GetOutputSubPrograms()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetOutputSubPrograms()"
       ]
     },
     {
@@ -10498,7 +10221,7 @@
       ],
       "description": "Returns the global stock height for all operations in the CAM tree.API:double MILL_GetGlobalStockHeight()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetGlobalStockHeight()"
       ]
     },
     {
@@ -10509,7 +10232,7 @@
       ],
       "description": "Returns the feature stock height for the current feature.API:double MILL_GetFeatureStockHeight()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetFeatureStockHeight()"
       ]
     },
     {
@@ -10520,7 +10243,7 @@
       ],
       "description": "Returns the total number of profiles assigned to operations in the CAM tree.API:short MILL_GetNumberOfContours()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetNumberOfContours()"
       ]
     },
     {
@@ -10531,7 +10254,7 @@
       ],
       "description": "Returns the total number of entities in a given shape.API:short MILL_GetNumberOfContourEntities()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetNumberOfContourEntities()"
       ]
     },
     {
@@ -10542,7 +10265,7 @@
       ],
       "description": "Returns the total number of features in the program.API:short MILL_GetNumberOfFeatures()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetNumberOfFeatures()"
       ]
     },
     {
@@ -10553,7 +10276,7 @@
       ],
       "description": "Returns the total number of features in the program.API:short MILL_GetNumberOfFeatures()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetNumberOfFeatures()"
       ]
     },
     {
@@ -10564,7 +10287,9 @@
       ],
       "description": "Returns the total number of operations in the program that is set to post. This APIwill not consider the operations that were patterned using toolpath pattern.For versions V26 or earlier, there were 2 APIs MILL_GetNumberOfFeatures() & MILL_GetCurrentFeatureNumber()which are deprecated and when used in versions after V26 will return the same valueas the MILL_GetNumberOfOperations() APIAPI:short MILL_GetNumberOfOperations()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetNumberOfFeatures()",
+        "MILL_GetCurrentFeatureNumber()",
+        "MILL_GetNumberOfOperations()"
       ]
     },
     {
@@ -10575,7 +10300,7 @@
       ],
       "description": "Returns the tool offset number for the current operation.API:short MILL_GetToolOffsetNumber()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetToolOffsetNumber()"
       ]
     },
     {
@@ -10586,7 +10311,7 @@
       ],
       "description": "Returns the offset number for the next tool in the program. If this function is usedon the last tool in the program, it returns the offset number for the first toolin the program.API:short MILL_GetNextToolOffsetNumber()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetNextToolOffsetNumber()"
       ]
     },
     {
@@ -10597,7 +10322,7 @@
       ],
       "description": "Returns the type of the current tool.Drilling1 = Center Drill2 = Drill4 = Spiral Tap5 = Point Tap6 = Hand Tap7 = Rolling Tap8 = Chamfer Tool9 = Counterbore Drill13 = Ream21 = Boring ToolMilling15 = Endmill Rough16 = Endmill Finish19 = Chamfer Mill22 = Thread Mill23 = V-Tool24 = Tapered Endmill26 = T-Cutter30 = Dove Mill31 = Lollipop25 = Corner Round27 = Laser28 = Plasma29 = Waterjet33= Drag KnifeAPI:short MILL_Get_ToolType()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_Get_ToolType()"
       ]
     },
     {
@@ -10608,7 +10333,7 @@
       ],
       "description": "Returns what direction the system compensation is set to for a profile feature.0 = None1 = Left2 = RightAPI:short MILL_GetSysOffsetSide()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetSysOffsetSide()"
       ]
     },
     {
@@ -10619,7 +10344,7 @@
       ],
       "description": "Returns the Lead-In type for the current operation.0 = Circular for all 2 and 3 Axis feature, Except for Thread.Thread = Helical.1 = Circular for Thread2 = Right Angle3 = Parallel for 2 Axis features, Tangent for 3 Axis features6 = Vertical/Plunge7 = Horizontal8 = Parallel for all 3 Axis features.API:short MILL_GetLeadinType()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetLeadinType()"
       ]
     },
     {
@@ -10630,7 +10355,7 @@
       ],
       "description": "Returns the Lead-Out type for the current operation.0 = Circular for all 2 and 3 Axis feature, Except for Thread.Thread = Helical.1 = Circular for Thread2 = Right Angle3 = Parallel for 2 Axis features, Tangent for 3 Axis features6 = Vertical/Plunge7 = Horizontal8 = Parallel for all 3 Axis features.API:short MILL_GetLeadoutType()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetLeadoutType()"
       ]
     },
     {
@@ -10641,7 +10366,7 @@
       ],
       "description": "Returns the amount that the current path is offset from the contour.API:double MILL_GetOffsetAmount()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetOffsetAmount()"
       ]
     },
     {
@@ -10652,7 +10377,7 @@
       ],
       "description": "Returns the current length offset mode.0 = No TCP1 = TCPAPI:short MILL_Get_LengthOffsetMode()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_Get_LengthOffsetMode()"
       ]
     },
     {
@@ -10663,7 +10388,7 @@
       ],
       "description": "Returns the previous length offset mode.0 = No TCP1 = TCPAPI:short MILL_Get_PrevLengthOffsetMode()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_Get_PrevLengthOffsetMode()"
       ]
     },
     {
@@ -10674,7 +10399,7 @@
       ],
       "description": "Returns the name of the work offset as specified on lines901through999.API:string MILL_GetWorkCoordName()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetWorkCoordName()"
       ]
     },
     {
@@ -10685,7 +10410,7 @@
       ],
       "description": "Returns the work offset number (1, 2, 3, etc.). This function returns from a 0 based index,so choosing Work Offset 1 in the software returns 0 in the API.API:short MILL_GetPatternWorkCoordNumber()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetPatternWorkCoordNumber()"
       ]
     },
     {
@@ -10696,7 +10421,7 @@
       ],
       "description": "Returns the name of the work offset as specified on lines901through999.API:string MILL_GetPatternWorkCoordName()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetPatternWorkCoordName()"
       ]
     },
     {
@@ -10707,7 +10432,7 @@
       ],
       "description": "Returns a value to determine what move list coordinates options is selected in theMultiaxis Posting page of the Current Settings dialog box.0 = Absolute (Without TLC)  No Machine Compensation1 = Absolute (With TLC)  Machine Compensation in Z Only2 = New Mode  Machine Hybrid Compensation (Mixed Mode)3 = Relative  Part Based (Common for TCP)API:short MILL_OutputCoordinateMode()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_OutputCoordinateMode()"
       ]
     },
     {
@@ -10718,7 +10443,7 @@
       ],
       "description": "Returns a value to determine the Machining Order that is selected in the software.1 = Individual Feature2 = Individual Tool Per Machine Setup3 = Individual ToolAPI:short MILL_GetMachiningOrder()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetMachiningOrder()"
       ]
     },
     {
@@ -10727,9 +10452,7 @@
         "Mill Turn Job"
       ],
       "description": "Used to direct the posting engine to execute the postlines found in the specifiedpostblock. The \u00e2\u0080\u009cxxxx\u00e2\u0080\u009d is the block number for the postblock to be executed.",
-      "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
-      ]
+      "bobcadAPIs": []
     },
     {
       "postVariableName": null,
@@ -10739,7 +10462,7 @@
       ],
       "description": "Returns a string converted from a double value formatted by post blocks414or415depending on the unit.API:void MILL_MakeRealString(double var)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_MakeRealString(double var)"
       ]
     },
     {
@@ -10750,7 +10473,7 @@
       ],
       "description": "Returns a string converted from a double value formatted by post blocks414or415depending on the unit. The prefix is added to the string from post question:684.API:void MILL_MakeXString(double var)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_MakeXString(double var)"
       ]
     },
     {
@@ -10761,7 +10484,7 @@
       ],
       "description": "Returns a string converted from a double value formatted by post blocks414or415depending on the unit.The prefix is added to the string from post question:685.API:void MILL_MakeYString(double var)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_MakeYString(double var)"
       ]
     },
     {
@@ -10772,7 +10495,7 @@
       ],
       "description": "Returns a string converted from a double value formatted by post blocks414or415depending on the unit.The prefix is added to the string from post question:686.API:void MILL_MakeZString(double var)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_MakeZString(double var)"
       ]
     },
     {
@@ -10783,7 +10506,7 @@
       ],
       "description": "Returns the number of integer memory locations.API:short MILL_GetNumberOfIntMemoryLoc()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetNumberOfIntMemoryLoc()"
       ]
     },
     {
@@ -10794,7 +10517,7 @@
       ],
       "description": "Returns the number of double memory locations.API:short MILL_GetNumberOfDoubleMemoryLoc()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetNumberOfDoubleMemoryLoc()"
       ]
     },
     {
@@ -10805,7 +10528,7 @@
       ],
       "description": "Returns the number of string memory locations.API:short MILL_GetNumberOfStringMemoryLoc()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetNumberOfStringMemoryLoc()"
       ]
     },
     {
@@ -10817,7 +10540,8 @@
       ],
       "description": "Sets the memory location at the specified index to the value specified for SetInteger.Note that both share the same memory locationsAPI:MILL_SetIntMemoryLoc(Index, SetInteger)LATHE_SetIntMemoryLoc(Index, SetInteger)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_SetIntMemoryLoc(Index, SetInteger)",
+        "LATHE_SetIntMemoryLoc(Index, SetInteger)"
       ]
     },
     {
@@ -10829,7 +10553,8 @@
       ],
       "description": "Sets the memory location at the specified index to the value specified for SetInteger.Note that both share the same memory locationsAPI:MILL_SetIntMemoryLoc(Index, SetInteger)LATHE_SetIntMemoryLoc(Index, SetInteger)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_SetIntMemoryLoc(Index, SetInteger)",
+        "LATHE_SetIntMemoryLoc(Index, SetInteger)"
       ]
     },
     {
@@ -10841,7 +10566,8 @@
       ],
       "description": "Returns the integer value stored in the specified index. Note that both share thesame memory locationsAPI:variable_name = MILL_GetIntMemoryLoc(short index)variable_name = LATHE_GetIntMemoryLoc(short index)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetIntMemoryLoc(short index)",
+        "LATHE_GetIntMemoryLoc(short index)"
       ]
     },
     {
@@ -10853,7 +10579,8 @@
       ],
       "description": "Returns the integer value stored in the specified index. Note that both share thesame memory locationsAPI:variable_name = MILL_GetIntMemoryLoc(short index)variable_name = LATHE_GetIntMemoryLoc(short index)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetIntMemoryLoc(short index)",
+        "LATHE_GetIntMemoryLoc(short index)"
       ]
     },
     {
@@ -10865,7 +10592,8 @@
       ],
       "description": "Sets the memory location at the specified index to the value specified in SetDouble.Notethat both share the same memory locationsAPI:void MILL_SetDoubleMemoryLoc(short Index, double SetDouble)void LATHE_SetDoubleMemoryLoc(short Index, double SetDouble)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_SetDoubleMemoryLoc(short Index, double SetDouble)",
+        "LATHE_SetDoubleMemoryLoc(short Index, double SetDouble)"
       ]
     },
     {
@@ -10877,7 +10605,8 @@
       ],
       "description": "Sets the memory location at the specified index to the value specified in SetDouble.Notethat both share the same memory locationsAPI:void MILL_SetDoubleMemoryLoc(short Index, double SetDouble)void LATHE_SetDoubleMemoryLoc(short Index, double SetDouble)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_SetDoubleMemoryLoc(short Index, double SetDouble)",
+        "LATHE_SetDoubleMemoryLoc(short Index, double SetDouble)"
       ]
     },
     {
@@ -10889,7 +10618,8 @@
       ],
       "description": "Returns the double value stored in the specified index. Note that both share thesame memory locationsAPI:variable_name = MILL_GetDoubleMemoryLoc(short index)variable_name = LATHE_GetDoubleMemoryLoc(short index)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetDoubleMemoryLoc(short index)",
+        "LATHE_GetDoubleMemoryLoc(short index)"
       ]
     },
     {
@@ -10901,7 +10631,8 @@
       ],
       "description": "Returns the double value stored in the specified index. Note that both share thesame memory locationsAPI:variable_name = MILL_GetDoubleMemoryLoc(short index)variable_name = LATHE_GetDoubleMemoryLoc(short index)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetDoubleMemoryLoc(short index)",
+        "LATHE_GetDoubleMemoryLoc(short index)"
       ]
     },
     {
@@ -10913,7 +10644,8 @@
       ],
       "description": "Sets the memory location at the specified index to the value specified in SetString.Note that both share the same memory locationsAPI:void MILL_SetStringMemoryLoc(short Index, string SetString)void Lathe_SetStringMemoryLoc(short Index, string SetString)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_SetStringMemoryLoc(short Index, string SetString)",
+        "Lathe_SetStringMemoryLoc(short Index, string SetString)"
       ]
     },
     {
@@ -10925,7 +10657,8 @@
       ],
       "description": "Sets the memory location at the specified index to the value specified in SetString.Note that both share the same memory locationsAPI:void MILL_SetStringMemoryLoc(short Index, string SetString)void Lathe_SetStringMemoryLoc(short Index, string SetString)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_SetStringMemoryLoc(short Index, string SetString)",
+        "Lathe_SetStringMemoryLoc(short Index, string SetString)"
       ]
     },
     {
@@ -10937,7 +10670,8 @@
       ],
       "description": "Returns the string value stored in the specified index. Note that both share thesame memory locationsAPI:variable_name = MILL_GetStringMemoryLoc(short index)variable_name = LATHE_GetStringMemoryLoc(short index)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetStringMemoryLoc(short index)",
+        "LATHE_GetStringMemoryLoc(short index)"
       ]
     },
     {
@@ -10949,7 +10683,8 @@
       ],
       "description": "Returns the string value stored in the specified index. Note that both share thesame memory locationsAPI:variable_name = MILL_GetStringMemoryLoc(short index)variable_name = LATHE_GetStringMemoryLoc(short index)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetStringMemoryLoc(short index)",
+        "LATHE_GetStringMemoryLoc(short index)"
       ]
     },
     {
@@ -10960,7 +10695,7 @@
       ],
       "description": "Returns a single line of the posted code to a string variable.This is used in programblock2102, and block540must be set to \u00e2\u0080\u009cy\u00e2\u0080\u009d.This allows the user to modify thecode after it has been processed through the posting engine.API:string MILL_GetOutputLineToNcFile()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetOutputLineToNcFile()"
       ]
     },
     {
@@ -10971,7 +10706,7 @@
       ],
       "description": "Returns a single line of the posted code to a string variable.This is used in programblock2102, and block540must be set to \u00e2\u0080\u009cy\u00e2\u0080\u009d.This allows the user to modify thecode after it has been processed through the posting engine.API:string LATHE_GetOutputLineToNcFile()",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "LATHE_GetOutputLineToNcFile()"
       ]
     },
     {
@@ -10982,7 +10717,7 @@
       ],
       "description": "Sets the string to be output in the posted program followed by a carriage return/linefeed.API:void MILL_SetOutputLineToNcFile(string var)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_SetOutputLineToNcFile(string var)"
       ]
     },
     {
@@ -10993,7 +10728,7 @@
       ],
       "description": "Sets the string to be output in the posted program followed by a carriage return/linefeed.API:void LATHE_SetOutputLineToNcFile(string var)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "LATHE_SetOutputLineToNcFile(string var)"
       ]
     },
     {
@@ -11005,7 +10740,8 @@
       ],
       "description": "Sets the return string to be output by the program block variable.For the case that the block outputs code within an existing posting line, meaningthe program block is being used to output for a single variable.(Example: n, rapid_move, program_block_1, xr, yr)API:void MILL_SetReturnString(string var)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_SetReturnString(string var)",
+        "LATHE_SetReturnString(variable_name)"
       ]
     },
     {
@@ -11017,7 +10753,8 @@
       ],
       "description": "Sets the return string to be output by the program block variable.For the case that the block outputs code within an existing posting line, meaningthe program block is being used to output for a single variable.(Example: n, rapid_move, program_block_1, xr, yr)API:void MILL_SetReturnString(string var)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_SetReturnString(string var)",
+        "LATHE_SetReturnString(variable_name)"
       ]
     },
     {
@@ -11028,7 +10765,8 @@
       ],
       "description": "Outputs a string into the posted program with a line feed character.API:void MILL_OutputText(string var)void MILL_OutputText(\u00e2\u0080\u009cSample String\u00e2\u0080\u009d)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_OutputText(Sample String)",
+        "MILL_OutputText(string var)"
       ]
     },
     {
@@ -11039,7 +10777,8 @@
       ],
       "description": "Outputs a string into the posted program with a line feed character.API:void LATHE_OutputText(string var)void LATHE_OutputText(\u00e2\u0080\u009cSample String\u00e2\u0080\u009d)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "LATHE_OutputText(string var)",
+        "LATHE_OutputText(Sample String)"
       ]
     },
     {
@@ -11051,7 +10790,8 @@
       ],
       "description": "Input must be a string formatted exactly as a posting line using system posting variables.(Example: \u00e2\u0080\u009cn, rapid_move, xr, yr, \u00e2\u0080\u0098M08\u00e2\u0080\u0099\u00e2\u0080\u009d).The system post processes these variables as it would by using the posting engineand outputs the posted string to the posted NC file.API:void MILL_ProcessPostLine(string var)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_ProcessPostLine(string var)",
+        "LATHE_ProcessPostLine(string var)"
       ]
     },
     {
@@ -11063,7 +10803,8 @@
       ],
       "description": "Input must be a string formatted exactly as a posting line using system posting variables.(Example: \u00e2\u0080\u009cn, rapid_move, xr, yr, \u00e2\u0080\u0098M08\u00e2\u0080\u0099\u00e2\u0080\u009d).The system post processes these variables as it would by using the posting engineand outputs the posted string to the posted NC file.API:void MILL_ProcessPostLine(string var)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_ProcessPostLine(string var)",
+        "LATHE_ProcessPostLine(string var)"
       ]
     },
     {
@@ -11075,7 +10816,8 @@
       ],
       "description": "Returns the state of the check box at the specified index from the Advanced Postingpage inside of a machining feature.0 = Not Selected1 = SelectedAPI:variable_name = MILL_GetUserCheckBoxVariable(short index)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetUserCheckBoxVariable(short index)",
+        "LATHE_GetUserCheckBoxVariable(short Index)"
       ]
     },
     {
@@ -11087,7 +10829,8 @@
       ],
       "description": "Returns the state of the check box at the specified index from the Advanced Postingpage inside of a machining feature.0 = Not Selected1 = SelectedAPI:variable_name = MILL_GetUserCheckBoxVariable(short index)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetUserCheckBoxVariable(short index)",
+        "LATHE_GetUserCheckBoxVariable(short Index)"
       ]
     },
     {
@@ -11099,7 +10842,8 @@
       ],
       "description": "Returns the selected index of the specified combo box in the Advanced Posting pageinside of a machining feature.API:variable_name = MILL_GetUserSelectComboVariable(short index)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetUserSelectComboVariable(short index)",
+        "LATHE_GetUserSelectComboVariable(short index)"
       ]
     },
     {
@@ -11111,7 +10855,8 @@
       ],
       "description": "Returns the selected index of the specified combo box in the Advanced Posting pageinside of a machining feature.API:variable_name = MILL_GetUserSelectComboVariable(short index)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetUserSelectComboVariable(short index)",
+        "LATHE_GetUserSelectComboVariable(short index)"
       ]
     },
     {
@@ -11123,7 +10868,8 @@
       ],
       "description": "Returns the value entered in the edit box at the specified index from the AdvancedPosting page inside of a machining feature.API:variable_name = MILL_GetUserEditIntegerVariable(short index)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetUserEditIntegerVariable(short index)",
+        "LATHE_GetUserEditIntegerVariable(short index)"
       ]
     },
     {
@@ -11135,7 +10881,8 @@
       ],
       "description": "Returns the value entered in the edit box at the specified index from the AdvancedPosting page inside of a machining feature.API:variable_name = MILL_GetUserEditIntegerVariable(short index)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetUserEditIntegerVariable(short index)",
+        "LATHE_GetUserEditIntegerVariable(short index)"
       ]
     },
     {
@@ -11147,7 +10894,8 @@
       ],
       "description": "Returns the value entered in the edit box at the specified index from the AdvancedPosting page inside of a machining feature.API:variable_name = MILL_GetUserEditRealVariable(short index)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetUserEditRealVariable(short index)",
+        "LATHE_GetUserEditRealVariable(short index)"
       ]
     },
     {
@@ -11159,7 +10907,8 @@
       ],
       "description": "Returns the value entered in the edit box at the specified index from the AdvancedPosting page inside of a machining feature.API:variable_name = MILL_GetUserEditRealVariable(short index)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetUserEditRealVariable(short index)",
+        "LATHE_GetUserEditRealVariable(short index)"
       ]
     },
     {
@@ -11171,7 +10920,8 @@
       ],
       "description": "Returns the value entered in the edit box at the specified index from the AdvancedPosting page inside of a machining feature.API:variable_name = MILL_GetUserEditStringVariable(short index)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetUserEditStringVariable(short index)",
+        "LATHE_GetUserEditStringVariable(short index)"
       ]
     },
     {
@@ -11183,7 +10933,8 @@
       ],
       "description": "Returns the value entered in the edit box at the specified index from the AdvancedPosting page inside of a machining feature.API:variable_name = MILL_GetUserEditStringVariable(short index)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetUserEditStringVariable(short index)",
+        "LATHE_GetUserEditStringVariable(short index)"
       ]
     },
     {
@@ -11195,7 +10946,8 @@
       ],
       "description": "Returns the state of the check box at the specified index in the Advanced Postingpageof the Current Settings dialog box.0 = Not Selected1 = SelectedAPI:variable_name = MILL_GetUserCheckBoxSettingsVariable(short index)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetUserCheckBoxSettingsVariable(short index)",
+        "LATHE_GetUserCheckBoxSettingsVariable(short index)"
       ]
     },
     {
@@ -11207,7 +10959,8 @@
       ],
       "description": "Returns the state of the check box at the specified index in the Advanced Postingpageof the Current Settings dialog box.0 = Not Selected1 = SelectedAPI:variable_name = MILL_GetUserCheckBoxSettingsVariable(short index)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetUserCheckBoxSettingsVariable(short index)",
+        "LATHE_GetUserCheckBoxSettingsVariable(short index)"
       ]
     },
     {
@@ -11219,7 +10972,8 @@
       ],
       "description": "Returns the selected index of the specified combo box in the Advanced Posting pageof the Current Settings dialog box.API:variable_name = MILL_GetUserSelectComboSettingsVariable(short index)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetUserSelectComboSettingsVariable(short index)",
+        "LATHE_GetUserSelectComboSettingsVariable(short index)"
       ]
     },
     {
@@ -11231,7 +10985,8 @@
       ],
       "description": "Returns the selected index of the specified combo box in the Advanced Posting pageof the Current Settings dialog box.API:variable_name = MILL_GetUserSelectComboSettingsVariable(short index)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetUserSelectComboSettingsVariable(short index)",
+        "LATHE_GetUserSelectComboSettingsVariable(short index)"
       ]
     },
     {
@@ -11243,7 +10998,8 @@
       ],
       "description": "Returns the value entered in the edit box at the specified index in the AdvancedPosting page of the Current Settings dialog box.API:variable_name = MILL_GetUserEditIntegerSettingsVariable(short index)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetUserEditIntegerSettingsVariable(short index)",
+        "LATHE_GetUserEditIntegerSettingsVariable(short index)"
       ]
     },
     {
@@ -11255,7 +11011,8 @@
       ],
       "description": "Returns the value entered in the edit box at the specified index in the AdvancedPosting page of the Current Settings dialog box.API:variable_name = MILL_GetUserEditIntegerSettingsVariable(short index)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetUserEditIntegerSettingsVariable(short index)",
+        "LATHE_GetUserEditIntegerSettingsVariable(short index)"
       ]
     },
     {
@@ -11267,7 +11024,8 @@
       ],
       "description": "Returns the value entered in the edit box at the specified index in the AdvancedPosting page of the Current Settings dialog box.API:variable_name = MILL_GetUserEditRealSettingsVariable(short index)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetUserEditRealSettingsVariable(short index)",
+        "LATHE_GetUserEditRealSettingsVariable(short index)"
       ]
     },
     {
@@ -11279,7 +11037,8 @@
       ],
       "description": "Returns the value entered in the edit box at the specified index in the AdvancedPosting page of the Current Settings dialog box.API:variable_name = MILL_GetUserEditRealSettingsVariable(short index)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetUserEditRealSettingsVariable(short index)",
+        "LATHE_GetUserEditRealSettingsVariable(short index)"
       ]
     },
     {
@@ -11291,7 +11050,8 @@
       ],
       "description": "Returns the value entered in the edit box at the specified index in the AdvancedPosting page of the Current Settings dialog box.API:variable_name = MILL_GetUserEditStringSettingsVariable(short index)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetUserEditStringSettingsVariable(short index)",
+        "LATHE_GetUserEditStringSettingsVariable(short index)"
       ]
     },
     {
@@ -11303,7 +11063,8 @@
       ],
       "description": "Returns the value entered in the edit box at the specified index in the AdvancedPosting page of the Current Settings dialog box.API:variable_name = MILL_GetUserEditStringSettingsVariable(short index)",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(\"tapthread_rollingholesize\")"
+        "MILL_GetUserEditStringSettingsVariable(short index)",
+        "LATHE_GetUserEditStringSettingsVariable(short index)"
       ]
     }
   ]
