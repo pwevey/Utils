@@ -35,6 +35,7 @@ for table in soup.find_all('table'):
         job_types = []
         description = None
 
+        # Find all job types in the first table data of each table
         for tr in table.find_all('tr')[1:]:
             tds = tr.find_all('td')
             if tds:
@@ -106,6 +107,8 @@ for table in soup.find_all('table'):
         except IndexError:
             pass
 
+        # Add the API calls to the post_variable dictionary
+        # If there are no API calls, the list will be empty
         try:
             post_variable['bobcadAPIs'] = [edge_case_GetDouble]
         except NameError:
