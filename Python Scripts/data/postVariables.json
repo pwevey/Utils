@@ -194,7 +194,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs any Unicode character. The xx can be a decimal, octal, and hexadecimal value of the Unicode character. If using a decimal value do not use the prefix 0 as it will be treated as octal value.\u00a0This variable was added to BobCAD-CAM V35 and BobCAM\u00a0for SOLIDWORKS\u00a0V10 SP1.For example, usecharout_39to output apostrophe. Here39is the decimal value used for the apostrophe.If specifying as hexadecimal value , then the format should becharout_0x27to output the apostrophe.Use thisWiki linkas reference to see the decimal, octal, and hexadecimal codes for different Unicode characters.Further explanation on the usage of this Post variable is found under the description section of the Post question228(Support Unicode Output? ) that is used to set the Posting engine to support the unicode characters or not.",
+      "description": "Outputs any Unicode character. The xx can be a decimal, octal, and hexadecimal value of the Unicode character. If using a decimal value do not use the prefix 0 as it will be treated as octal value.This variable was added to BobCAD-CAM V35 and BobCAMfor SOLIDWORKSV10 SP1.For example, usecharout_39to output apostrophe. Here39is the decimal value used for the apostrophe.If specifying as hexadecimal value , then the format should becharout_0x27to output the apostrophe.Use thisWiki linkas reference to see the decimal, octal, and hexadecimal codes for different Unicode characters.Further explanation on the usage of this Post variable is found under the description section of the Post question228(Support Unicode Output? ) that is used to set the Posting engine to support the unicode characters or not.",
       "bobcadAPIs": []
     },
     {
@@ -252,8 +252,8 @@
       ],
       "description": "Output length offset register with prefix. Prefix defined on post question:688API:short MILL_GetLengthOffsetNumber()short LATHE_GetLengthOffsetNumber()short MILLTURN_GetLengthOffsetNumber()",
       "bobcadAPIs": [
-        "MILLTURN_GetLengthOffsetNumber()",
         "LATHE_GetLengthOffsetNumber()",
+        "MILLTURN_GetLengthOffsetNumber()",
         "MILL_GetLengthOffsetNumber()"
       ]
     },
@@ -265,8 +265,8 @@
       ],
       "description": "Output the part height with prefix from post question:648API:short MILL_GetPartHeight()short MILLTURN_GetPartHeight()",
       "bobcadAPIs": [
-        "MILL_GetPartHeight()",
-        "MILLTURN_GetPartHeight()"
+        "MILLTURN_GetPartHeight()",
+        "MILL_GetPartHeight()"
       ]
     },
     {
@@ -301,8 +301,8 @@
       ],
       "description": "Outputs the work coordinate string value based on the selected work offset. Maximum work offsets are defined by post question:258. Work offset string values are assigned for each work offset starting at post question:900and go through post question999.API:short MILL_GetWorkCoordNumber()short MILLTURN_GetWorkCoordNumber()",
       "bobcadAPIs": [
-        "MILL_GetWorkCoordNumber()",
-        "MILLTURN_GetWorkCoordNumber()"
+        "MILLTURN_GetWorkCoordNumber()",
+        "MILL_GetWorkCoordNumber()"
       ]
     },
     {
@@ -313,9 +313,9 @@
       ],
       "description": "Outputs the work coordinate string value for a specific work coordinate. Work offset string values are assigned for each work offset starting a post question:900and go through post question999.API:short MILL_GetWorkCoordNumberCode(int)short MILLTURN_GetWorkCoordNumberCode(int)int=1 through 99Example:var = MILL_GetWorkCoordNumberCode(1)",
       "bobcadAPIs": [
-        "MILL_GetWorkCoordNumberCode(1)",
         "MILL_GetWorkCoordNumberCode(int)",
-        "MILLTURN_GetWorkCoordNumberCode(int)"
+        "MILLTURN_GetWorkCoordNumberCode(int)",
+        "MILL_GetWorkCoordNumberCode(1)"
       ]
     },
     {
@@ -473,7 +473,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the first X position of the operation in No Machine Compensation Move list coordinates mode. Prefix is defined in the post question684.NOTE \u00a0- To be ideally used in start, tool change, null tool change, 30 & 31 blocks and useful in cases where coordinates output should not be in TCP before calling to turn on TCPAPI: GetDoubleOfPostVariable(\u00e2\u0080\u009cvariable_name\u00e2\u0080\u009d)",
+      "description": "Outputs the first X position of the operation in No Machine Compensation Move list coordinates mode. Prefix is defined in the post question684.NOTE - To be ideally used in start, tool change, null tool change, 30 & 31 blocks and useful in cases where coordinates output should not be in TCP before calling to turn on TCPAPI: GetDoubleOfPostVariable(\u00e2\u0080\u009cvariable_name\u00e2\u0080\u009d)",
       "bobcadAPIs": [
         "GetDoubleOfPostVariable(variable_name)"
       ]
@@ -484,7 +484,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the first Y position of the operation in No Machine Compensation Move list coordinates mode. Prefix is defined in the post question685.NOTE \u00a0- To be ideally used in start, tool change, null tool change, 30 & 31 blocks and useful in cases where coordinates output should not be in TCP before calling to turn on TCPAPI: GetDoubleOfPostVariable(\u00e2\u0080\u009cvariable_name\u00e2\u0080\u009d)",
+      "description": "Outputs the first Y position of the operation in No Machine Compensation Move list coordinates mode. Prefix is defined in the post question685.NOTE - To be ideally used in start, tool change, null tool change, 30 & 31 blocks and useful in cases where coordinates output should not be in TCP before calling to turn on TCPAPI: GetDoubleOfPostVariable(\u00e2\u0080\u009cvariable_name\u00e2\u0080\u009d)",
       "bobcadAPIs": [
         "GetDoubleOfPostVariable(variable_name)"
       ]
@@ -495,7 +495,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the first Z position of the operation in No Machine Compensation Move list coordinates mode. Prefix is defined in the post question686.NOTE \u00a0- To be ideally used in start, tool change, null tool change, 30 & 31 blocks and useful in cases where coordinates output should not be in TCP before calling to turn on TCPAPI: GetDoubleOfPostVariable(\u00e2\u0080\u009cvariable_name\u00e2\u0080\u009d)",
+      "description": "Outputs the first Z position of the operation in No Machine Compensation Move list coordinates mode. Prefix is defined in the post question686.NOTE - To be ideally used in start, tool change, null tool change, 30 & 31 blocks and useful in cases where coordinates output should not be in TCP before calling to turn on TCPAPI: GetDoubleOfPostVariable(\u00e2\u0080\u009cvariable_name\u00e2\u0080\u009d)",
       "bobcadAPIs": [
         "GetDoubleOfPostVariable(variable_name)"
       ]
@@ -506,7 +506,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the first X position of the operation in Machine Compensation in Z only Move list coordinates mode. Prefix is defined in the post question684.NOTE \u00a0- To be ideally used in start, tool change, null tool change, 30 & 31 blocks and useful in cases where coordinates output should not be in TCP before calling to turn on TCPAPI: GetDoubleOfPostVariable(\u00e2\u0080\u009cvariable_name\u00e2\u0080\u009d)",
+      "description": "Outputs the first X position of the operation in Machine Compensation in Z only Move list coordinates mode. Prefix is defined in the post question684.NOTE - To be ideally used in start, tool change, null tool change, 30 & 31 blocks and useful in cases where coordinates output should not be in TCP before calling to turn on TCPAPI: GetDoubleOfPostVariable(\u00e2\u0080\u009cvariable_name\u00e2\u0080\u009d)",
       "bobcadAPIs": [
         "GetDoubleOfPostVariable(variable_name)"
       ]
@@ -517,7 +517,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the first Y position of the operation in Machine Compensation in Z only Move list coordinates mode. Prefix is defined in the post question685.NOTE \u00a0- To be ideally used in start, tool change, null tool change, 30 & 31 blocks and useful in cases where coordinates output should not be in TCP before calling to turn on TCPAPI: GetDoubleOfPostVariable(\u00e2\u0080\u009cvariable_name\u00e2\u0080\u009d)",
+      "description": "Outputs the first Y position of the operation in Machine Compensation in Z only Move list coordinates mode. Prefix is defined in the post question685.NOTE - To be ideally used in start, tool change, null tool change, 30 & 31 blocks and useful in cases where coordinates output should not be in TCP before calling to turn on TCPAPI: GetDoubleOfPostVariable(\u00e2\u0080\u009cvariable_name\u00e2\u0080\u009d)",
       "bobcadAPIs": [
         "GetDoubleOfPostVariable(variable_name)"
       ]
@@ -528,7 +528,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the first Z position of the operation in Machine Compensation in Z only Move list coordinates mode. Prefix is defined in the post question686.NOTE \u00a0- To be ideally used in start, tool change, null tool change, 30 & 31 blocks and useful in cases where coordinates output should not be in TCP before calling to turn on TCPAPI: GetDoubleOfPostVariable(\u00e2\u0080\u009cvariable_name\u00e2\u0080\u009d)",
+      "description": "Outputs the first Z position of the operation in Machine Compensation in Z only Move list coordinates mode. Prefix is defined in the post question686.NOTE - To be ideally used in start, tool change, null tool change, 30 & 31 blocks and useful in cases where coordinates output should not be in TCP before calling to turn on TCPAPI: GetDoubleOfPostVariable(\u00e2\u0080\u009cvariable_name\u00e2\u0080\u009d)",
       "bobcadAPIs": [
         "GetDoubleOfPostVariable(variable_name)"
       ]
@@ -733,8 +733,8 @@
       ],
       "description": "Returns the value of the previous X axis feed move. Rapid moves are not included. Prefix comes from the post question:684API:double MILL_GetPreviousXFeed()double LATHE_GetPrefiousXFeed()",
       "bobcadAPIs": [
-        "LATHE_GetPrefiousXFeed()",
-        "MILL_GetPreviousXFeed()"
+        "MILL_GetPreviousXFeed()",
+        "LATHE_GetPrefiousXFeed()"
       ]
     },
     {
@@ -757,8 +757,8 @@
       ],
       "description": "Returns the value of the previous Z axis feed move. Rapid moves are not included. Prefix comes from the post question:686API:double MILL_GetPreviousZFeed()double LATHE_GetPrefiousZFeed()",
       "bobcadAPIs": [
-        "LATHE_GetPrefiousZFeed()",
-        "MILL_GetPreviousZFeed()"
+        "MILL_GetPreviousZFeed()",
+        "LATHE_GetPrefiousZFeed()"
       ]
     },
     {
@@ -783,8 +783,8 @@
       ],
       "description": "Returns the value of the current Y axis feed move. Prefix comes from the post question:685API:double MILL_GetYFeed()double LATHE_GetYFeed()",
       "bobcadAPIs": [
-        "LATHE_GetYFeed()",
-        "MILL_GetYFeed()"
+        "MILL_GetYFeed()",
+        "LATHE_GetYFeed()"
       ]
     },
     {
@@ -796,8 +796,8 @@
       ],
       "description": "Returns the value of the current Z axis feed move. Prefix comes from the post question:686API:double MILL_GetZFeed()double LATHE_GetZFeed()",
       "bobcadAPIs": [
-        "LATHE_GetZFeed()",
-        "MILL_GetZFeed()"
+        "MILL_GetZFeed()",
+        "LATHE_GetZFeed()"
       ]
     },
     {
@@ -1323,7 +1323,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will output the ON command for the previously \u00a0active Workpiece device.NOTE: Seeworkpiece_device_brakefor more details.API:string MILLTURN_GetPrvWorkpieceDeviceBrakeOFF()",
+      "description": "This variable will output the ON command for the previously active Workpiece device.NOTE: Seeworkpiece_device_brakefor more details.API:string MILLTURN_GetPrvWorkpieceDeviceBrakeOFF()",
       "bobcadAPIs": [
         "MILLTURN_GetPrvWorkpieceDeviceBrakeOFF()"
       ]
@@ -1363,7 +1363,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable is referred to as a Smart variable.\u00a0Each Tool device has post questionsthat define the brake codes for On and Off.Tool Device Post Questions:10x05- String - ON10x06- String - Auto ON10x07- String - OFFWhen this variable is output from Lathe postblocks the posting engine will outputthe active Tool device OFF code.When this variable is output from a milling postblock the posting engine will outputthe ON code for Indexing operations and will output OFF for simultaneous 4 axis or5 axis motion.API:string MILLTURN_GetToolDeviceBrake()",
+      "description": "This variable is referred to as a Smart variable.Each Tool device has post questionsthat define the brake codes for On and Off.Tool Device Post Questions:10x05- String - ON10x06- String - Auto ON10x07- String - OFFWhen this variable is output from Lathe postblocks the posting engine will outputthe active Tool device OFF code.When this variable is output from a milling postblock the posting engine will outputthe ON code for Indexing operations and will output OFF for simultaneous 4 axis or5 axis motion.API:string MILLTURN_GetToolDeviceBrake()",
       "bobcadAPIs": [
         "MILLTURN_GetToolDeviceBrake()"
       ]
@@ -1373,7 +1373,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will output the OFF command from the previously active Tool device.\u00a0Seetool_device_brake for more details.API:string MILLTURN_GetPrvToolDeviceBrakeOFF()",
+      "description": "This variable will output the OFF command from the previously active Tool device.Seetool_device_brake for more details.API:string MILLTURN_GetPrvToolDeviceBrakeOFF()",
       "bobcadAPIs": [
         "MILLTURN_GetPrvToolDeviceBrakeOFF()"
       ]
@@ -1477,7 +1477,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the string based on the mode (Inch/Metric).\u00a0Strings defined on post questions:614(Inch) and post question:615(Metric).API:short MILL_GetUnits()Returns the current unit setting0= Inch1= Metric",
+      "description": "Outputs the string based on the mode (Inch/Metric).Strings defined on post questions:614(Inch) and post question:615(Metric).API:short MILL_GetUnits()Returns the current unit setting0= Inch1= Metric",
       "bobcadAPIs": [
         "MILL_GetUnits()"
       ]
@@ -1498,7 +1498,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the string based on the current mode (Absolute/Incremental).\u00a0The outputstrings are defined on post question:620(Abs) and post question:621(Inc).API:short MILL_GetIsIncremental()",
+      "description": "Outputs the string based on the current mode (Absolute/Incremental).The outputstrings are defined on post question:620(Abs) and post question:621(Inc).API:short MILL_GetIsIncremental()",
       "bobcadAPIs": [
         "MILL_GetIsIncremental()"
       ]
@@ -1509,7 +1509,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the arc center\u00a0\u00a0X coordinate value using the prefix from post question:642API:double MILL_GetArcCenterX()",
+      "description": "Outputs the arc centerX coordinate value using the prefix from post question:642API:double MILL_GetArcCenterX()",
       "bobcadAPIs": [
         "MILL_GetArcCenterX()"
       ]
@@ -1520,7 +1520,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the arc center\u00a0\u00a0Y coordinate value using the prefix from post question:643API:double MILL_GetArcCenterY()",
+      "description": "Outputs the arc centerY coordinate value using the prefix from post question:643API:double MILL_GetArcCenterY()",
       "bobcadAPIs": [
         "MILL_GetArcCenterY()"
       ]
@@ -1531,7 +1531,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the arc center\u00a0\u00a0Z coordinate value using the prefix from post question:640API:double MILL_GetArcCenterZ()",
+      "description": "Outputs the arc centerZ coordinate value using the prefix from post question:640API:double MILL_GetArcCenterZ()",
       "bobcadAPIs": [
         "MILL_GetArcCenterZ()"
       ]
@@ -1556,9 +1556,9 @@
       ],
       "description": "Outputs the arc center value based on the current arc being cut using prefixes frompost questions:640through post question:643.API:double MILL_GetArcCenterX()double MILL_GetArcCenterY()double MILL_GetArcCenterZ()",
       "bobcadAPIs": [
-        "MILL_GetArcCenterZ()",
+        "MILL_GetArcCenterY()",
         "MILL_GetArcCenterX()",
-        "MILL_GetArcCenterY()"
+        "MILL_GetArcCenterZ()"
       ]
     },
     {
@@ -1614,7 +1614,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the line number at the beginning of the profile that is used to define thecanned roughing cycle.\u00a0The prefix is defined on post question:1790API:string LATHE_GetFirstRoughLineNumberPrefix()",
+      "description": "Outputs the line number at the beginning of the profile that is used to define thecanned roughing cycle.The prefix is defined on post question:1790API:string LATHE_GetFirstRoughLineNumberPrefix()",
       "bobcadAPIs": [
         "LATHE_GetFirstRoughLineNumberPrefix()"
       ]
@@ -1625,7 +1625,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the line number at the end of the profile that is used to define the cannedroughing cycle.\u00a0The prefix is defined on post question:1791API:string LATHE_GetLastRoughLineNumberPrefix()",
+      "description": "Outputs the line number at the end of the profile that is used to define the cannedroughing cycle.The prefix is defined on post question:1791API:string LATHE_GetLastRoughLineNumberPrefix()",
       "bobcadAPIs": [
         "LATHE_GetLastRoughLineNumberPrefix()"
       ]
@@ -1636,7 +1636,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the line number at the beginning of the profile that is used to define thecanned finish cycle.\u00a0The prefix is defined on post question:1790API:string LATHE_GetLineNumberFirstFinish()",
+      "description": "Outputs the line number at the beginning of the profile that is used to define thecanned finish cycle.The prefix is defined on post question:1790API:string LATHE_GetLineNumberFirstFinish()",
       "bobcadAPIs": [
         "LATHE_GetLineNumberFirstFinish()"
       ]
@@ -1658,7 +1658,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Returns the prefix string for the first line of a finish canned cycle.\u00a0The prefixstring is defined on post question:1790.API:string LATHE_GetFirstFinishLineNumberPrefix()",
+      "description": "Returns the prefix string for the first line of a finish canned cycle.The prefixstring is defined on post question:1790.API:string LATHE_GetFirstFinishLineNumberPrefix()",
       "bobcadAPIs": [
         "LATHE_GetFirstFinishLineNumberPrefix()"
       ]
@@ -1669,10 +1669,10 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the line number at the end of the profile that is used to define the cannedfinish cycle.\u00a0The prefix is defined on post question:1791API:string LATHE_GetLineNumberLastFinish()string LATHE GetLastFinishLineNumberPrefix()",
+      "description": "Outputs the line number at the end of the profile that is used to define the cannedfinish cycle.The prefix is defined on post question:1791API:string LATHE_GetLineNumberLastFinish()string LATHE GetLastFinishLineNumberPrefix()",
       "bobcadAPIs": [
-        "GetLastFinishLineNumberPrefix()",
-        "LATHE_GetLineNumberLastFinish()"
+        "LATHE_GetLineNumberLastFinish()",
+        "GetLastFinishLineNumberPrefix()"
       ]
     },
     {
@@ -1691,7 +1691,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs sub call string.\u00a0String defined from post question:628",
+      "description": "Outputs sub call string.String defined from post question:628",
       "bobcadAPIs": []
     },
     {
@@ -1700,7 +1700,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs sub return string.\u00a0String defined from post question:629",
+      "description": "Outputs sub return string.String defined from post question:629",
       "bobcadAPIs": []
     },
     {
@@ -1738,7 +1738,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "This variable should be utilized in the Milling tool change blocks to call the30or31block based on whether the operation is utilizing a transform block.\u00a0If theoperation is not utilizing the transform plane, block30will be output.\u00a0If theoperation is under an index system, and using the transform plane, the31transformplane block will be output.",
+      "description": "This variable should be utilized in the Milling tool change blocks to call the30or31block based on whether the operation is utilizing a transform block.If theoperation is not utilizing the transform plane, block30will be output.If theoperation is under an index system, and using the transform plane, the31transformplane block will be output.",
       "bobcadAPIs": []
     },
     {
@@ -2091,8 +2091,8 @@
       ],
       "description": "Used to return the value of the transform plane related variables only.API: GetDoubleOfPostVariable(\u00e2\u0080\u009cvariable_name\u00e2\u0080\u009d)Example : GetDoubleOfPostVariable(\u00e2\u0080\u009ceuler_angle_intrinsic_zxz_1\u00e2\u0080\u009d)Note: For a list of all variables which work with this API, see theGetDoubleOfPostVariabletopic.",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(variable_name)",
-        "GetDoubleOfPostVariable(euler_angle_intrinsic_zxz_1)"
+        "GetDoubleOfPostVariable(euler_angle_intrinsic_zxz_1)",
+        "GetDoubleOfPostVariable(variable_name)"
       ]
     },
     {
@@ -2125,7 +2125,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the string character uses to end a comment.\u00a0String is defined on post question:631",
+      "description": "Outputs the string character uses to end a comment.String is defined on post question:631",
       "bobcadAPIs": []
     },
     {
@@ -2395,7 +2395,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the note from CAM tree. Variable outputs note from Job level if used in Block 0, outputs note from Machine setup when used in blocks 15 & 16., when used in other blocks will output notes from Group folder/Index system/Wrapping group/feature/operation level. This block was added to BobCAD-CAM V36 and BobCAM\u00a0for SOLIDWORKS\u00a0V11.",
+      "description": "Outputs the note from CAM tree. Variable outputs note from Job level if used in Block 0, outputs note from Machine setup when used in blocks 15 & 16., when used in other blocks will output notes from Group folder/Index system/Wrapping group/feature/operation level. This block was added to BobCAD-CAM V36 and BobCAMfor SOLIDWORKSV11.",
       "bobcadAPIs": []
     },
     {
@@ -2500,7 +2500,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Returns the wrapping stock diameter with prefix.\u00a0The prefix is defined on post question: 703API:double MILL_GetRotaryStockDiameter()",
+      "description": "Returns the wrapping stock diameter with prefix.The prefix is defined on post question: 703API:double MILL_GetRotaryStockDiameter()",
       "bobcadAPIs": [
         "MILL_GetRotaryStockDiameter()"
       ]
@@ -2511,7 +2511,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Returns the length of the stock with prefix.\u00a0The prefix is defined on post question:704API:double MILL_GetRotaryStockLength()",
+      "description": "Returns the length of the stock with prefix.The prefix is defined on post question:704API:double MILL_GetRotaryStockLength()",
       "bobcadAPIs": [
         "MILL_GetRotaryStockLength()"
       ]
@@ -2543,7 +2543,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the tool angle with prefix.\u00a0The prefix is defined on post question:699",
+      "description": "Outputs the tool angle with prefix.The prefix is defined on post question:699",
       "bobcadAPIs": []
     },
     {
@@ -2561,7 +2561,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the tool type with prefix.\u00a0The prefix is defined on post question:701Values:1 - Flat End Mill, Tap Tool, Reamer, Thread Mill, Counter Bore, Boring, All other tools2 - Ball End Mill3 - Bullnose End Mill4 - Drill, Carbide Drill, Center Drill7 - Chamfer Drill, Chamfer Mill, V-Tool",
+      "description": "Outputs the tool type with prefix.The prefix is defined on post question:701Values:1 - Flat End Mill, Tap Tool, Reamer, Thread Mill, Counter Bore, Boring, All other tools2 - Ball End Mill3 - Bullnose End Mill4 - Drill, Carbide Drill, Center Drill7 - Chamfer Drill, Chamfer Mill, V-Tool",
       "bobcadAPIs": []
     },
     {
@@ -2593,7 +2593,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the block delete characters.\u00a0The block delete characters that are outputare defined on post question:656",
+      "description": "Outputs the block delete characters.The block delete characters that are outputare defined on post question:656",
       "bobcadAPIs": []
     },
     {
@@ -2801,7 +2801,7 @@
       "jobTypes": [
         "Mill Job"
       ],
-      "description": "Outputs the currently set mode Radius or Diameter based on post question:1249.\u00a0Ifset to Radius mode the string from post question:3561will be output.\u00a0If set toDiameter mode the string from post question:3562will be output.API:string MILLTURN_GetMtOutputRadDia()",
+      "description": "Outputs the currently set mode Radius or Diameter based on post question:1249.Ifset to Radius mode the string from post question:3561will be output.If set toDiameter mode the string from post question:3562will be output.API:string MILLTURN_GetMtOutputRadDia()",
       "bobcadAPIs": [
         "MILLTURN_GetMtOutputRadDia()"
       ]
@@ -2813,7 +2813,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the arc strings based on the arc direction.\u00a0Strings from\u00a0\u00a0post questions:682=CW, and683=CCW.",
+      "description": "Outputs the arc strings based on the arc direction.Strings frompost questions:682=CW, and683=CCW.",
       "bobcadAPIs": []
     },
     {
@@ -2821,7 +2821,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the post block3020if the post question:3509is set to Yes.\u00a0These blocksare used to put the machine in feed per revolution mode for the cross live tools.",
+      "description": "Outputs the post block3020if the post question:3509is set to Yes.These blocksare used to put the machine in feed per revolution mode for the cross live tools.",
       "bobcadAPIs": []
     },
     {
@@ -2829,7 +2829,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the post block3021if the post question:3509is set to Yes.\u00a0These blocksare used to put the machine in feed per revolution mode for the cross live tools.",
+      "description": "Outputs the post block3021if the post question:3509is set to Yes.These blocksare used to put the machine in feed per revolution mode for the cross live tools.",
       "bobcadAPIs": []
     },
     {
@@ -2895,7 +2895,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the code used to set the maximum spindle speed clamp.\u00a0The output stringis defined on post question:3577API:string MILLTURN_GetMaxSSGCode()",
+      "description": "Outputs the code used to set the maximum spindle speed clamp.The output stringis defined on post question:3577API:string MILLTURN_GetMaxSSGCode()",
       "bobcadAPIs": [
         "MILLTURN_GetMaxSSGCode()"
       ]
@@ -2915,7 +2915,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the string that is used to turn on exact stop mode on the machine.\u00a0Thisis a modal variable.\u00a0The string is defined on post question:3579.API:string MILLTURN_GetExactStopModalOn()",
+      "description": "Outputs the string that is used to turn on exact stop mode on the machine.Thisis a modal variable.The string is defined on post question:3579.API:string MILLTURN_GetExactStopModalOn()",
       "bobcadAPIs": [
         "MILLTURN_GetExactStopModalOn()"
       ]
@@ -2925,7 +2925,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the string that is used to turn off exact stop mode on the machine.\u00a0Thisis a modal variable.\u00a0The string is defined on post question:3580.API:string MILLTURN_GetExactStopModalOff()",
+      "description": "Outputs the string that is used to turn off exact stop mode on the machine.Thisis a modal variable.The string is defined on post question:3580.API:string MILLTURN_GetExactStopModalOff()",
       "bobcadAPIs": [
         "MILLTURN_GetExactStopModalOff()"
       ]
@@ -2956,7 +2956,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the string that defines the code used to activate a Lathe Finish Canned cycle.\u00a0The string is defined on post question:1870.API:string MILLTURN_GetFinishCycleCode()",
+      "description": "Outputs the string that defines the code used to activate a Lathe Finish Canned cycle.The string is defined on post question:1870.API:string MILLTURN_GetFinishCycleCode()",
       "bobcadAPIs": [
         "MILLTURN_GetFinishCycleCode()"
       ]
@@ -2966,7 +2966,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the string that defines the code used to activate a Lathe Roughing Cannedcycle.\u00a0The string that is output depends on if the cycle is OD or Facing.The OD string that is output is defined on post question:1871The Face string that is output is defined on post question:1872API:string MILLTURN_GetRoughCycleCode()",
+      "description": "Outputs the string that defines the code used to activate a Lathe Roughing Cannedcycle.The string that is output depends on if the cycle is OD or Facing.The OD string that is output is defined on post question:1871The Face string that is output is defined on post question:1872API:string MILLTURN_GetRoughCycleCode()",
       "bobcadAPIs": [
         "MILLTURN_GetRoughCycleCode()"
       ]
@@ -2976,7 +2976,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the string that defines the pattern repeat cycle on the machine.\u00a0The outputstring is defined on post question:1873API:string MILLTURN_GetPatternRepeatCode()",
+      "description": "Outputs the string that defines the pattern repeat cycle on the machine.The outputstring is defined on post question:1873API:string MILLTURN_GetPatternRepeatCode()",
       "bobcadAPIs": [
         "MILLTURN_GetPatternRepeatCode()"
       ]
@@ -2986,7 +2986,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the string that defines the grooving cycle on the machine.\u00a0The code thatis output depends on if the cycle is OD or Face orientation.OD/ID code\u00a0\u00a0is defined on post question:1875Face code is defined on post question:1874API:string MILLTURN_GetGrooveCycleCode()",
+      "description": "Outputs the string that defines the grooving cycle on the machine.The code thatis output depends on if the cycle is OD or Face orientation.OD/ID codeis defined on post question:1875Face code is defined on post question:1874API:string MILLTURN_GetGrooveCycleCode()",
       "bobcadAPIs": [
         "MILLTURN_GetGrooveCycleCode()"
       ]
@@ -2996,7 +2996,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the string that turns on the thread cutting cycle on the machine.\u00a0The codethat is output depends on if the cycle is OD or Face orientation.OD/ID code is defined on post question:1876Face code is defined on post question:1877API:string MILLTURN_GetThreadCycleCode()",
+      "description": "Outputs the string that turns on the thread cutting cycle on the machine.The codethat is output depends on if the cycle is OD or Face orientation.OD/ID code is defined on post question:1876Face code is defined on post question:1877API:string MILLTURN_GetThreadCycleCode()",
       "bobcadAPIs": [
         "MILLTURN_GetThreadCycleCode()"
       ]
@@ -3007,7 +3007,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the string that defines the end of file to the machine.\u00a0The string is definedon post question:625.",
+      "description": "Outputs the string that defines the end of file to the machine.The string is definedon post question:625.",
       "bobcadAPIs": []
     },
     {
@@ -3017,7 +3017,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the string that defines a stop to the machine.\u00a0The string is defined onpost question:626",
+      "description": "Outputs the string that defines a stop to the machine.The string is defined onpost question:626",
       "bobcadAPIs": []
     },
     {
@@ -3025,7 +3025,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the string that defines an optional stop to the machine.\u00a0The string is definedon post question:627",
+      "description": "Outputs the string that defines an optional stop to the machine.The string is definedon post question:627",
       "bobcadAPIs": []
     },
     {
@@ -3035,7 +3035,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the spindle ON string based on the current Forwar/Reverse state.\u00a0The stringsoutput are defined on post question:670=Forward, and post question:671=Reverse.",
+      "description": "Outputs the spindle ON string based on the current Forwar/Reverse state.The stringsoutput are defined on post question:670=Forward, and post question:671=Reverse.",
       "bobcadAPIs": []
     },
     {
@@ -3045,7 +3045,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the string to turn off the spindle.\u00a0The string output is defined on postquestion:671.",
+      "description": "Outputs the string to turn off the spindle.The string output is defined on postquestion:671.",
       "bobcadAPIs": []
     },
     {
@@ -3095,7 +3095,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the coolant ON string.\u00a0The strings output are as follows:673= Flood706= Mist707= Air708= Oil",
+      "description": "Outputs the coolant ON string.The strings output are as follows:673= Flood706= Mist707= Air708= Oil",
       "bobcadAPIs": []
     },
     {
@@ -3105,7 +3105,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the coolant OFF string.\u00a0The string is defined on post question:674",
+      "description": "Outputs the coolant OFF string.The string is defined on post question:674",
       "bobcadAPIs": []
     },
     {
@@ -3347,7 +3347,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the canned turning cycle starting X position with prefix.\u00a0The prefix stringis defined on post question:684API:double LATHE_GetProfileStartX()",
+      "description": "Outputs the canned turning cycle starting X position with prefix.The prefix stringis defined on post question:684API:double LATHE_GetProfileStartX()",
       "bobcadAPIs": [
         "LATHE_GetProfileStartX()"
       ]
@@ -3358,7 +3358,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the canned turning cycle starting Z position with prefix.\u00a0The prefix stringis defined on post question:686API:double LATHE_GetProfileStartZ()",
+      "description": "Outputs the canned turning cycle starting Z position with prefix.The prefix stringis defined on post question:686API:double LATHE_GetProfileStartZ()",
       "bobcadAPIs": [
         "LATHE_GetProfileStartZ()"
       ]
@@ -3369,7 +3369,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the canned turning cycle ending X position with prefix.\u00a0The prefix stringis defined on post question:684API:double LATHE_GetProfileEndX()",
+      "description": "Outputs the canned turning cycle ending X position with prefix.The prefix stringis defined on post question:684API:double LATHE_GetProfileEndX()",
       "bobcadAPIs": [
         "LATHE_GetProfileEndX()"
       ]
@@ -3380,7 +3380,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the canned turning cycle ending Z position with prefix.\u00a0The prefix stringis defined on post question:686API:double LATHE_GetProfileEndZ()",
+      "description": "Outputs the canned turning cycle ending Z position with prefix.The prefix stringis defined on post question:686API:double LATHE_GetProfileEndZ()",
       "bobcadAPIs": [
         "LATHE_GetProfileEndZ()"
       ]
@@ -3390,7 +3390,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the canned threading cycle ending X position with prefix.\u00a0The prefix stringis defined on post question: 1801. This variable will output the X dimension withoutthe thread depth being taken into account.API:double LATHE_GetProfileEndXTopOfThread()",
+      "description": "Outputs the canned threading cycle ending X position with prefix.The prefix stringis defined on post question: 1801. This variable will output the X dimension withoutthe thread depth being taken into account.API:double LATHE_GetProfileEndXTopOfThread()",
       "bobcadAPIs": [
         "LATHE_GetProfileEndXTopOfThread()"
       ]
@@ -3402,7 +3402,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the string defining the currently used cycle.\u00a0The strings used are definedon post questions:800through831.",
+      "description": "Outputs the string defining the currently used cycle.The strings used are definedon post questions:800through831.",
       "bobcadAPIs": []
     },
     {
@@ -3411,7 +3411,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the string that defines the Canned Cycle Cancel to the machine.\u00a0The stringoutput is defined on post question:679",
+      "description": "Outputs the string that defines the Canned Cycle Cancel to the machine.The stringoutput is defined on post question:679",
       "bobcadAPIs": []
     },
     {
@@ -3421,7 +3421,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the current defined string based on post questions:516and515.\u00a0The outputstrings are defined on post questions:727and728.",
+      "description": "Outputs the current defined string based on post questions:516and515.The outputstrings are defined on post questions:727and728.",
       "bobcadAPIs": []
     },
     {
@@ -3431,7 +3431,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the drill depth with prefix.\u00a0The prefix is defined on post question:677API:double MILL_GetDrillDepth()",
+      "description": "Outputs the drill depth with prefix.The prefix is defined on post question:677API:double MILL_GetDrillDepth()",
       "bobcadAPIs": [
         "MILL_GetDrillDepth()"
       ]
@@ -3450,7 +3450,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the Z axis position at the depth of the hole.\u00a0The prefix is defined on postquestion:677API:double MILL_GetDrillZ()",
+      "description": "Outputs the Z axis position at the depth of the hole.The prefix is defined on postquestion:677API:double MILL_GetDrillZ()",
       "bobcadAPIs": [
         "MILL_GetDrillZ()"
       ]
@@ -3472,7 +3472,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the absolute value of the drilling depth with prefix.\u00a0The prefix is definedon post question:677API:double MILL_GetAbsDrillDepth()",
+      "description": "Outputs the absolute value of the drilling depth with prefix.The prefix is definedon post question:677API:double MILL_GetAbsDrillDepth()",
       "bobcadAPIs": [
         "MILL_GetAbsDrillDepth()"
       ]
@@ -3484,7 +3484,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the value for the reference plane with prefix.\u00a0The value is defined with post question557. The prefix is defined onpost question:649API:double MILL_GetReferencPlaneHeight()",
+      "description": "Outputs the value for the reference plane with prefix.The value is defined with post question557. The prefix is defined onpost question:649API:double MILL_GetReferencPlaneHeight()",
       "bobcadAPIs": [
         "MILL_GetReferencPlaneHeight()"
       ]
@@ -3496,7 +3496,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the value for the initial plane with prefix.\u00a0The prefix is defined on postquestion:689API:double MILL_GetInitialPlaneHeight()",
+      "description": "Outputs the value for the initial plane with prefix.The prefix is defined on postquestion:689API:double MILL_GetInitialPlaneHeight()",
       "bobcadAPIs": [
         "MILL_GetInitialPlaneHeight()"
       ]
@@ -3520,7 +3520,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the value of the peck drilling increment with prefix.\u00a0The prefix is definedon post question:676API:double MILL_GetPeckDrillIncrement()",
+      "description": "Outputs the value of the peck drilling increment with prefix.The prefix is definedon post question:676API:double MILL_GetPeckDrillIncrement()",
       "bobcadAPIs": [
         "MILL_GetPeckDrillIncrement()"
       ]
@@ -3531,7 +3531,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the value of the peck drilling increment with prefix.\u00a0The prefix is definedon post question:1842API:double LATHE_GetPeckIncrement()",
+      "description": "Outputs the value of the peck drilling increment with prefix.The prefix is definedon post question:1842API:double LATHE_GetPeckIncrement()",
       "bobcadAPIs": [
         "LATHE_GetPeckIncrement()"
       ]
@@ -3543,7 +3543,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the dwell value with prefix.\u00a0The prefix is defined on post question:607API:double MILL_GetDwell()",
+      "description": "Outputs the dwell value with prefix.The prefix is defined on post question:607API:double MILL_GetDwell()",
       "bobcadAPIs": [
         "MILL_GetDwell()"
       ]
@@ -3553,7 +3553,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the string defined for the Dwell code.\u00a0The output string is defined on postquestion:655API:double MILLTURN_GetGDwell()",
+      "description": "Outputs the string defined for the Dwell code.The output string is defined on postquestion:655API:double MILLTURN_GetGDwell()",
       "bobcadAPIs": [
         "MILLTURN_GetGDwell()"
       ]
@@ -3564,7 +3564,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the dwell value with prefix.\u00a0The prefix is defined on post question:607API:short MILL_GetDwellMilliseconds()",
+      "description": "Outputs the dwell value with prefix.The prefix is defined on post question:607API:short MILL_GetDwellMilliseconds()",
       "bobcadAPIs": [
         "MILL_GetDwellMilliseconds()"
       ]
@@ -3575,7 +3575,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the incremental Z depth value with prefix.\u00a0The prefix is defined on postquestion:677",
+      "description": "Outputs the incremental Z depth value with prefix.The prefix is defined on postquestion:677",
       "bobcadAPIs": []
     },
     {
@@ -3585,7 +3585,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the value for the first peck drill increment with prefix.\u00a0The prefix isdefined on post question:675.API:double MILL_GetPeckDrillFirstPeckAmount()",
+      "description": "Outputs the value for the first peck drill increment with prefix.The prefix isdefined on post question:675.API:double MILL_GetPeckDrillFirstPeckAmount()",
       "bobcadAPIs": [
         "MILL_GetPeckDrillFirstPeckAmount()"
       ]
@@ -3629,7 +3629,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the roughing canned cycle X axis allowance value with prefix.\u00a0The prefixis defined on post question:1880API:double LATHE_GetRoughCycleRoughXAllowance()",
+      "description": "Outputs the roughing canned cycle X axis allowance value with prefix.The prefixis defined on post question:1880API:double LATHE_GetRoughCycleRoughXAllowance()",
       "bobcadAPIs": [
         "LATHE_GetRoughCycleRoughXAllowance()"
       ]
@@ -3640,7 +3640,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the roughing and finish canned cycle X axis finish allowance value with prefix.\u00a0The prefix is defined on post question:1882API:double LATHE_GetRoughCycleFinishXAllowance()",
+      "description": "Outputs the roughing and finish canned cycle X axis finish allowance value with prefix.The prefix is defined on post question:1882API:double LATHE_GetRoughCycleFinishXAllowance()",
       "bobcadAPIs": [
         "LATHE_GetRoughCycleFinishXAllowance()"
       ]
@@ -3662,7 +3662,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the roughing canned cycle Z axis allowance value with prefix.\u00a0The prefixis defined on post question:1881API:double LATHE_GetRoughCycleRoughZAllowance()",
+      "description": "Outputs the roughing canned cycle Z axis allowance value with prefix.The prefixis defined on post question:1881API:double LATHE_GetRoughCycleRoughZAllowance()",
       "bobcadAPIs": [
         "LATHE_GetRoughCycleRoughZAllowance()"
       ]
@@ -3673,7 +3673,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the roughing and finish canned cycle Z axis finish allowance value with prefix.\u00a0Theprefix is defined on post question:1883API:double LATHE_GetRoughCycleFinishZAllowance()",
+      "description": "Outputs the roughing and finish canned cycle Z axis finish allowance value with prefix.Theprefix is defined on post question:1883API:double LATHE_GetRoughCycleFinishZAllowance()",
       "bobcadAPIs": [
         "LATHE_GetRoughCycleFinishZAllowance()"
       ]
@@ -3704,7 +3704,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the depth of cut for the one line canned cycle format with decimal formatand prefix.\u00a0The prefix is defined on post question:1804",
+      "description": "Outputs the depth of cut for the one line canned cycle format with decimal formatand prefix.The prefix is defined on post question:1804",
       "bobcadAPIs": []
     },
     {
@@ -3713,7 +3713,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the depth of cut for the two line canned cycle format with decimal formatand prefix.\u00a0The prefix is defined on post question:1804",
+      "description": "Outputs the depth of cut for the two line canned cycle format with decimal formatand prefix.The prefix is defined on post question:1804",
       "bobcadAPIs": []
     },
     {
@@ -3722,7 +3722,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the roughing canned cycle retract amount defined on post question:1411witha prefix.\u00a0The prefix is defined on post question:1807API:double LATHE_GetRoughRetractAmount()",
+      "description": "Outputs the roughing canned cycle retract amount defined on post question:1411witha prefix.The prefix is defined on post question:1807API:double LATHE_GetRoughRetractAmount()",
       "bobcadAPIs": [
         "LATHE_GetRoughRetractAmount()"
       ]
@@ -3733,7 +3733,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the roughing canned cycle depth of cut in the X axis with prefix.\u00a0The prefixis defined on post question:1823",
+      "description": "Outputs the roughing canned cycle depth of cut in the X axis with prefix.The prefixis defined on post question:1823",
       "bobcadAPIs": []
     },
     {
@@ -3742,7 +3742,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the roughing canned cycle depth of cut in the Z axis with prefix.\u00a0The prefixis defined on post question:1824",
+      "description": "Outputs the roughing canned cycle depth of cut in the Z axis with prefix.The prefixis defined on post question:1824",
       "bobcadAPIs": []
     },
     {
@@ -3751,7 +3751,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the roughing canned cycle depth of cut in the X axis with prefix with decimalformat.\u00a0The prefix is defined on post question:1823",
+      "description": "Outputs the roughing canned cycle depth of cut in the X axis with prefix with decimalformat.The prefix is defined on post question:1823",
       "bobcadAPIs": []
     },
     {
@@ -3760,7 +3760,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the roughing canned cycle depth of cut in the Z axis with prefix with decimalformat.\u00a0The prefix is defined on post question:1824",
+      "description": "Outputs the roughing canned cycle depth of cut in the Z axis with prefix with decimalformat.The prefix is defined on post question:1824",
       "bobcadAPIs": []
     },
     {
@@ -3780,7 +3780,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the value of the X axis spring pass.\u00a0The value is output in diameter withprefix.\u00a0The prefix is defined on post question:1810API:double LATHE_GetFinishXSpringPassStockDiameter()",
+      "description": "Outputs the value of the X axis spring pass.The value is output in diameter withprefix.The prefix is defined on post question:1810API:double LATHE_GetFinishXSpringPassStockDiameter()",
       "bobcadAPIs": [
         "LATHE_GetFinishXSpringPassStockDiameter()"
       ]
@@ -3791,7 +3791,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the value of the Z axis spring pass with prefix.\u00a0The prefix is defined onpost question:1811API:double LATHE_GetFinishZSpringPassStockDiameter()",
+      "description": "Outputs the value of the Z axis spring pass with prefix.The prefix is defined onpost question:1811API:double LATHE_GetFinishZSpringPassStockDiameter()",
       "bobcadAPIs": [
         "LATHE_GetFinishZSpringPassStockDiameter()"
       ]
@@ -3802,7 +3802,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the value of the X axis allowance as diameter value with prefix.\u00a0The prefixis defined on post question:1808API:double LATHE_GetXFinishAllowance()",
+      "description": "Outputs the value of the X axis allowance as diameter value with prefix.The prefixis defined on post question:1808API:double LATHE_GetXFinishAllowance()",
       "bobcadAPIs": [
         "LATHE_GetXFinishAllowance()"
       ]
@@ -3813,7 +3813,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the value of the Z axis allowance with prefix.\u00a0The prefix is defined onpost question:1809API:double LATHE_GetZFinishAllowance()",
+      "description": "Outputs the value of the Z axis allowance with prefix.The prefix is defined onpost question:1809API:double LATHE_GetZFinishAllowance()",
       "bobcadAPIs": [
         "LATHE_GetZFinishAllowance()"
       ]
@@ -3824,7 +3824,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the number of finish cuts with prefix.\u00a0The prefix is fixed to the \u00e2\u0080\u009cD\u00e2\u0080\u009d character.This variable outputs the numbers of passes in pattern repeat cycle (Fanuc G73) aswell the number of finish passes for the threading cycleAPI:short LATHE_GetFinishNumberOfCuts()",
+      "description": "Outputs the number of finish cuts with prefix.The prefix is fixed to the \u00e2\u0080\u009cD\u00e2\u0080\u009d character.This variable outputs the numbers of passes in pattern repeat cycle (Fanuc G73) aswell the number of finish passes for the threading cycleAPI:short LATHE_GetFinishNumberOfCuts()",
       "bobcadAPIs": [
         "LATHE_GetFinishNumberOfCuts()"
       ]
@@ -3879,7 +3879,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Returns the value calculated from the pattern repeat operation\u00e2\u0080\u0099s X Stock / Numberof Cuts.\u00a0Prefix is defined on post question:1884API:double LATHE_GetPatternRepeatDepthOfCutX()",
+      "description": "Returns the value calculated from the pattern repeat operation\u00e2\u0080\u0099s X Stock / Numberof Cuts.Prefix is defined on post question:1884API:double LATHE_GetPatternRepeatDepthOfCutX()",
       "bobcadAPIs": [
         "LATHE_GetPatternRepeatDepthOfCutX()"
       ]
@@ -3890,7 +3890,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Returns the value calculated from the pattern repeat operation\u00e2\u0080\u0099s Z Stock / Numberof Cuts.\u00a0Prefix is defined on post question:1885API:double LATHE_GetPatternRepeatDepthOfCutZ()",
+      "description": "Returns the value calculated from the pattern repeat operation\u00e2\u0080\u0099s Z Stock / Numberof Cuts.Prefix is defined on post question:1885API:double LATHE_GetPatternRepeatDepthOfCutZ()",
       "bobcadAPIs": [
         "LATHE_GetPatternRepeatDepthOfCutZ()"
       ]
@@ -3912,7 +3912,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the X axis value for the bottom of the groove with prefix.\u00a0The prefix isdefined on post question:1813API:double LATHE_GetGrooveXBottom()double MILLTURN_GetGrooveXBottom()",
+      "description": "Outputs the X axis value for the bottom of the groove with prefix.The prefix isdefined on post question:1813API:double LATHE_GetGrooveXBottom()double MILLTURN_GetGrooveXBottom()",
       "bobcadAPIs": [
         "LATHE_GetGrooveXBottom()",
         "MILLTURN_GetGrooveXBottom()"
@@ -3924,10 +3924,10 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the Z axis value for the bottom of the groove with prefix.\u00a0The prefix isdefined on post question:1814API:double LATHE_GetGrooveZBottom()double MILLTURN_GetGrooveZBottom()",
+      "description": "Outputs the Z axis value for the bottom of the groove with prefix.The prefix isdefined on post question:1814API:double LATHE_GetGrooveZBottom()double MILLTURN_GetGrooveZBottom()",
       "bobcadAPIs": [
-        "MILLTURN_GetGrooveZBottom()",
-        "LATHE_GetGrooveZBottom()"
+        "LATHE_GetGrooveZBottom()",
+        "MILLTURN_GetGrooveZBottom()"
       ]
     },
     {
@@ -3938,8 +3938,8 @@
       ],
       "description": "Outputs the peck increment for the groove with prefix. The prefix is defined on postquestion:1816API:double LATHE_GetGroovePeckIncrement()double MILLTURN_GetGroovePeckIncrement()",
       "bobcadAPIs": [
-        "MILLTURN_GetGroovePeckIncrement()",
-        "LATHE_GetGroovePeckIncrement()"
+        "LATHE_GetGroovePeckIncrement()",
+        "MILLTURN_GetGroovePeckIncrement()"
       ]
     },
     {
@@ -3962,8 +3962,8 @@
       ],
       "description": "Outputs the retract amount for the groove cycle with prefix. The prefix is definedon post question:1812The value output is defined on post question:1412API:double LATHE_GetGrooveCycleRetract()double MILLTURN_GetGrooveDepthOfCut()",
       "bobcadAPIs": [
-        "MILLTURN_GetGrooveDepthOfCut()",
-        "LATHE_GetGrooveCycleRetract()"
+        "LATHE_GetGrooveCycleRetract()",
+        "MILLTURN_GetGrooveDepthOfCut()"
       ]
     },
     {
@@ -3981,7 +3981,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the dwell value with prefix.\u00a0The prefix is defined on post question:1825.API:double LATHE_GetDrillDwell()double MILLTURN_GetDrillDwell()",
+      "description": "Outputs the dwell value with prefix.The prefix is defined on post question:1825.API:double LATHE_GetDrillDwell()double MILLTURN_GetDrillDwell()",
       "bobcadAPIs": [
         "LATHE_GetDrillDwell()",
         "MILLTURN_GetDrillDwell()"
@@ -3995,8 +3995,8 @@
       ],
       "description": "Outputs the first peck value with prefix. The prefix is defined on post question:1841.API:double LATHE_GetFirstPeck()double MILLTURN_GetFirstPeck()",
       "bobcadAPIs": [
-        "LATHE_GetFirstPeck()",
-        "MILLTURN_GetFirstPeck()"
+        "MILLTURN_GetFirstPeck()",
+        "LATHE_GetFirstPeck()"
       ]
     },
     {
@@ -4017,10 +4017,10 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the peck retract value with prefix.\u00a0The prefix is defined on post question:1827.API:double LATHE_GetPeckRetract()double MILLTURN_GetPeckRetract()",
+      "description": "Outputs the peck retract value with prefix.The prefix is defined on post question:1827.API:double LATHE_GetPeckRetract()double MILLTURN_GetPeckRetract()",
       "bobcadAPIs": [
-        "LATHE_GetPeckRetract()",
-        "MILLTURN_GetPeckRetract()"
+        "MILLTURN_GetPeckRetract()",
+        "LATHE_GetPeckRetract()"
       ]
     },
     {
@@ -4038,7 +4038,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the final Z axis position for the G32 tapping operation with prefix.\u00a0Theprefix is defined on post question:686.API:double LATHE_GetTapG32FinalZ()",
+      "description": "Outputs the final Z axis position for the G32 tapping operation with prefix.Theprefix is defined on post question:686.API:double LATHE_GetTapG32FinalZ()",
       "bobcadAPIs": [
         "LATHE_GetTapG32FinalZ()"
       ]
@@ -4060,7 +4060,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the initial Z axis position for the G32 tapping operation with prefix.\u00a0Theprefix is defined on post question:686.API:double LATHE_GetTapG32InitialZ()",
+      "description": "Outputs the initial Z axis position for the G32 tapping operation with prefix.Theprefix is defined on post question:686.API:double LATHE_GetTapG32InitialZ()",
       "bobcadAPIs": [
         "LATHE_GetTapG32InitialZ()"
       ]
@@ -4080,7 +4080,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the string for right hand tapping.\u00a0The output string is defined on postquestion:1765",
+      "description": "Outputs the string for right hand tapping.The output string is defined on postquestion:1765",
       "bobcadAPIs": []
     },
     {
@@ -4089,7 +4089,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the string for left hand tapping.\u00a0The output string is defined on post question:1766",
+      "description": "Outputs the string for left hand tapping.The output string is defined on post question:1766",
       "bobcadAPIs": []
     },
     {
@@ -4098,7 +4098,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the tap reference plane value in decimal format with prefix.\u00a0The prefixis defined on post question:1820",
+      "description": "Outputs the tap reference plane value in decimal format with prefix.The prefixis defined on post question:1820",
       "bobcadAPIs": []
     },
     {
@@ -4116,7 +4116,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the tap X value with prefix.\u00a0The prefix is defined on post question:684. Withlathe operations this will always return a value of \u00e2\u0080\u009c0.000\u00e2\u0080\u009d",
+      "description": "Outputs the tap X value with prefix.The prefix is defined on post question:684. Withlathe operations this will always return a value of \u00e2\u0080\u009c0.000\u00e2\u0080\u009d",
       "bobcadAPIs": []
     },
     {
@@ -4136,7 +4136,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs a call to post block1027.\u00a0This is normally used to put the machine in feedper revolution mode.",
+      "description": "Outputs a call to post block1027.This is normally used to put the machine in feedper revolution mode.",
       "bobcadAPIs": []
     },
     {
@@ -4145,7 +4145,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs a call to post block1028.\u00a0This is normally used to put the machine in feedper minute mode.",
+      "description": "Outputs a call to post block1028.This is normally used to put the machine in feedper minute mode.",
       "bobcadAPIs": []
     },
     {
@@ -4155,7 +4155,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the tapping feedrate with prefix.\u00a0The prefix is defined on post question:695API:double MILL_GetTappingFeedRate()",
+      "description": "Outputs the tapping feedrate with prefix.The prefix is defined on post question:695API:double MILL_GetTappingFeedRate()",
       "bobcadAPIs": [
         "MILL_GetTappingFeedRate()"
       ]
@@ -4177,7 +4177,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the tapping spindle speed with prefix.\u00a0The prefix is defined on post question:696API:double MILL_GetTappingSpindleSpeed()",
+      "description": "Outputs the tapping spindle speed with prefix.The prefix is defined on post question:696API:double MILL_GetTappingSpindleSpeed()",
       "bobcadAPIs": [
         "MILL_GetTappingSpindleSpeed()"
       ]
@@ -4188,10 +4188,10 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the number of threads per inch in Inch mode and threads per millimeter inMetric mode with prefix.\u00a0The prefix is defined on post question:697API:double MILL_GetThreadsPerInch()double MILLTURN_GetThreadsPerInch()",
+      "description": "Outputs the number of threads per inch in Inch mode and threads per millimeter inMetric mode with prefix.The prefix is defined on post question:697API:double MILL_GetThreadsPerInch()double MILLTURN_GetThreadsPerInch()",
       "bobcadAPIs": [
-        "MILL_GetThreadsPerInch()",
-        "MILLTURN_GetThreadsPerInch()"
+        "MILLTURN_GetThreadsPerInch()",
+        "MILL_GetThreadsPerInch()"
       ]
     },
     {
@@ -4254,7 +4254,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the string value that defines the thread start angle.\u00a0The output stringis defined on post question:1712.",
+      "description": "Outputs the string value that defines the thread start angle.The output stringis defined on post question:1712.",
       "bobcadAPIs": []
     },
     {
@@ -4263,7 +4263,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the string value that defines the thread end angle.\u00a0The output string isdefined on post question:1713.",
+      "description": "Outputs the string value that defines the thread end angle.The output string isdefined on post question:1713.",
       "bobcadAPIs": []
     },
     {
@@ -4294,10 +4294,9 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the thread height value with prefix.\u00a0The prefix is defined on post question:1793.API:short\u00a0\u00a0LATHE_GetThreadHeight()short MILLTURN_GetThreadHeight()",
+      "description": "Outputs the thread height value with prefix.The prefix is defined on post question:1793.API:shortLATHE_GetThreadHeight()short MILLTURN_GetThreadHeight()",
       "bobcadAPIs": [
-        "MILLTURN_GetThreadHeight()",
-        "LATHE_GetThreadHeight()"
+        "MILLTURN_GetThreadHeight()"
       ]
     },
     {
@@ -4306,10 +4305,9 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the thread height value as decimal with prefix.\u00a0The prefix is defined onpost question:1793.API:short\u00a0\u00a0LATHE_GetThreadHeight()short MILLTURN_GetThreadHeight()",
+      "description": "Outputs the thread height value as decimal with prefix.The prefix is defined onpost question:1793.API:shortLATHE_GetThreadHeight()short MILLTURN_GetThreadHeight()",
       "bobcadAPIs": [
-        "MILLTURN_GetThreadHeight()",
-        "LATHE_GetThreadHeight()"
+        "MILLTURN_GetThreadHeight()"
       ]
     },
     {
@@ -4318,11 +4316,8 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the thread first cut value with prefix. The prefix is defined on post question:1792.API:double\u00a0\u00a0LATHE_GetThreadFirstCut()double\u00a0\u00a0MILLTURN_GetThreadFirstCut()",
-      "bobcadAPIs": [
-        "MILLTURN_GetThreadFirstCut()",
-        "LATHE_GetThreadFirstCut()"
-      ]
+      "description": "Outputs the thread first cut value with prefix. The prefix is defined on post question:1792.API:doubleLATHE_GetThreadFirstCut()doubleMILLTURN_GetThreadFirstCut()",
+      "bobcadAPIs": []
     },
     {
       "postVariableName": "thread_first_cut_decimal",
@@ -4339,10 +4334,10 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the angle in value for thread operations with prefix.\u00a0The prefix is definedon post question:1794.API:double LATHE_GetAngleIn()double MILLTURN_GetAngleIn()",
+      "description": "Outputs the angle in value for thread operations with prefix.The prefix is definedon post question:1794.API:double LATHE_GetAngleIn()double MILLTURN_GetAngleIn()",
       "bobcadAPIs": [
-        "MILLTURN_GetAngleIn()",
-        "LATHE_GetAngleIn()"
+        "LATHE_GetAngleIn()",
+        "MILLTURN_GetAngleIn()"
       ]
     },
     {
@@ -4351,7 +4346,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the angle in value, as decimal, for thread operations with prefix.\u00a0The prefixis defined on post question:1794.",
+      "description": "Outputs the angle in value, as decimal, for thread operations with prefix.The prefixis defined on post question:1794.",
       "bobcadAPIs": []
     },
     {
@@ -4393,10 +4388,10 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the thread last cut amount with prefix.\u00a0The prefix is defined on post question:1795.API:double LATHE_GetThreadLastCut()double MILLTURN_GetThreadLastCut()",
+      "description": "Outputs the thread last cut amount with prefix.The prefix is defined on post question:1795.API:double LATHE_GetThreadLastCut()double MILLTURN_GetThreadLastCut()",
       "bobcadAPIs": [
-        "LATHE_GetThreadLastCut()",
-        "MILLTURN_GetThreadLastCut()"
+        "MILLTURN_GetThreadLastCut()",
+        "LATHE_GetThreadLastCut()"
       ]
     },
     {
@@ -4405,10 +4400,10 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the thread machine allowance value with prefix.\u00a0The prefix is defined onpost question:1796. The allowance value is defined on post question:1413.API:double LATHE_GetThreadMachineAllowance()double MILLTURN_GetThreadMachineAllowance()",
+      "description": "Outputs the thread machine allowance value with prefix.The prefix is defined onpost question:1796. The allowance value is defined on post question:1413.API:double LATHE_GetThreadMachineAllowance()double MILLTURN_GetThreadMachineAllowance()",
       "bobcadAPIs": [
-        "LATHE_GetThreadMachineAllowance()",
-        "MILLTURN_GetThreadMachineAllowance()"
+        "MILLTURN_GetThreadMachineAllowance()",
+        "LATHE_GetThreadMachineAllowance()"
       ]
     },
     {
@@ -4428,7 +4423,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the X axis position of the G33 type threading cycle with prefix.\u00a0The prefixis defined on post question:684.",
+      "description": "Outputs the X axis position of the G33 type threading cycle with prefix.The prefixis defined on post question:684.",
       "bobcadAPIs": []
     },
     {
@@ -4437,7 +4432,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the Z axis position of the G33 type threading cycle with prefix.\u00a0The prefixis defined on post question:686.",
+      "description": "Outputs the Z axis position of the G33 type threading cycle with prefix.The prefixis defined on post question:686.",
       "bobcadAPIs": []
     },
     {
@@ -4485,7 +4480,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the string defined for canceling Turning/Threading canned cycles.\u00a0The outputstring is defined on post question:1878API:string MILLTURN_GetCancelCannedCycle()",
+      "description": "Outputs the string defined for canceling Turning/Threading canned cycles.The outputstring is defined on post question:1878API:string MILLTURN_GetCancelCannedCycle()",
       "bobcadAPIs": [
         "MILLTURN_GetCancelCannedCycle()"
       ]
@@ -4496,7 +4491,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the reference height for the Heidenhain machines with prefix.\u00a0The prefixis set to \u00e2\u0080\u009cP01\u00e2\u0080\u009dAPI:double MILL_GetHeidenReferenceHeight()double MILLTURN_GetHeidenReferenceHeight()",
+      "description": "Outputs the reference height for the Heidenhain machines with prefix.The prefixis set to \u00e2\u0080\u009cP01\u00e2\u0080\u009dAPI:double MILL_GetHeidenReferenceHeight()double MILLTURN_GetHeidenReferenceHeight()",
       "bobcadAPIs": [
         "MILLTURN_GetHeidenReferenceHeight()",
         "MILL_GetHeidenReferenceHeight()"
@@ -4508,10 +4503,10 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the depth value for the Heidenhain machines with prefix.\u00a0The prefix is setto \u00e2\u0080\u009cP02\u00e2\u0080\u009dAPI:double MILL_GetHeidenDepth()double MILLTURN_GetHeidenDepth()",
+      "description": "Outputs the depth value for the Heidenhain machines with prefix.The prefix is setto \u00e2\u0080\u009cP02\u00e2\u0080\u009dAPI:double MILL_GetHeidenDepth()double MILLTURN_GetHeidenDepth()",
       "bobcadAPIs": [
-        "MILLTURN_GetHeidenDepth()",
-        "MILL_GetHeidenDepth()"
+        "MILL_GetHeidenDepth()",
+        "MILLTURN_GetHeidenDepth()"
       ]
     },
     {
@@ -4520,10 +4515,10 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the peck increment value for the Heidenhain machines with prefix.\u00a0The prefixis set to \u00e2\u0080\u009cP03\u00e2\u0080\u009dAPI:double MILL_GetHeidenPeckIncrement()double MILLTURN_GetHeidenPeckIncrement()",
+      "description": "Outputs the peck increment value for the Heidenhain machines with prefix.The prefixis set to \u00e2\u0080\u009cP03\u00e2\u0080\u009dAPI:double MILL_GetHeidenPeckIncrement()double MILLTURN_GetHeidenPeckIncrement()",
       "bobcadAPIs": [
-        "MILLTURN_GetHeidenPeckIncrement()",
-        "MILL_GetHeidenPeckIncrement()"
+        "MILL_GetHeidenPeckIncrement()",
+        "MILLTURN_GetHeidenPeckIncrement()"
       ]
     },
     {
@@ -4532,10 +4527,10 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the dwell value for the Heidenhain machines with prefix.\u00a0The prefix is setto \u00e2\u0080\u009cP04\u00e2\u0080\u009dAPI:double MILL_GetHeidenDwell()double MILLTURN_GetHeidenDwell()",
+      "description": "Outputs the dwell value for the Heidenhain machines with prefix.The prefix is setto \u00e2\u0080\u009cP04\u00e2\u0080\u009dAPI:double MILL_GetHeidenDwell()double MILLTURN_GetHeidenDwell()",
       "bobcadAPIs": [
-        "MILL_GetHeidenDwell()",
-        "MILLTURN_GetHeidenDwell()"
+        "MILLTURN_GetHeidenDwell()",
+        "MILL_GetHeidenDwell()"
       ]
     },
     {
@@ -4544,10 +4539,10 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the plunge feedrate with prefix.\u00a0The prefix is set to \u00e2\u0080\u009cP05\u00e2\u0080\u009dAPI:double MILL_GetHeidenPlungeRate()double MILLTURN_GetHeidenPlungeRate()",
+      "description": "Outputs the plunge feedrate with prefix.The prefix is set to \u00e2\u0080\u009cP05\u00e2\u0080\u009dAPI:double MILL_GetHeidenPlungeRate()double MILLTURN_GetHeidenPlungeRate()",
       "bobcadAPIs": [
-        "MILL_GetHeidenPlungeRate()",
-        "MILLTURN_GetHeidenPlungeRate()"
+        "MILLTURN_GetHeidenPlungeRate()",
+        "MILL_GetHeidenPlungeRate()"
       ]
     },
     {
@@ -4557,7 +4552,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the spindle speed for milling with prefix.\u00a0The prefix is defined on postquestion:605.API:short MILL_GetSpindleSpeed()",
+      "description": "Outputs the spindle speed for milling with prefix.The prefix is defined on postquestion:605.API:short MILL_GetSpindleSpeed()",
       "bobcadAPIs": [
         "MILL_GetSpindleSpeed()"
       ]
@@ -4599,7 +4594,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the spindle ON code and the spindle speed value with prefix.\u00a0The spindleON code for CSS is defined on post question:1785.\u00a0The spindle speed value prefixis defined on post question:605.",
+      "description": "Outputs the spindle ON code and the spindle speed value with prefix.The spindleON code for CSS is defined on post question:1785.The spindle speed value prefixis defined on post question:605.",
       "bobcadAPIs": []
     },
     {
@@ -4608,7 +4603,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the spindle ON code and the spindle speed value with prefix.\u00a0The spindleON code for RPM is defined on post question:1786.\u00a0The spindle speed value prefixis defined on post question:605.",
+      "description": "Outputs the spindle ON code and the spindle speed value with prefix.The spindleON code for RPM is defined on post question:1786.The spindle speed value prefixis defined on post question:605.",
       "bobcadAPIs": []
     },
     {
@@ -4617,7 +4612,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the code for RPM or CSS based on the active mode set in the operation.\u00a0TheRPM code is defined on post question:1786.\u00a0The CSS code is defined on post question:1785.",
+      "description": "Outputs the code for RPM or CSS based on the active mode set in the operation.TheRPM code is defined on post question:1786.The CSS code is defined on post question:1785.",
       "bobcadAPIs": []
     },
     {
@@ -4634,7 +4629,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the spindle speed with prefix.\u00a0The prefix is defined on post question:605API:short LATHE_GetCssRpm()",
+      "description": "Outputs the spindle speed with prefix.The prefix is defined on post question:605API:short LATHE_GetCssRpm()",
       "bobcadAPIs": [
         "LATHE_GetCssRpm()"
       ]
@@ -4644,7 +4639,7 @@
       "jobTypes": [
         "Lathe Job"
       ],
-      "description": "Outputs the finish pass spindle speed with prefix.\u00a0The prefix is defined on postquestion:1781API:short LATHE_GetFinishSpindleSpeed()",
+      "description": "Outputs the finish pass spindle speed with prefix.The prefix is defined on postquestion:1781API:short LATHE_GetFinishSpindleSpeed()",
       "bobcadAPIs": [
         "LATHE_GetFinishSpindleSpeed()"
       ]
@@ -4656,7 +4651,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the maximum spindle speed with prefix.\u00a0The prefix is defined on post question:609API:short MILL_GetMaximumSpindleSpeed()",
+      "description": "Outputs the maximum spindle speed with prefix.The prefix is defined on post question:609API:short MILL_GetMaximumSpindleSpeed()",
       "bobcadAPIs": [
         "MILL_GetMaximumSpindleSpeed()"
       ]
@@ -4705,7 +4700,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the Z axis spindle speed with NO prefix.\u00a0The prefix is defined on post question:605",
+      "description": "Outputs the Z axis spindle speed with NO prefix.The prefix is defined on post question:605",
       "bobcadAPIs": []
     },
     {
@@ -4747,7 +4742,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the tool number with the prefix that is set to \u00e2\u0080\u009cT\u00e2\u0080\u009d.\u00a0Decimal places usedfor the output formatting is defined on post question:215.API:short MILL_GetToolNumber()",
+      "description": "Outputs the tool number with the prefix that is set to \u00e2\u0080\u009cT\u00e2\u0080\u009d.Decimal places usedfor the output formatting is defined on post question:215.API:short MILL_GetToolNumber()",
       "bobcadAPIs": [
         "MILL_GetToolNumber()"
       ]
@@ -4759,7 +4754,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the tool number with NO prefix.\u00a0The decimal places used for the output formatting is defined on post question:215",
+      "description": "Outputs the tool number with NO prefix.The decimal places used for the output formatting is defined on post question:215",
       "bobcadAPIs": []
     },
     {
@@ -4769,7 +4764,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the tool number with NO prefix.\u00a0The decimal places used for output is defined on post question:215",
+      "description": "Outputs the tool number with NO prefix.The decimal places used for output is defined on post question:215",
       "bobcadAPIs": []
     },
     {
@@ -4778,7 +4773,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the finish tool number of a feature with prefix.\u00a0The prefix is defined onpost question:1781API:short LATHE_GetFinishToolNumber()",
+      "description": "Outputs the finish tool number of a feature with prefix.The prefix is defined onpost question:1781API:short LATHE_GetFinishToolNumber()",
       "bobcadAPIs": [
         "LATHE_GetFinishToolNumber()"
       ]
@@ -4815,9 +4810,9 @@
       ],
       "description": "Outputs the next tool number with NO prefix.API:double MILL_GetNextToolNumber()double LATHE_GetNextToolNumber()double MILLTURN_GetNextToolNumber()",
       "bobcadAPIs": [
-        "MILL_GetNextToolNumber()",
+        "LATHE_GetNextToolNumber()",
         "MILLTURN_GetNextToolNumber()",
-        "LATHE_GetNextToolNumber()"
+        "MILL_GetNextToolNumber()"
       ]
     },
     {
@@ -4835,7 +4830,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the current tool number with a space and then the offset number.\u00a0The toolnumber prefix is set to the letter \u00e2\u0080\u009cT\u00e2\u0080\u009d.\u00a0The offset has no prefix.",
+      "description": "Outputs the current tool number with a space and then the offset number.The toolnumber prefix is set to the letter \u00e2\u0080\u009cT\u00e2\u0080\u009d.The offset has no prefix.",
       "bobcadAPIs": []
     },
     {
@@ -4844,7 +4839,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the next tool number with a space and then the offset number.\u00a0The tool number prefix is set to the letter \u00e2\u0080\u009cT\u00e2\u0080\u009d.\u00a0The offset has no prefix.",
+      "description": "Outputs the next tool number with a space and then the offset number.The tool number prefix is set to the letter \u00e2\u0080\u009cT\u00e2\u0080\u009d.The offset has no prefix.",
       "bobcadAPIs": []
     },
     {
@@ -4852,7 +4847,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the string defined on post question:654.\u00a0This code defines the commandused to initiate a tool change on the machine.\u00a0This code will only be output ifthe active tool device post question20x30is set to a value of 7 or 8.API:string MILLTURN_GetToolchangeCode()",
+      "description": "Outputs the string defined on post question:654.This code defines the commandused to initiate a tool change on the machine.This code will only be output ifthe active tool device post question20x30is set to a value of 7 or 8.API:string MILLTURN_GetToolchangeCode()",
       "bobcadAPIs": [
         "MILLTURN_GetToolchangeCode()"
       ]
@@ -4862,7 +4857,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Returns the Suffix Code of the current tool with NO prefix.\u00a0This is a string valuewith NO prefix commonly used for Mazak tool numbering.API:string MILLTURN_GetSuffixCode()",
+      "description": "Returns the Suffix Code of the current tool with NO prefix.This is a string valuewith NO prefix commonly used for Mazak tool numbering.API:string MILLTURN_GetSuffixCode()",
       "bobcadAPIs": [
         "MILLTURN_GetSuffixCode()"
       ]
@@ -4872,7 +4867,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Returns the Suffix Code of the next tool with NO prefix.\u00a0This is a string valuewith NO prefix commonly used for Mazak tool numbering.API:string MILLTURN_GetNextSuffixCode()",
+      "description": "Returns the Suffix Code of the next tool with NO prefix.This is a string valuewith NO prefix commonly used for Mazak tool numbering.API:string MILLTURN_GetNextSuffixCode()",
       "bobcadAPIs": [
         "MILLTURN_GetNextSuffixCode()"
       ]
@@ -4882,7 +4877,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the orientation number in a 2 digit format with NO prefix. Used for Mazaktool numbering. The value output comes from the Tool Orientation Mapping questionsin the post (5200through5208). The Tool Orientation Control parameters in aturning feature is used to define the output.API:string MILLTURN_GetToolOrientation()\u00a0\u00a0\u00a0\u00a0This returns the mapped stringinteger MILLTURN_GetToolOrientationIndex()\u00a0\u00a0\u00a0This returns the orientation index value",
+      "description": "Outputs the orientation number in a 2 digit format with NO prefix. Used for Mazaktool numbering. The value output comes from the Tool Orientation Mapping questionsin the post (5200through5208). The Tool Orientation Control parameters in aturning feature is used to define the output.API:string MILLTURN_GetToolOrientation()This returns the mapped stringinteger MILLTURN_GetToolOrientationIndex()This returns the orientation index value",
       "bobcadAPIs": [
         "MILLTURN_GetToolOrientationIndex()",
         "MILLTURN_GetToolOrientation()"
@@ -4917,8 +4912,8 @@
       ],
       "description": "Returns the tool number formatted with the offset canceled (T0100) The prefix isdefined on post question:1781API:string LATHE_GetSpecialToolNumber()string MILLTURN_GetSpecialToolNumber()",
       "bobcadAPIs": [
-        "MILLTURN_GetSpecialToolNumber()",
-        "LATHE_GetSpecialToolNumber()"
+        "LATHE_GetSpecialToolNumber()",
+        "MILLTURN_GetSpecialToolNumber()"
       ]
     },
     {
@@ -4929,8 +4924,8 @@
       ],
       "description": "Returns the tool number formatted with the offset canceled (T0100) The prefix isdefined on post question:1781API:string LATHE_GetFinishSpecialToolNumber()string MILLTURN_GetFinishSpecialToolNumber()",
       "bobcadAPIs": [
-        "LATHE_GetFinishSpecialToolNumber()",
-        "MILLTURN_GetFinishSpecialToolNumber()"
+        "MILLTURN_GetFinishSpecialToolNumber()",
+        "LATHE_GetFinishSpecialToolNumber()"
       ]
     },
     {
@@ -5007,8 +5002,8 @@
       ],
       "description": "Outputs the value of the radius of the milling tool with NO prefix.API:double MILL_GetToolRadius()double MILLTURN_GetToolRadius()",
       "bobcadAPIs": [
-        "MILLTURN_GetToolRadius()",
-        "MILL_GetToolRadius()"
+        "MILL_GetToolRadius()",
+        "MILLTURN_GetToolRadius()"
       ]
     },
     {
@@ -5017,10 +5012,10 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the string containing the tool name.\u00a0The names that are output are the tooltypes that can be seen in the tool crib.API:string MILL_GetToolName()string MILLTURN_GetToolName()",
+      "description": "Outputs the string containing the tool name.The names that are output are the tooltypes that can be seen in the tool crib.API:string MILL_GetToolName()string MILLTURN_GetToolName()",
       "bobcadAPIs": [
-        "MILLTURN_GetToolName()",
-        "MILL_GetToolName()"
+        "MILL_GetToolName()",
+        "MILLTURN_GetToolName()"
       ]
     },
     {
@@ -5053,7 +5048,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the current feed rate value with prefix.\u00a0The prefix is defined on post question:606API:double MILL_GetFeedRate()",
+      "description": "Outputs the current feed rate value with prefix.The prefix is defined on post question:606API:double MILL_GetFeedRate()",
       "bobcadAPIs": [
         "MILL_GetFeedRate()"
       ]
@@ -5065,7 +5060,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the current feed rate with prefix.\u00a0The prefix is defined on post question:606",
+      "description": "Outputs the current feed rate with prefix.The prefix is defined on post question:606",
       "bobcadAPIs": []
     },
     {
@@ -5092,7 +5087,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the feedrate from post block 51 with a value representing the Z axis(Plunge)feedrate.\u00a0The prefix output is defined on post question:705",
+      "description": "Outputs the feedrate from post block 51 with a value representing the Z axis(Plunge)feedrate.The prefix output is defined on post question:705",
       "bobcadAPIs": []
     },
     {
@@ -5101,7 +5096,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the string that defines Inverse Time feed mode on the machine.\u00a0The stringoutput is defined on post question:714",
+      "description": "Outputs the string that defines Inverse Time feed mode on the machine.The stringoutput is defined on post question:714",
       "bobcadAPIs": []
     },
     {
@@ -5110,7 +5105,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the string that defines Unit Per Minute feed mode on the machine.\u00a0The stringoutput is defined on post question:715",
+      "description": "Outputs the string that defines Unit Per Minute feed mode on the machine.The stringoutput is defined on post question:715",
       "bobcadAPIs": []
     },
     {
@@ -5118,7 +5113,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "feed_mode_uprOutputs the string that defines Unit Per Revolution feed mode on the machine.\u00a0The string output is defined on post question:729",
+      "description": "feed_mode_uprOutputs the string that defines Unit Per Revolution feed mode on the machine.The string output is defined on post question:729",
       "bobcadAPIs": []
     },
     {
@@ -5135,7 +5130,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the feed rate for Unit Per Revolution feed with prefix.\u00a0The prefix stringis defined based on operation type as follows:Mill Operations = String defined on post question:606Lathe Operation = String defined on post question:1707API:string MILLTURN_GetFeedRateUPR()",
+      "description": "Outputs the feed rate for Unit Per Revolution feed with prefix.The prefix stringis defined based on operation type as follows:Mill Operations = String defined on post question:606Lathe Operation = String defined on post question:1707API:string MILLTURN_GetFeedRateUPR()",
       "bobcadAPIs": [
         "MILLTURN_GetFeedRateUPR()"
       ]
@@ -5146,7 +5141,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the strings that will put the machine in Feed Per Minute or Inverse Timemode on the machine. The strings output depend on the current mode determined bythe operation.\u00a0The strings are defined as follows:Unit Per Minute = String defined on post question:715Inverse Time Feed = String defined on post question:714API:short MILL_Get_FeedMode()short MILLTURN_Get_FeedMode()0 = UPM1 = Inverse Feed",
+      "description": "Outputs the strings that will put the machine in Feed Per Minute or Inverse Timemode on the machine. The strings output depend on the current mode determined bythe operation.The strings are defined as follows:Unit Per Minute = String defined on post question:715Inverse Time Feed = String defined on post question:714API:short MILL_Get_FeedMode()short MILLTURN_Get_FeedMode()0 = UPM1 = Inverse Feed",
       "bobcadAPIs": [
         "MILLTURN_Get_FeedMode()",
         "MILL_Get_FeedMode()"
@@ -5158,7 +5153,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the current feedrate with prefix. The output depends on the active feed mode(Unit Per Minute or Unit Per Revolution).\u00a0The prefix output is defined as follows:Unit Per Minute = String defined on post question:1707Unit Per Revolution = String defined on post question:1706API:string LATHE_GetFinishFeedRate()",
+      "description": "Outputs the current feedrate with prefix. The output depends on the active feed mode(Unit Per Minute or Unit Per Revolution).The prefix output is defined as follows:Unit Per Minute = String defined on post question:1707Unit Per Revolution = String defined on post question:1706API:string LATHE_GetFinishFeedRate()",
       "bobcadAPIs": [
         "LATHE_GetFinishFeedRate()"
       ]
@@ -5169,7 +5164,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the current feedrate with prefix. The output depends on the active feed mode(Unit Per Minute or Unit Per Revolution).\u00a0The prefix output is defined as follows:Unit Per Minute = String defined on post question:1707Unit Per Revolution = String defined on post question:1706API:double LATHE_GetRoughFeedRate()",
+      "description": "Outputs the current feedrate with prefix. The output depends on the active feed mode(Unit Per Minute or Unit Per Revolution).The prefix output is defined as follows:Unit Per Minute = String defined on post question:1707Unit Per Revolution = String defined on post question:1706API:double LATHE_GetRoughFeedRate()",
       "bobcadAPIs": [
         "LATHE_GetRoughFeedRate()"
       ]
@@ -5180,7 +5175,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the string defining the mode for the tapping cycle.\u00a0The string output areas follows:Feed Per Minute = String defined on post question:715Feed Per Revolution = String defined on post question:729API:string LATHE_GetTapFeedMode()",
+      "description": "Outputs the string defining the mode for the tapping cycle.The string output areas follows:Feed Per Minute = String defined on post question:715Feed Per Revolution = String defined on post question:729API:string LATHE_GetTapFeedMode()",
       "bobcadAPIs": [
         "LATHE_GetTapFeedMode()"
       ]
@@ -5221,7 +5216,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the initial Z axis position of the stock with a prefix for the stock feedoperation.\u00a0The prefix is defined on post question:686",
+      "description": "Outputs the initial Z axis position of the stock with a prefix for the stock feedoperation.The prefix is defined on post question:686",
       "bobcadAPIs": []
     },
     {
@@ -5230,7 +5225,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the initial X axis position of the stock with a prefix for the stock feedoperation.\u00a0The prefix is defined on post question:684",
+      "description": "Outputs the initial X axis position of the stock with a prefix for the stock feedoperation.The prefix is defined on post question:684",
       "bobcadAPIs": []
     },
     {
@@ -5239,7 +5234,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the value with the prefix from the stock feed operation for the X axis startingposition.\u00a0The prefix is defined on post question:684",
+      "description": "Outputs the value with the prefix from the stock feed operation for the X axis startingposition.The prefix is defined on post question:684",
       "bobcadAPIs": []
     },
     {
@@ -5248,7 +5243,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the value with the prefix from the stock feed operation for the Z axis startingposition.\u00a0The prefix is defined on post question:686",
+      "description": "Outputs the value with the prefix from the stock feed operation for the Z axis startingposition.The prefix is defined on post question:686",
       "bobcadAPIs": []
     },
     {
@@ -5257,7 +5252,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the value with the prefix from the stock feed operation for the Z axis endingposition.\u00a0The prefix is defined on post question:686",
+      "description": "Outputs the value with the prefix from the stock feed operation for the Z axis endingposition.The prefix is defined on post question:686",
       "bobcadAPIs": []
     },
     {
@@ -5266,7 +5261,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the tool value entered into the stock feed operation for the tool with prefix.\u00a0The prefix is defined on post question:1781",
+      "description": "Outputs the tool value entered into the stock feed operation for the tool with prefix.The prefix is defined on post question:1781",
       "bobcadAPIs": []
     },
     {
@@ -5405,7 +5400,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the value with prefix used to define the 2nd point X position for the strokelimit.\u00a0The prefix is defined on post question:3574API:string MILLTURN_GetStrokeLimitI()",
+      "description": "Outputs the value with prefix used to define the 2nd point X position for the strokelimit.The prefix is defined on post question:3574API:string MILLTURN_GetStrokeLimitI()",
       "bobcadAPIs": [
         "MILLTURN_GetStrokeLimitI()"
       ]
@@ -5415,7 +5410,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the value with prefix used to define the 2nd point Y position for the strokelimit.\u00a0The prefix is defined on post question:3575API:string MILLTURN_GetStrokeLimitJ()",
+      "description": "Outputs the value with prefix used to define the 2nd point Y position for the strokelimit.The prefix is defined on post question:3575API:string MILLTURN_GetStrokeLimitJ()",
       "bobcadAPIs": [
         "MILLTURN_GetStrokeLimitJ()"
       ]
@@ -5425,7 +5420,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the value with prefix used to define the 2nd point Z position for the strokelimit.\u00a0The prefix is defined on post question:3576API:string MILLTURN_GetStrokeLimitK()",
+      "description": "Outputs the value with prefix used to define the 2nd point Z position for the strokelimit.The prefix is defined on post question:3576API:string MILLTURN_GetStrokeLimitK()",
       "bobcadAPIs": [
         "MILLTURN_GetStrokeLimitK()"
       ]
@@ -5455,7 +5450,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the string that cancels the torque limit mode on the machine.\u00a0The outputstring is defined on post question:3568API:string MILLTURN_GetTorqueLimitCancel()",
+      "description": "Outputs the string that cancels the torque limit mode on the machine.The outputstring is defined on post question:3568API:string MILLTURN_GetTorqueLimitCancel()",
       "bobcadAPIs": [
         "MILLTURN_GetTorqueLimitCancel()"
       ]
@@ -5467,7 +5462,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the string representing the compensation OFF command.\u00a0The output stringis defined on post question:639",
+      "description": "Outputs the string representing the compensation OFF command.The output stringis defined on post question:639",
       "bobcadAPIs": []
     },
     {
@@ -5476,7 +5471,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Forces the output of the cancel cutter compensation code.\u00a0The string is definedon post question:639",
+      "description": "Forces the output of the cancel cutter compensation code.The string is definedon post question:639",
       "bobcadAPIs": []
     },
     {
@@ -5488,8 +5483,8 @@
       ],
       "description": "Outputs the tool diameter offset value with prefix. The prefix string is definedon post question:678API:double MILL_GetToolDiamCompNumber()double MILL_GetToolDiamCompNumberWithAddAmount()",
       "bobcadAPIs": [
-        "MILL_GetToolDiamCompNumberWithAddAmount()",
-        "MILL_GetToolDiamCompNumber()"
+        "MILL_GetToolDiamCompNumber()",
+        "MILL_GetToolDiamCompNumberWithAddAmount()"
       ]
     },
     {
@@ -5529,7 +5524,7 @@
       "jobTypes": [
         "Mill Job"
       ],
-      "description": "Returns the diameter of the laser/plasma/waterjet tool for the current operationwith prefix.\u00a0The prefix is defined on post question:750API:double MILL_GetLPWCutterWidth()",
+      "description": "Returns the diameter of the laser/plasma/waterjet tool for the current operationwith prefix.The prefix is defined on post question:750API:double MILL_GetLPWCutterWidth()",
       "bobcadAPIs": [
         "MILL_GetLPWCutterWidth()"
       ]
@@ -5539,7 +5534,7 @@
       "jobTypes": [
         "Mill Job"
       ],
-      "description": "Returns the Z pierce height for laser/plasma/waterjet tools with prefix.\u00a0The prefixis defined on post question:751API:double MILL_GetLPWPierceHeight()",
+      "description": "Returns the Z pierce height for laser/plasma/waterjet tools with prefix.The prefixis defined on post question:751API:double MILL_GetLPWPierceHeight()",
       "bobcadAPIs": [
         "MILL_GetLPWPierceHeight()"
       ]
@@ -5687,7 +5682,7 @@
       "jobTypes": [
         "Mill Job"
       ],
-      "description": "Returns the Laser Pulse Frequency specified on the Tool page.\u00a0The prefix is definedon post question:767API:short MILL_GetLPWGetPulseFrequency()",
+      "description": "Returns the Laser Pulse Frequency specified on the Tool page.The prefix is definedon post question:767API:short MILL_GetLPWGetPulseFrequency()",
       "bobcadAPIs": [
         "MILL_GetLPWGetPulseFrequency()"
       ]
@@ -5735,7 +5730,7 @@
       "jobTypes": [
         "Mill Job"
       ],
-      "description": "Outputs the abrasive ON command.\u00a0The string is defined on post question:780",
+      "description": "Outputs the abrasive ON command.The string is defined on post question:780",
       "bobcadAPIs": []
     },
     {
@@ -5743,7 +5738,7 @@
       "jobTypes": [
         "Mill Job"
       ],
-      "description": "Outputs the abrasive OFF command.\u00a0The string is defined on post question:781",
+      "description": "Outputs the abrasive OFF command.The string is defined on post question:781",
       "bobcadAPIs": []
     },
     {
@@ -5767,7 +5762,7 @@
       "jobTypes": [
         "Mill Job"
       ],
-      "description": "Outputs the vacuum OFF code.\u00a0The string is defined on post question:783",
+      "description": "Outputs the vacuum OFF code.The string is defined on post question:783",
       "bobcadAPIs": []
     },
     {
@@ -5802,7 +5797,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the string to turn ON the RTCP command on the machine.\u00a0The string outputis defined on post question:720",
+      "description": "Outputs the string to turn ON the RTCP command on the machine.The string outputis defined on post question:720",
       "bobcadAPIs": []
     },
     {
@@ -5811,7 +5806,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the string to turn OFF the RTCP command on the machine.\u00a0The string outputis defined on post question:721",
+      "description": "Outputs the string to turn OFF the RTCP command on the machine.The string outputis defined on post question:721",
       "bobcadAPIs": []
     },
     {
@@ -5837,7 +5832,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the string for the active mode.C axis Enabled for Milling modeC axis Disabled for Turning modeThe string values output depends on the active Workpiece device.\u00a0The strings aredefined on post questions:10x18and10x19.API:string MILLTURN_GetMTMode()",
+      "description": "Outputs the string for the active mode.C axis Enabled for Milling modeC axis Disabled for Turning modeThe string values output depends on the active Workpiece device.The strings aredefined on post questions:10x18and10x19.API:string MILLTURN_GetMTMode()",
       "bobcadAPIs": [
         "MILLTURN_GetMTMode()"
       ]
@@ -5847,7 +5842,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Used to get the posting mode.\u00a0The posting mode is found on the posting page of MillTurn features.Return Values:0 = Longhand1 = Auto/Y Axis Mode2 = Polar Interpolation ModeAPI:short MILLTURN_GetPostingMode()",
+      "description": "Used to get the posting mode.The posting mode is found on the posting page of MillTurn features.Return Values:0 = Longhand1 = Auto/Y Axis Mode2 = Polar Interpolation ModeAPI:short MILLTURN_GetPostingMode()",
       "bobcadAPIs": [
         "MILLTURN_GetPostingMode()"
       ]
@@ -5951,7 +5946,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the code used to make the tailstock advance on the machine. The output stringis defined for each specific tailstock device\u00e2\u0080\u0099s post question:30x01.\u00a0The last numberin the variable name defines the tailstock device that should be output.API:string MILLTURN_GetTailstockAdvanceCodeOfDevice(int)",
+      "description": "Outputs the code used to make the tailstock advance on the machine. The output stringis defined for each specific tailstock device\u00e2\u0080\u0099s post question:30x01.The last numberin the variable name defines the tailstock device that should be output.API:string MILLTURN_GetTailstockAdvanceCodeOfDevice(int)",
       "bobcadAPIs": [
         "MILLTURN_GetTailstockAdvanceCodeOfDevice(int)"
       ]
@@ -5961,7 +5956,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the code used to make the tailstock retract on the machine. The output stringis defined for each specific tailstock device\u00e2\u0080\u0099s post question:30x01.\u00a0The last numberin the variable name defines the tailstock device that should be output.API:string MILLTURN_GetTailstockRetractCodeOfDevice(int)",
+      "description": "Outputs the code used to make the tailstock retract on the machine. The output stringis defined for each specific tailstock device\u00e2\u0080\u0099s post question:30x01.The last numberin the variable name defines the tailstock device that should be output.API:string MILLTURN_GetTailstockRetractCodeOfDevice(int)",
       "bobcadAPIs": [
         "MILLTURN_GetTailstockRetractCodeOfDevice(int)"
       ]
@@ -5971,7 +5966,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined tailstock device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 1 postblock. The last number in the variable name specifies the specific tailstock device to be called.",
+      "description": "This variable will call and process the code that is in the defined tailstock device\u00e2\u0080\u0099sCommand Block 1 postblock. The last number in the variable name specifies the specific tailstock device to be called.",
       "bobcadAPIs": []
     },
     {
@@ -5979,7 +5974,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined tailstock device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 2 postblock. The last number in the variable name specifies the specific tailstock device to be called.",
+      "description": "This variable will call and process the code that is in the defined tailstock device\u00e2\u0080\u0099sCommand Block 2 postblock. The last number in the variable name specifies the specific tailstock device to be called.",
       "bobcadAPIs": []
     },
     {
@@ -5987,7 +5982,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined tailstock device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 3 postblock. The last number in the variable name specifies the specific tailstock device to be called.",
+      "description": "This variable will call and process the code that is in the defined tailstock device\u00e2\u0080\u0099sCommand Block 3 postblock. The last number in the variable name specifies the specific tailstock device to be called.",
       "bobcadAPIs": []
     },
     {
@@ -5995,7 +5990,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined tailstock device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 4 postblock. The last number in the variable name specifies the specific tailstock device to be called.",
+      "description": "This variable will call and process the code that is in the defined tailstock device\u00e2\u0080\u0099sCommand Block 4 postblock. The last number in the variable name specifies the specific tailstock device to be called.",
       "bobcadAPIs": []
     },
     {
@@ -6003,7 +5998,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined tailstock device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 5 postblock. The last number in the variable name specifies the specific tailstock device to be called.",
+      "description": "This variable will call and process the code that is in the defined tailstock device\u00e2\u0080\u0099sCommand Block 5 postblock. The last number in the variable name specifies the specific tailstock device to be called.",
       "bobcadAPIs": []
     },
     {
@@ -6011,7 +6006,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the code used to open the stead rest on the machine.\u00a0The output string isdefined on the active stead rest\u00e2\u0080\u0099s post question:40x01API:string MILLTURN_GetSteadRestOpenCode()",
+      "description": "Outputs the code used to open the stead rest on the machine.The output string isdefined on the active stead rest\u00e2\u0080\u0099s post question:40x01API:string MILLTURN_GetSteadRestOpenCode()",
       "bobcadAPIs": [
         "MILLTURN_GetSteadRestOpenCode()"
       ]
@@ -6021,7 +6016,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the code used to close the stead rest on the machine.\u00a0The output stringis defined on the active stead rest\u00e2\u0080\u0099s post question:40x02API:string MILLTURN_GetSteadRestCloseCode()",
+      "description": "Outputs the code used to close the stead rest on the machine.The output stringis defined on the active stead rest\u00e2\u0080\u0099s post question:40x02API:string MILLTURN_GetSteadRestCloseCode()",
       "bobcadAPIs": [
         "MILLTURN_GetSteadRestCloseCode()"
       ]
@@ -6031,10 +6026,10 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the code used to open the stead rest on the machine for a specific steadrest device.\u00a0The output string is defined on the defined stead rest\u00e2\u0080\u0099s post question:40x01API:string MILLTURN_GetSteadRestOpenCode1()throughstring MILLTURN_GetSteadyRestOpenCode10()",
+      "description": "Outputs the code used to open the stead rest on the machine for a specific steadrest device.The output string is defined on the defined stead rest\u00e2\u0080\u0099s post question:40x01API:string MILLTURN_GetSteadRestOpenCode1()throughstring MILLTURN_GetSteadyRestOpenCode10()",
       "bobcadAPIs": [
-        "MILLTURN_GetSteadRestOpenCode1()",
-        "MILLTURN_GetSteadyRestOpenCode10()"
+        "MILLTURN_GetSteadyRestOpenCode10()",
+        "MILLTURN_GetSteadRestOpenCode1()"
       ]
     },
     {
@@ -6042,7 +6037,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the code used to close the stead rest on the machine for a specific steadrest device.\u00a0The output string is defined on the defined stead rest\u00e2\u0080\u0099s post question:40x02API:string MILLTURN_GetSteadRestCloseCode1()throughstring MILLTURN_GetSteadyRestCloseCode10()",
+      "description": "Outputs the code used to close the stead rest on the machine for a specific steadrest device.The output string is defined on the defined stead rest\u00e2\u0080\u0099s post question:40x02API:string MILLTURN_GetSteadRestCloseCode1()throughstring MILLTURN_GetSteadyRestCloseCode10()",
       "bobcadAPIs": [
         "MILLTURN_GetSteadRestCloseCode1()",
         "MILLTURN_GetSteadyRestCloseCode10()"
@@ -6053,7 +6048,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined steady rest device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 1 postblock. The last number in the variable name specifies the specific steady rest device to be called.",
+      "description": "This variable will call and process the code that is in the defined steady rest device\u00e2\u0080\u0099sCommand Block 1 postblock. The last number in the variable name specifies the specific steady rest device to be called.",
       "bobcadAPIs": []
     },
     {
@@ -6061,7 +6056,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined steady rest device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 2 postblock. The last number in the variable name specifies the specific steady rest device to be called.",
+      "description": "This variable will call and process the code that is in the defined steady rest device\u00e2\u0080\u0099sCommand Block 2 postblock. The last number in the variable name specifies the specific steady rest device to be called.",
       "bobcadAPIs": []
     },
     {
@@ -6069,7 +6064,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined steady rest device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 3 postblock. The last number in the variable name specifies the specific steady rest device to be called.",
+      "description": "This variable will call and process the code that is in the defined steady rest device\u00e2\u0080\u0099sCommand Block 3 postblock. The last number in the variable name specifies the specific steady rest device to be called.",
       "bobcadAPIs": []
     },
     {
@@ -6077,7 +6072,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined steady rest device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 4 postblock. The last number in the variable name specifies the specific steady rest device to be called.",
+      "description": "This variable will call and process the code that is in the defined steady rest device\u00e2\u0080\u0099sCommand Block 4 postblock. The last number in the variable name specifies the specific steady rest device to be called.",
       "bobcadAPIs": []
     },
     {
@@ -6085,7 +6080,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined steady rest device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 5 postblock. The last number in the variable name specifies the specific steady rest device to be called.",
+      "description": "This variable will call and process the code that is in the defined steady rest device\u00e2\u0080\u0099sCommand Block 5 postblock. The last number in the variable name specifies the specific steady rest device to be called.",
       "bobcadAPIs": []
     },
     {
@@ -6115,8 +6110,8 @@
       ],
       "description": "Outputs the command from the define parts catcher device to advance the parts catcher on the machine. The output string is defined on each parts catcher device\u00e2\u0080\u0099s post question:50x01API:string MILLTURN_GetPartsCatcherAdvanceCode_1()throughstring MILLTURN_GetPartsCatcherAdvanceCode_10()",
       "bobcadAPIs": [
-        "MILLTURN_GetPartsCatcherAdvanceCode_1()",
-        "MILLTURN_GetPartsCatcherAdvanceCode_10()"
+        "MILLTURN_GetPartsCatcherAdvanceCode_10()",
+        "MILLTURN_GetPartsCatcherAdvanceCode_1()"
       ]
     },
     {
@@ -6135,7 +6130,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined parts catcherdevice\u00e2\u0080\u0099s\u00a0\u00a0Command Block 1 postblock. The last number in the variable name specifiesthe specific parts catcher device to be called.",
+      "description": "This variable will call and process the code that is in the defined parts catcherdevice\u00e2\u0080\u0099sCommand Block 1 postblock. The last number in the variable name specifiesthe specific parts catcher device to be called.",
       "bobcadAPIs": []
     },
     {
@@ -6143,7 +6138,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined parts catcherdevice\u00e2\u0080\u0099s\u00a0\u00a0Command Block 2 postblock. The last number in the variable name specifiesthe specific parts catcher device to be called.",
+      "description": "This variable will call and process the code that is in the defined parts catcherdevice\u00e2\u0080\u0099sCommand Block 2 postblock. The last number in the variable name specifiesthe specific parts catcher device to be called.",
       "bobcadAPIs": []
     },
     {
@@ -6151,7 +6146,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined parts catcherdevice\u00e2\u0080\u0099s\u00a0\u00a0Command Block 3 postblock. The last number in the variable name specifiesthe specific parts catcher device to be called.",
+      "description": "This variable will call and process the code that is in the defined parts catcherdevice\u00e2\u0080\u0099sCommand Block 3 postblock. The last number in the variable name specifiesthe specific parts catcher device to be called.",
       "bobcadAPIs": []
     },
     {
@@ -6159,7 +6154,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined parts catcherdevice\u00e2\u0080\u0099s\u00a0\u00a0Command Block 4 postblock. The last number in the variable name specifiesthe specific parts catcher device to be called.",
+      "description": "This variable will call and process the code that is in the defined parts catcherdevice\u00e2\u0080\u0099sCommand Block 4 postblock. The last number in the variable name specifiesthe specific parts catcher device to be called.",
       "bobcadAPIs": []
     },
     {
@@ -6167,7 +6162,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined parts catcherdevice\u00e2\u0080\u0099s\u00a0\u00a0Command Block 5 postblock. The last number in the variable name specifiesthe specific parts catcher device to be called.",
+      "description": "This variable will call and process the code that is in the defined parts catcherdevice\u00e2\u0080\u0099sCommand Block 5 postblock. The last number in the variable name specifiesthe specific parts catcher device to be called.",
       "bobcadAPIs": []
     },
     {
@@ -6175,7 +6170,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the active workpiece device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 1 postblock.",
+      "description": "This variable will call and process the code that is in the active workpiece device\u00e2\u0080\u0099sCommand Block 1 postblock.",
       "bobcadAPIs": []
     },
     {
@@ -6183,7 +6178,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the active workpiece device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 2 postblock.",
+      "description": "This variable will call and process the code that is in the active workpiece device\u00e2\u0080\u0099sCommand Block 2 postblock.",
       "bobcadAPIs": []
     },
     {
@@ -6191,7 +6186,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the active workpiece device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 3 postblock.",
+      "description": "This variable will call and process the code that is in the active workpiece device\u00e2\u0080\u0099sCommand Block 3 postblock.",
       "bobcadAPIs": []
     },
     {
@@ -6199,7 +6194,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the active workpiece device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 4 postblock.",
+      "description": "This variable will call and process the code that is in the active workpiece device\u00e2\u0080\u0099sCommand Block 4 postblock.",
       "bobcadAPIs": []
     },
     {
@@ -6207,7 +6202,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the active workpiece device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 5 postblock.",
+      "description": "This variable will call and process the code that is in the active workpiece device\u00e2\u0080\u0099sCommand Block 5 postblock.",
       "bobcadAPIs": []
     },
     {
@@ -6215,7 +6210,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the active workpiece device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 6 postblock.",
+      "description": "This variable will call and process the code that is in the active workpiece device\u00e2\u0080\u0099sCommand Block 6 postblock.",
       "bobcadAPIs": []
     },
     {
@@ -6223,7 +6218,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the active workpiece device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 7 postblock.",
+      "description": "This variable will call and process the code that is in the active workpiece device\u00e2\u0080\u0099sCommand Block 7 postblock.",
       "bobcadAPIs": []
     },
     {
@@ -6231,7 +6226,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the active workpiece device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 8 postblock.",
+      "description": "This variable will call and process the code that is in the active workpiece device\u00e2\u0080\u0099sCommand Block 8 postblock.",
       "bobcadAPIs": []
     },
     {
@@ -6239,7 +6234,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the active workpiece device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 9 postblock.",
+      "description": "This variable will call and process the code that is in the active workpiece device\u00e2\u0080\u0099sCommand Block 9 postblock.",
       "bobcadAPIs": []
     },
     {
@@ -6247,7 +6242,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined workpiece device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 1 postblock. The last number in the variable name specifies the specific workpiece to be called.",
+      "description": "This variable will call and process the code that is in the defined workpiece device\u00e2\u0080\u0099sCommand Block 1 postblock. The last number in the variable name specifies the specific workpiece to be called.",
       "bobcadAPIs": []
     },
     {
@@ -6255,7 +6250,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined workpiece device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 2 postblock. The last number in the variable name specifies the specific workpiece to be called.",
+      "description": "This variable will call and process the code that is in the defined workpiece device\u00e2\u0080\u0099sCommand Block 2 postblock. The last number in the variable name specifies the specific workpiece to be called.",
       "bobcadAPIs": []
     },
     {
@@ -6263,7 +6258,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined workpiece device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 3 postblock. The last number in the variable name specifies the specific workpiece to be called.",
+      "description": "This variable will call and process the code that is in the defined workpiece device\u00e2\u0080\u0099sCommand Block 3 postblock. The last number in the variable name specifies the specific workpiece to be called.",
       "bobcadAPIs": []
     },
     {
@@ -6271,7 +6266,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined workpiece device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 4 postblock. The last number in the variable name specifies the specific workpiece to be called.",
+      "description": "This variable will call and process the code that is in the defined workpiece device\u00e2\u0080\u0099sCommand Block 4 postblock. The last number in the variable name specifies the specific workpiece to be called.",
       "bobcadAPIs": []
     },
     {
@@ -6279,7 +6274,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined workpiece device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 5 postblock. The last number in the variable name specifies the specific workpiece to be called.",
+      "description": "This variable will call and process the code that is in the defined workpiece device\u00e2\u0080\u0099sCommand Block 5 postblock. The last number in the variable name specifies the specific workpiece to be called.",
       "bobcadAPIs": []
     },
     {
@@ -6287,7 +6282,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined workpiece device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 6 postblock. The last number in the variable name specifies the specific workpiece to be called.",
+      "description": "This variable will call and process the code that is in the defined workpiece device\u00e2\u0080\u0099sCommand Block 6 postblock. The last number in the variable name specifies the specific workpiece to be called.",
       "bobcadAPIs": []
     },
     {
@@ -6295,7 +6290,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined workpiece device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 7 postblock. The last number in the variable name specifies the specific workpiece to be called.",
+      "description": "This variable will call and process the code that is in the defined workpiece device\u00e2\u0080\u0099sCommand Block 7 postblock. The last number in the variable name specifies the specific workpiece to be called.",
       "bobcadAPIs": []
     },
     {
@@ -6303,7 +6298,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined workpiece device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 8 postblock. The last number in the variable name specifies the specific workpiece to be called.",
+      "description": "This variable will call and process the code that is in the defined workpiece device\u00e2\u0080\u0099sCommand Block 8 postblock. The last number in the variable name specifies the specific workpiece to be called.",
       "bobcadAPIs": []
     },
     {
@@ -6311,7 +6306,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined workpiece device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 9 postblock. The last number in the variable name specifies the specific workpiece to be called.",
+      "description": "This variable will call and process the code that is in the defined workpiece device\u00e2\u0080\u0099sCommand Block 9 postblock. The last number in the variable name specifies the specific workpiece to be called.",
       "bobcadAPIs": []
     },
     {
@@ -6339,7 +6334,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the enable code from the active workpiece device.\u00a0The string output is defined in each workpiece on post question:10x00API:string MILLTURN_GetWorkpieceDeviceEnable()",
+      "description": "Outputs the enable code from the active workpiece device.The string output is defined in each workpiece on post question:10x00API:string MILLTURN_GetWorkpieceDeviceEnable()",
       "bobcadAPIs": [
         "MILLTURN_GetWorkpieceDeviceEnable()"
       ]
@@ -6349,7 +6344,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the disable code from the active workpiece device.\u00a0The string output isdefined in each workpiece on post question:10x01API:string MILLTURN_GetWorkpieceDeviceDisable()",
+      "description": "Outputs the disable code from the active workpiece device.The string output isdefined in each workpiece on post question:10x01API:string MILLTURN_GetWorkpieceDeviceDisable()",
       "bobcadAPIs": [
         "MILLTURN_GetWorkpieceDeviceDisable()"
       ]
@@ -6389,7 +6384,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the code to enable spindle syncing on the machine.\u00a0The output string isdefined on the active workpiece\u00e2\u0080\u0099s post question:10x36.API:string MILLTURN_GetSpindleSync()",
+      "description": "Outputs the code to enable spindle syncing on the machine.The output string isdefined on the active workpiece\u00e2\u0080\u0099s post question:10x36.API:string MILLTURN_GetSpindleSync()",
       "bobcadAPIs": [
         "MILLTURN_GetSpindleSync()"
       ]
@@ -6399,7 +6394,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the code to disable spindle syncing on the machine.\u00a0The output string isdefined on the active workpiece\u00e2\u0080\u0099s post question:10x37.API:string MILLTURN_GetSpindleUnsync()",
+      "description": "Outputs the code to disable spindle syncing on the machine.The output string isdefined on the active workpiece\u00e2\u0080\u0099s post question:10x37.API:string MILLTURN_GetSpindleUnsync()",
       "bobcadAPIs": [
         "MILLTURN_GetSpindleUnsync()"
       ]
@@ -6409,7 +6404,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the string from the active workpiece\u00e2\u0080\u0099s block to enable the C axis MillingMode on the machine.\u00a0The output string is defined on each workpiece\u00e2\u0080\u0099s post question:10x18.API:string MILLTURN_GetCAxisEnable()",
+      "description": "Outputs the string from the active workpiece\u00e2\u0080\u0099s block to enable the C axis MillingMode on the machine.The output string is defined on each workpiece\u00e2\u0080\u0099s post question:10x18.API:string MILLTURN_GetCAxisEnable()",
       "bobcadAPIs": [
         "MILLTURN_GetCAxisEnable()"
       ]
@@ -6419,7 +6414,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the string from the active workpiece\u00e2\u0080\u0099s block to disable the C axis MillingMode on the machine.\u00a0The output string is defined on each workpiece\u00e2\u0080\u0099s post question:10x19.API:string MILLTURN_GetCAxisDisable()",
+      "description": "Outputs the string from the active workpiece\u00e2\u0080\u0099s block to disable the C axis MillingMode on the machine.The output string is defined on each workpiece\u00e2\u0080\u0099s post question:10x19.API:string MILLTURN_GetCAxisDisable()",
       "bobcadAPIs": [
         "MILLTURN_GetCAxisDisable()"
       ]
@@ -6429,7 +6424,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the active tool device\u00e2\u0080\u0099s\u00a0\u00a0CommandBlock 1 postblock.",
+      "description": "This variable will call and process the code that is in the active tool device\u00e2\u0080\u0099sCommandBlock 1 postblock.",
       "bobcadAPIs": []
     },
     {
@@ -6437,7 +6432,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the active tool device\u00e2\u0080\u0099s\u00a0\u00a0CommandBlock 2 postblock.",
+      "description": "This variable will call and process the code that is in the active tool device\u00e2\u0080\u0099sCommandBlock 2 postblock.",
       "bobcadAPIs": []
     },
     {
@@ -6445,7 +6440,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the active tool device\u00e2\u0080\u0099s\u00a0\u00a0CommandBlock 3 postblock.",
+      "description": "This variable will call and process the code that is in the active tool device\u00e2\u0080\u0099sCommandBlock 3 postblock.",
       "bobcadAPIs": []
     },
     {
@@ -6453,7 +6448,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the active tool device\u00e2\u0080\u0099s\u00a0\u00a0CommandBlock 4 postblock.",
+      "description": "This variable will call and process the code that is in the active tool device\u00e2\u0080\u0099sCommandBlock 4 postblock.",
       "bobcadAPIs": []
     },
     {
@@ -6461,7 +6456,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the active tool device\u00e2\u0080\u0099s\u00a0\u00a0CommandBlock 5 postblock.",
+      "description": "This variable will call and process the code that is in the active tool device\u00e2\u0080\u0099sCommandBlock 5 postblock.",
       "bobcadAPIs": []
     },
     {
@@ -6469,7 +6464,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the active tool device\u00e2\u0080\u0099s\u00a0\u00a0CommandBlock 6 postblock.",
+      "description": "This variable will call and process the code that is in the active tool device\u00e2\u0080\u0099sCommandBlock 6 postblock.",
       "bobcadAPIs": []
     },
     {
@@ -6477,7 +6472,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the active tool device\u00e2\u0080\u0099s\u00a0\u00a0CommandBlock 7 postblock.",
+      "description": "This variable will call and process the code that is in the active tool device\u00e2\u0080\u0099sCommandBlock 7 postblock.",
       "bobcadAPIs": []
     },
     {
@@ -6485,7 +6480,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the active tool device\u00e2\u0080\u0099s\u00a0\u00a0CommandBlock 8 postblock.",
+      "description": "This variable will call and process the code that is in the active tool device\u00e2\u0080\u0099sCommandBlock 8 postblock.",
       "bobcadAPIs": []
     },
     {
@@ -6493,7 +6488,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the active tool device\u00e2\u0080\u0099s\u00a0\u00a0CommandBlock 9 postblock.",
+      "description": "This variable will call and process the code that is in the active tool device\u00e2\u0080\u0099sCommandBlock 9 postblock.",
       "bobcadAPIs": []
     },
     {
@@ -6501,7 +6496,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined tool device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 1 postblock. The last number in the variable name specifies the specific tool device to be called.",
+      "description": "This variable will call and process the code that is in the defined tool device\u00e2\u0080\u0099sCommand Block 1 postblock. The last number in the variable name specifies the specific tool device to be called.",
       "bobcadAPIs": []
     },
     {
@@ -6509,7 +6504,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined tool device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 2 postblock. The last number in the variable name specifies the specific tool device to be called.",
+      "description": "This variable will call and process the code that is in the defined tool device\u00e2\u0080\u0099sCommand Block 2 postblock. The last number in the variable name specifies the specific tool device to be called.",
       "bobcadAPIs": []
     },
     {
@@ -6517,7 +6512,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined tool device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 3 postblock. The last number in the variable name specifies the specific tool device to be called.",
+      "description": "This variable will call and process the code that is in the defined tool device\u00e2\u0080\u0099sCommand Block 3 postblock. The last number in the variable name specifies the specific tool device to be called.",
       "bobcadAPIs": []
     },
     {
@@ -6525,7 +6520,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined tool device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 4 postblock. The last number in the variable name specifies the specific tool device to be called.",
+      "description": "This variable will call and process the code that is in the defined tool device\u00e2\u0080\u0099sCommand Block 4 postblock. The last number in the variable name specifies the specific tool device to be called.",
       "bobcadAPIs": []
     },
     {
@@ -6533,7 +6528,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined tool device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 5 postblock. The last number in the variable name specifies the specific tool device to be called.",
+      "description": "This variable will call and process the code that is in the defined tool device\u00e2\u0080\u0099sCommand Block 5 postblock. The last number in the variable name specifies the specific tool device to be called.",
       "bobcadAPIs": []
     },
     {
@@ -6541,7 +6536,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined tool device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 6 postblock. The last number in the variable name specifies the specific tool device to be called.",
+      "description": "This variable will call and process the code that is in the defined tool device\u00e2\u0080\u0099sCommand Block 6 postblock. The last number in the variable name specifies the specific tool device to be called.",
       "bobcadAPIs": []
     },
     {
@@ -6549,7 +6544,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined tool device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 7 postblock. The last number in the variable name specifies the specific tool device to be called.",
+      "description": "This variable will call and process the code that is in the defined tool device\u00e2\u0080\u0099sCommand Block 7 postblock. The last number in the variable name specifies the specific tool device to be called.",
       "bobcadAPIs": []
     },
     {
@@ -6557,7 +6552,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined tool device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 8 postblock. The last number in the variable name specifies the specific tool device to be called.",
+      "description": "This variable will call and process the code that is in the defined tool device\u00e2\u0080\u0099sCommand Block 8 postblock. The last number in the variable name specifies the specific tool device to be called.",
       "bobcadAPIs": []
     },
     {
@@ -6565,7 +6560,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "This variable will call and process the code that is in the defined tool device\u00e2\u0080\u0099s\u00a0\u00a0Command Block 9 postblock. The last number in the variable name specifies the specific tool device to be called.",
+      "description": "This variable will call and process the code that is in the defined tool device\u00e2\u0080\u0099sCommand Block 9 postblock. The last number in the variable name specifies the specific tool device to be called.",
       "bobcadAPIs": []
     },
     {
@@ -6573,7 +6568,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the code to index in the forward direction on the machine.\u00a0The output stringis defined on each tool device\u00e2\u0080\u0099s post question:20x18API:string MILLTURN_GetToolDeviceRotaryIndexForwardCode()",
+      "description": "Outputs the code to index in the forward direction on the machine.The output stringis defined on each tool device\u00e2\u0080\u0099s post question:20x18API:string MILLTURN_GetToolDeviceRotaryIndexForwardCode()",
       "bobcadAPIs": [
         "MILLTURN_GetToolDeviceRotaryIndexForwardCode()"
       ]
@@ -6583,7 +6578,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the code to index in the reverse direction on the machine.\u00a0The output stringis defined on each tool device\u00e2\u0080\u0099s post question:20x19API:string MILLTURN_GetToolDeviceRotaryIndexReverseCode()",
+      "description": "Outputs the code to index in the reverse direction on the machine.The output stringis defined on each tool device\u00e2\u0080\u0099s post question:20x19API:string MILLTURN_GetToolDeviceRotaryIndexReverseCode()",
       "bobcadAPIs": [
         "MILLTURN_GetToolDeviceRotaryIndexReverseCode()"
       ]
@@ -6593,7 +6588,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the code to enable the active tool device.\u00a0The output string is definedon each tool device\u00e2\u0080\u0099s post question:20x00API:string MILLTURN_GetToolDeviceEnable()",
+      "description": "Outputs the code to enable the active tool device.The output string is definedon each tool device\u00e2\u0080\u0099s post question:20x00API:string MILLTURN_GetToolDeviceEnable()",
       "bobcadAPIs": [
         "MILLTURN_GetToolDeviceEnable()"
       ]
@@ -6603,7 +6598,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the code to disable the active tool device.\u00a0The output string is definedon each tool device\u00e2\u0080\u0099s post question:20x01API:string MILLTURN_GetToolDeviceDisable()",
+      "description": "Outputs the code to disable the active tool device.The output string is definedon each tool device\u00e2\u0080\u0099s post question:20x01API:string MILLTURN_GetToolDeviceDisable()",
       "bobcadAPIs": [
         "MILLTURN_GetToolDeviceDisable()"
       ]
@@ -6633,7 +6628,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the position of the spindle orientation with prefix for the active tool device.The value will come from the Tool Angle Control dialog found in each turning operation.\u00a0The prefix is defined on each tool device\u00e2\u0080\u0099s post question:20x06API:string MILLTURN_GetSpindleOrientPosition()",
+      "description": "Outputs the position of the spindle orientation with prefix for the active tool device.The value will come from the Tool Angle Control dialog found in each turning operation.The prefix is defined on each tool device\u00e2\u0080\u0099s post question:20x06API:string MILLTURN_GetSpindleOrientPosition()",
       "bobcadAPIs": [
         "MILLTURN_GetSpindleOrientPosition()"
       ]
@@ -6651,7 +6646,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the command to enable a workzone on the machine. The output string is defined for each zone post block and the active zone determines the output.\u00a0The zone 1 enable block is defined on post question:6011.API:string MILLTURN_GetZoneDeviceEnable()",
+      "description": "Outputs the command to enable a workzone on the machine. The output string is defined for each zone post block and the active zone determines the output.The zone 1 enable block is defined on post question:6011.API:string MILLTURN_GetZoneDeviceEnable()",
       "bobcadAPIs": [
         "MILLTURN_GetZoneDeviceEnable()"
       ]
@@ -6661,7 +6656,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the command to disable a workzone on the machine.\u00a0The output string is defined for each zone post block and the active zone determines the output.\u00a0The zone 1 disable block is defined on post question:6012.API:string MILLTURN_GetZoneDeviceDisable()",
+      "description": "Outputs the command to disable a workzone on the machine.The output string is defined for each zone post block and the active zone determines the output.The zone 1 disable block is defined on post question:6012.API:string MILLTURN_GetZoneDeviceDisable()",
       "bobcadAPIs": [
         "MILLTURN_GetZoneDeviceDisable()"
       ]
@@ -6671,7 +6666,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the command to enable a specific workzone on the machine.\u00a0The output string is defined for each zone post block and the specified zone determines the output.\u00a0The zone 1 enable block is defined on post question:6011. The number at the end of the variable name defines the specific zone to output.API:string MILLTURN_GetZoneDeviceEnableOfDevice(int)",
+      "description": "Outputs the command to enable a specific workzone on the machine.The output string is defined for each zone post block and the specified zone determines the output.The zone 1 enable block is defined on post question:6011. The number at the end of the variable name defines the specific zone to output.API:string MILLTURN_GetZoneDeviceEnableOfDevice(int)",
       "bobcadAPIs": [
         "MILLTURN_GetZoneDeviceEnableOfDevice(int)"
       ]
@@ -6681,7 +6676,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the command to disable a specific workzone on the machine.\u00a0The output string is defined for each zone post block and the specified zone determines the output.\u00a0The zone 1 disable block is defined on post question:6012. The number at the end of the variable name defines the specific zone to output.API:string MILLTURN_GetZoneDeviceDisableOfDevice(int)",
+      "description": "Outputs the command to disable a specific workzone on the machine.The output string is defined for each zone post block and the specified zone determines the output.The zone 1 disable block is defined on post question:6012. The number at the end of the variable name defines the specific zone to output.API:string MILLTURN_GetZoneDeviceDisableOfDevice(int)",
       "bobcadAPIs": [
         "MILLTURN_GetZoneDeviceDisableOfDevice(int)"
       ]
@@ -6815,7 +6810,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the lathe tool home number needed for the predator header.\u00a0The string prefix comes from post question:1843",
+      "description": "Outputs the lathe tool home number needed for the predator header.The string prefix comes from post question:1843",
       "bobcadAPIs": []
     },
     {
@@ -6931,7 +6926,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the string used to put the machine in offset value set mode.\u00a0The stringoutput is defined on post question:3564API:string MILLTURN_GetOffsetValueSet()",
+      "description": "Outputs the string used to put the machine in offset value set mode.The stringoutput is defined on post question:3564API:string MILLTURN_GetOffsetValueSet()",
       "bobcadAPIs": [
         "MILLTURN_GetOffsetValueSet()"
       ]
@@ -6941,7 +6936,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the string used to cancel the machine offset value set mode.\u00a0The stringoutput is defined on post question:3565API:string MILLTURN_GetOffsetValueSetCancel()",
+      "description": "Outputs the string used to cancel the machine offset value set mode.The stringoutput is defined on post question:3565API:string MILLTURN_GetOffsetValueSetCancel()",
       "bobcadAPIs": [
         "MILLTURN_GetOffsetValueSetCancel()"
       ]
@@ -6951,7 +6946,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the code that is used to switch the machine to Machine Coordinates.\u00a0Theoutput string is defined on post question:652Commonly set to G53API:string MILLTURN_GetMachineCoordinateCode()",
+      "description": "Outputs the code that is used to switch the machine to Machine Coordinates.Theoutput string is defined on post question:652Commonly set to G53API:string MILLTURN_GetMachineCoordinateCode()",
       "bobcadAPIs": [
         "MILLTURN_GetMachineCoordinateCode()"
       ]
@@ -6969,7 +6964,7 @@
       "jobTypes": [
         "Mill Turn Job"
       ],
-      "description": "Outputs the code that is used to switch the machine to coordinates relative to thehome position.\u00a0The output string is defined on post question:653Commonly set to G28API:string MILLTURN_GetMachineCoordinateCode()",
+      "description": "Outputs the code that is used to switch the machine to coordinates relative to thehome position.The output string is defined on post question:653Commonly set to G28API:string MILLTURN_GetMachineCoordinateCode()",
       "bobcadAPIs": [
         "MILLTURN_GetMachineCoordinateCode()"
       ]
@@ -6989,8 +6984,10 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs themajor Diametervalue of the thread type used in tapping operation, only using the API GetDoubleOfPostVariable()NOTE-\u00a0 This variable cannot be directly used inside a post processor since its only a variable that is a valid input to the GetDoubleOfPostVariable() API function",
-      "bobcadAPIs": []
+      "description": "Outputs themajor Diametervalue of the thread type used in tapping operation, only using the API GetDoubleOfPostVariable()NOTE- This variable cannot be directly used inside a post processor since its only a variable that is a valid input to the GetDoubleOfPostVariable() API function",
+      "bobcadAPIs": [
+        "GetDoubleOfPostVariable()"
+      ]
     },
     {
       "postVariableName": "length_offset",
@@ -6999,8 +6996,10 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs theminor Diametervalue of the thread type used in tapping operation, only using the API GetDoubleOfPostVariable()NOTE-\u00a0 This variable cannot be directly used inside a post processor since its only a variable that is a valid input to the GetDoubleOfPostVariable() API function",
-      "bobcadAPIs": []
+      "description": "Outputs theminor Diametervalue of the thread type used in tapping operation, only using the API GetDoubleOfPostVariable()NOTE- This variable cannot be directly used inside a post processor since its only a variable that is a valid input to the GetDoubleOfPostVariable() API function",
+      "bobcadAPIs": [
+        "GetDoubleOfPostVariable()"
+      ]
     },
     {
       "postVariableName": "length_offset",
@@ -7009,8 +7008,10 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs thepitchvalue of the thread type used in tapping operation, only using the API GetDoubleOfPostVariable()NOTE-\u00a0 This variable cannot be directly used inside a post processor since its only a variable that is a valid input to the GetDoubleOfPostVariable() API function",
-      "bobcadAPIs": []
+      "description": "Outputs thepitchvalue of the thread type used in tapping operation, only using the API GetDoubleOfPostVariable()NOTE- This variable cannot be directly used inside a post processor since its only a variable that is a valid input to the GetDoubleOfPostVariable() API function",
+      "bobcadAPIs": [
+        "GetDoubleOfPostVariable()"
+      ]
     },
     {
       "postVariableName": "length_offset",
@@ -7019,8 +7020,10 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs thethread anglevalue of the thread type used in tapping operation, only using the API GetDoubleOfPostVariable()NOTE-\u00a0 This variable cannot be directly used inside a post processor since its only a variable that is a valid input to the GetDoubleOfPostVariable() API function",
-      "bobcadAPIs": []
+      "description": "Outputs thethread anglevalue of the thread type used in tapping operation, only using the API GetDoubleOfPostVariable()NOTE- This variable cannot be directly used inside a post processor since its only a variable that is a valid input to the GetDoubleOfPostVariable() API function",
+      "bobcadAPIs": [
+        "GetDoubleOfPostVariable()"
+      ]
     },
     {
       "postVariableName": "length_offset",
@@ -7029,8 +7032,10 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs thetaper anglevalue of the thread type used in tapping operation, only using the API GetDoubleOfPostVariable()NOTE-\u00a0 This variable cannot be directly used inside a post processor since its only a variable that is a valid input to the GetDoubleOfPostVariable() API function",
-      "bobcadAPIs": []
+      "description": "Outputs thetaper anglevalue of the thread type used in tapping operation, only using the API GetDoubleOfPostVariable()NOTE- This variable cannot be directly used inside a post processor since its only a variable that is a valid input to the GetDoubleOfPostVariable() API function",
+      "bobcadAPIs": [
+        "GetDoubleOfPostVariable()"
+      ]
     },
     {
       "postVariableName": "length_offset",
@@ -7039,8 +7044,10 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the cutting hole sizevalue for the thread type used in tapping operation, only using the API GetDoubleOfPostVariable()NOTE-\u00a0 This variable cannot be directly used inside a post processor since its only a variable that is a valid input to the GetDoubleOfPostVariable() API function",
-      "bobcadAPIs": []
+      "description": "Outputs the cutting hole sizevalue for the thread type used in tapping operation, only using the API GetDoubleOfPostVariable()NOTE- This variable cannot be directly used inside a post processor since its only a variable that is a valid input to the GetDoubleOfPostVariable() API function",
+      "bobcadAPIs": [
+        "GetDoubleOfPostVariable()"
+      ]
     },
     {
       "postVariableName": "length_offset",
@@ -7049,15 +7056,17 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Outputs the rolling hole sizevalue for the thread type used in tapping operation, only using the API GetDoubleOfPostVariable()NOTE-\u00a0 This variable cannot be directly used inside a post processor since its only a variable that is a valid input to the GetDoubleOfPostVariable() API function",
-      "bobcadAPIs": []
+      "description": "Outputs the rolling hole sizevalue for the thread type used in tapping operation, only using the API GetDoubleOfPostVariable()NOTE- This variable cannot be directly used inside a post processor since its only a variable that is a valid input to the GetDoubleOfPostVariable() API function",
+      "bobcadAPIs": [
+        "GetDoubleOfPostVariable()"
+      ]
     },
     {
       "postVariableName": "macro_call",
       "jobTypes": [
         "Mill Job"
       ],
-      "description": "This variable will output the string defined on post question:4200used for calling a macro.Example String Values are:Fanuc - G65Haas - G65Mazak - G65Siemens - L9800 \u00a0NOTE: Siemens does not have a specific call command.Okuma - \"CALL\"",
+      "description": "This variable will output the string defined on post question:4200used for calling a macro.Example String Values are:Fanuc - G65Haas - G65Mazak - G65Siemens - L9800 NOTE: Siemens does not have a specific call command.Okuma - \"CALL\"",
       "bobcadAPIs": []
     },
     {
@@ -7169,7 +7178,7 @@
       "jobTypes": [
         "Mill Job"
       ],
-      "description": "This variable will output the string defined on post question:4213used for defining the code for an internal corner \u00a0probing cycle.Example String Values are:Fanuc - P9815Haas - P9815Mazak - P9815Siemens - L9815Okuma - O9815",
+      "description": "This variable will output the string defined on post question:4213used for defining the code for an internal corner probing cycle.Example String Values are:Fanuc - P9815Haas - P9815Mazak - P9815Siemens - L9815Okuma - O9815",
       "bobcadAPIs": []
     },
     {
@@ -7177,7 +7186,7 @@
       "jobTypes": [
         "Mill Job"
       ],
-      "description": "This variable will output the string defined on post question:4214used for defining the code for an external corner \u00a0probing cycle.Example String Values are:Fanuc - P9816Haas - P9816Mazak - P9816Siemens - L9816Okuma - O9816",
+      "description": "This variable will output the string defined on post question:4214used for defining the code for an external corner probing cycle.Example String Values are:Fanuc - P9816Haas - P9816Mazak - P9816Siemens - L9816Okuma - O9816",
       "bobcadAPIs": []
     },
     {
@@ -7417,7 +7426,7 @@
       "jobTypes": [
         "Mill Job"
       ],
-      "description": "This variable will output the string defined on post question:4268. used for defining the prefix for the face for 2 measurements parameter in the rectangle probing cycle.Used In:5 Point RectangleExample String Values are:Fanuc - A \u00a0\u00a0\u00a0\u00a0\u00a0(Permissible values: A11, A12, A13, A14)Haas - ??Mazak - ??Siemens - ??Okuma - ??",
+      "description": "This variable will output the string defined on post question:4268. used for defining the prefix for the face for 2 measurements parameter in the rectangle probing cycle.Used In:5 Point RectangleExample String Values are:Fanuc - A (Permissible values: A11, A12, A13, A14)Haas - ??Mazak - ??Siemens - ??Okuma - ??",
       "bobcadAPIs": []
     },
     {
@@ -7449,7 +7458,7 @@
       "jobTypes": [
         "Mill Job"
       ],
-      "description": "This variable will output the string defined on post question:4272. used for defining the probe surface output parameter.Used In:Probe SurfaceExample String Values are:Fanuc - C \u00a0(Permissible Values: C0, C1, C2)Haas - ??Mazak - ??Siemens - ??Okuma - ??",
+      "description": "This variable will output the string defined on post question:4272. used for defining the probe surface output parameter.Used In:Probe SurfaceExample String Values are:Fanuc - C (Permissible Values: C0, C1, C2)Haas - ??Mazak - ??Siemens - ??Okuma - ??",
       "bobcadAPIs": []
     },
     {
@@ -7457,7 +7466,7 @@
       "jobTypes": [
         "Mill Job"
       ],
-      "description": "This variable will output the string defined on post question:4273. used for defining the 4th axis probing type parameter.Used In:4th Axis CycleExample String Values are:Fanuc - K \u00a0(Permissible Values: K1, K2, K3, K4)Haas - ??Mazak - ??Siemens - ??Okuma - ??",
+      "description": "This variable will output the string defined on post question:4273. used for defining the 4th axis probing type parameter.Used In:4th Axis CycleExample String Values are:Fanuc - K (Permissible Values: K1, K2, K3, K4)Haas - ??Mazak - ??Siemens - ??Okuma - ??",
       "bobcadAPIs": []
     },
     {
@@ -7561,7 +7570,7 @@
       "jobTypes": [
         "Mill Job"
       ],
-      "description": "This variable will output the string defined on post question:4286. used for defining the null band \u00a0used in tool setting. (Tolerance limit for adjusting tool offset)Example String Values are:Fanuc - VHaas - VMazak - VSiemens - R22=Okuma - PV=",
+      "description": "This variable will output the string defined on post question:4286. used for defining the null band used in tool setting. (Tolerance limit for adjusting tool offset)Example String Values are:Fanuc - VHaas - VMazak - VSiemens - R22=Okuma - PV=",
       "bobcadAPIs": []
     },
     {
@@ -7577,7 +7586,7 @@
       "jobTypes": [
         "Mill Job"
       ],
-      "description": "This variable will output the string defined on post question:4288. used for opening the print port on the machine.Example String Values are:W1NOTES:Fanuc and Mazak need to open and close the port with the probe on/off command before any cycles that use print. Siemens, Okuma, and Haas do not need the extra parameter as they do this automatically.The way the probe_print_open and probe_print_close variables work: \u00a0\u00a0The probe_print_open will open the port for the first cycle that uses print in the program, and the probe_print_close will close the port after the last probe cycle using print in the program.These variables are intended to be used in the4000. Probe On and4001. Probe Off postblocks.",
+      "description": "This variable will output the string defined on post question:4288. used for opening the print port on the machine.Example String Values are:W1NOTES:Fanuc and Mazak need to open and close the port with the probe on/off command before any cycles that use print. Siemens, Okuma, and Haas do not need the extra parameter as they do this automatically.The way the probe_print_open and probe_print_close variables work: The probe_print_open will open the port for the first cycle that uses print in the program, and the probe_print_close will close the port after the last probe cycle using print in the program.These variables are intended to be used in the4000. Probe On and4001. Probe Off postblocks.",
       "bobcadAPIs": []
     },
     {
@@ -7585,7 +7594,7 @@
       "jobTypes": [
         "Mill Job"
       ],
-      "description": "This variable will output the string defined on post question:4289. used for closing the print port on the machine.Example String Values are:W1NOTES:Fanuc and Mazak need to open and close the port with the probe on/off command before any cycles that use print. Siemens, Okuma, and Haas do not need the extra parameter as they do this automatically.The way the probe_print_open and probe_print_close variables work: \u00a0\u00a0The probe_print_open will open the port for the first cycle that uses print in the program, and the probe_print_close will close the port after the last probe cycle using print in the program.These variables are intended to be used in the4000. Probe On and4001. Probe Off postblocks.",
+      "description": "This variable will output the string defined on post question:4289. used for closing the print port on the machine.Example String Values are:W1NOTES:Fanuc and Mazak need to open and close the port with the probe on/off command before any cycles that use print. Siemens, Okuma, and Haas do not need the extra parameter as they do this automatically.The way the probe_print_open and probe_print_close variables work: The probe_print_open will open the port for the first cycle that uses print in the program, and the probe_print_close will close the port after the last probe cycle using print in the program.These variables are intended to be used in the4000. Probe On and4001. Probe Off postblocks.",
       "bobcadAPIs": []
     },
     {
@@ -7681,7 +7690,7 @@
       "jobTypes": [
         "Mill Job"
       ],
-      "description": "This variable will output the string defined on post question:4423. used for defining the length experience \u00a0value in CTS cycles.Example String Values are:Fanuc - KHaas - ??Mazak - ??Siemens - ??Okuma - ??",
+      "description": "This variable will output the string defined on post question:4423. used for defining the length experience value in CTS cycles.Example String Values are:Fanuc - KHaas - ??Mazak - ??Siemens - ??Okuma - ??",
       "bobcadAPIs": []
     },
     {
@@ -7689,7 +7698,7 @@
       "jobTypes": [
         "Mill Job"
       ],
-      "description": "This variable will output the string defined on post question:4424. used for defining the tool out of tolerance \u00a0value in CTS cycles.Example String Values are:Fanuc - MHaas - ??Mazak - ??Siemens - ??Okuma - ??",
+      "description": "This variable will output the string defined on post question:4424. used for defining the tool out of tolerance value in CTS cycles.Example String Values are:Fanuc - MHaas - ??Mazak - ??Siemens - ??Okuma - ??",
       "bobcadAPIs": []
     },
     {
@@ -7721,7 +7730,7 @@
       "jobTypes": [
         "Mill Job"
       ],
-      "description": "This variable will output the string defined on post question:4428. used for defining the tool offset parameter value for Type A offset tables \u00a0in CTS cycles.Example String Values are:Fanuc - EHaas - ??Mazak - ??Siemens - ??Okuma - ??",
+      "description": "This variable will output the string defined on post question:4428. used for defining the tool offset parameter value for Type A offset tables in CTS cycles.Example String Values are:Fanuc - EHaas - ??Mazak - ??Siemens - ??Okuma - ??",
       "bobcadAPIs": []
     },
     {
@@ -7729,7 +7738,7 @@
       "jobTypes": [
         "Mill Job"
       ],
-      "description": "This variable will output the string defined on post question:4429. used for defining the diameter experience value\u00a0in CTS cycles.Example String Values are:Fanuc - JHaas - ??Mazak - ??Siemens - ??Okuma - ??",
+      "description": "This variable will output the string defined on post question:4429. used for defining the diameter experience valuein CTS cycles.Example String Values are:Fanuc - JHaas - ??Mazak - ??Siemens - ??Okuma - ??",
       "bobcadAPIs": []
     },
     {
@@ -7737,7 +7746,7 @@
       "jobTypes": [
         "Mill Job"
       ],
-      "description": "This variable will output the string defined on post question:4430. used for defining the extra z clearance parameter \u00a0value\u00a0in CTS cycles.Example String Values are:Fanuc - WHaas - ??Mazak - ??Siemens - ??Okuma - ??",
+      "description": "This variable will output the string defined on post question:4430. used for defining the extra z clearance parameter valuein CTS cycles.Example String Values are:Fanuc - WHaas - ??Mazak - ??Siemens - ??Okuma - ??",
       "bobcadAPIs": []
     },
     {
@@ -7745,7 +7754,7 @@
       "jobTypes": [
         "Mill Job"
       ],
-      "description": "This variable will output the string defined on post question:4431. used for defining the Z axis measure position parameter \u00a0value\u00a0in CTS cycles.Example String Values are:Fanuc - ZHaas - ??Mazak - ??Siemens - ??Okuma - ??",
+      "description": "This variable will output the string defined on post question:4431. used for defining the Z axis measure position parameter valuein CTS cycles.Example String Values are:Fanuc - ZHaas - ??Mazak - ??Siemens - ??Okuma - ??",
       "bobcadAPIs": []
     },
     {
@@ -7753,7 +7762,7 @@
       "jobTypes": [
         "Mill Job"
       ],
-      "description": "This variable will output the string defined on post question:4432. used for defining the incremental radial distance \u00a0parameter value\u00a0in the feed up cycle. .Example String Values are:Fanuc - UHaas - ??Mazak - ??Siemens - ??Okuma - ??",
+      "description": "This variable will output the string defined on post question:4432. used for defining the incremental radial distance parameter valuein the feed up cycle. .Example String Values are:Fanuc - UHaas - ??Mazak - ??Siemens - ??Okuma - ??",
       "bobcadAPIs": []
     },
     {
@@ -7793,7 +7802,7 @@
       "jobTypes": [
         "Mill Job"
       ],
-      "description": "This variable will output the string defined on post question:4437. used for defining the thermal compX storage location \u00a0parameter.Example String Values are:Fanuc - XHaas - ??Mazak - ??Siemens - ??Okuma - ??",
+      "description": "This variable will output the string defined on post question:4437. used for defining the thermal compX storage location parameter.Example String Values are:Fanuc - XHaas - ??Mazak - ??Siemens - ??Okuma - ??",
       "bobcadAPIs": []
     },
     {
@@ -7801,7 +7810,7 @@
       "jobTypes": [
         "Mill Job"
       ],
-      "description": "This variable will output the string defined on post question:4438. used for defining the thermal comp Y storage location \u00a0parameter.Example String Values are:Fanuc - YHaas - ??Mazak - ??Siemens - ??Okuma - ??",
+      "description": "This variable will output the string defined on post question:4438. used for defining the thermal comp Y storage location parameter.Example String Values are:Fanuc - YHaas - ??Mazak - ??Siemens - ??Okuma - ??",
       "bobcadAPIs": []
     },
     {
@@ -7809,7 +7818,7 @@
       "jobTypes": [
         "Mill Job"
       ],
-      "description": "This variable will output the string defined on post question:4439. used for defining the thermal compZ storage location \u00a0parameter.Example String Values are:Fanuc - ZHaas - ??Mazak - ??Siemens - ??Okuma - ??",
+      "description": "This variable will output the string defined on post question:4439. used for defining the thermal compZ storage location parameter.Example String Values are:Fanuc - ZHaas - ??Mazak - ??Siemens - ??Okuma - ??",
       "bobcadAPIs": []
     },
     {
@@ -7913,7 +7922,7 @@
       "jobTypes": [
         "Mill Job"
       ],
-      "description": "This variable will output the string defined on post question:4511. used for defining the corner radius measure \u00a0cycle for NCTS.Example String Values are:Fanuc - P9867Haas - P9867Mazak - P9867Siemens - L9867Okuma - O9867",
+      "description": "This variable will output the string defined on post question:4511. used for defining the corner radius measure cycle for NCTS.Example String Values are:Fanuc - P9867Haas - P9867Mazak - P9867Siemens - L9867Okuma - O9867",
       "bobcadAPIs": []
     },
     {
@@ -7953,7 +7962,7 @@
       "jobTypes": [
         "Mill Job"
       ],
-      "description": "This variable will output the string defined on post question:4554. used for defining the prefix for the overtravel \u00a0parameter in NTS cycles.Example String Values are:Fanuc - QHaas - QMazak - QSiemens - R17=Okuma - PQ=",
+      "description": "This variable will output the string defined on post question:4554. used for defining the prefix for the overtravel parameter in NTS cycles.Example String Values are:Fanuc - QHaas - QMazak - QSiemens - R17=Okuma - PQ=",
       "bobcadAPIs": []
     },
     {
@@ -7977,7 +7986,7 @@
       "jobTypes": [
         "Mill Job"
       ],
-      "description": "This variable will output the string defined on post question:4557. used for defining the prefix for the radial step-over \u00a0parameter in NTS cycles.Example String Values are:Fanuc - YHaas - YMazak - YSiemens - R25=Okuma - PY=",
+      "description": "This variable will output the string defined on post question:4557. used for defining the prefix for the radial step-over parameter in NTS cycles.Example String Values are:Fanuc - YHaas - YMazak - YSiemens - R25=Okuma - PY=",
       "bobcadAPIs": []
     },
     {
@@ -7985,7 +7994,7 @@
       "jobTypes": [
         "Mill Job"
       ],
-      "description": "This variable will output the string defined on post question:4558. used for defining the prefix for the solid tool \u00a0parameter in NTS cycles.Example String Values are:Fanuc - AHaas - AMazak - ASiemens - R01=Okuma - PA=",
+      "description": "This variable will output the string defined on post question:4558. used for defining the prefix for the solid tool parameter in NTS cycles.Example String Values are:Fanuc - AHaas - AMazak - ASiemens - R01=Okuma - PA=",
       "bobcadAPIs": []
     },
     {
@@ -8213,7 +8222,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Returns the region defined on the Feature page of turning features.Region = Return Value1\u00a0= \u00a012\u00a0= \u00a02API:short LATHE_GetLatheRegion()",
+      "description": "Returns the region defined on the Feature page of turning features.Region = Return Value1= 12= 2API:short LATHE_GetLatheRegion()",
       "bobcadAPIs": [
         "LATHE_GetLatheRegion()"
       ]
@@ -8407,7 +8416,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "V25 Build 895 and later:Returns the sweep of an arc in degrees.V25 Build 769 and earlier:Returns the sweep of an arc in Radians.\u00a0To get degrees, the value must be multipliedby 180 and divided by pi.API:double MILL_GetArcAngleDegrees()",
+      "description": "V25 Build 895 and later:Returns the sweep of an arc in degrees.V25 Build 769 and earlier:Returns the sweep of an arc in Radians.To get degrees, the value must be multipliedby 180 and divided by pi.API:double MILL_GetArcAngleDegrees()",
       "bobcadAPIs": [
         "MILL_GetArcAngleDegrees()"
       ]
@@ -8418,7 +8427,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Returns the current machining plane for arcs(i.e G17, G18, G19).\u00a0The number returnsfrom this function is a reference to the plane and not the actual plane designation.0 = XY Plane1 = YZ Plane2 = XZ PlaneAPI:short MILL_GetArcMachiningPlane()",
+      "description": "Returns the current machining plane for arcs(i.e G17, G18, G19).The number returnsfrom this function is a reference to the plane and not the actual plane designation.0 = XY Plane1 = YZ Plane2 = XZ PlaneAPI:short MILL_GetArcMachiningPlane()",
       "bobcadAPIs": [
         "MILL_GetArcMachiningPlane()"
       ]
@@ -8429,7 +8438,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Returns the current index angle for the rotational axis.\u00a0This returns the user-inputvalue from the Rotary Angle option within the feature.API:double MILL_GetRotaryIndexAngle()",
+      "description": "Returns the current index angle for the rotational axis.This returns the user-inputvalue from the Rotary Angle option within the feature.API:double MILL_GetRotaryIndexAngle()",
       "bobcadAPIs": [
         "MILL_GetRotaryIndexAngle()"
       ]
@@ -8746,7 +8755,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Returns the current operation type.Drilling100 = Center Drill101 = Drill102 = Tap103 = Ream104 = Boring105 = Chamfer Drill106 = Counterbore Drill204 = Chamfer Mill206 = Counterbore MillMilling200 = Profile Rough201 = Profile Finish202 = Pocket203 = Facing204 = Chamfer Mill205 = 2 Axis Plunge Rough206 = Counterbore Mill208 = Tapered Pocket (V-Carve Rough)209 = 2 Axis Engraving210 = Thread Mill212\u00a0\u00a0= Drag Knife300 = Z Level Rough301 = Z Level Finish302 = Planar303 = Spiral304 = Radial305 = 3 Axis Plunge Rough306 = Advanced Rough307 = Flatlands308 = Equidistant309 = Pencil310 = 3 Axis Engrave Rough311 = 3 Axis Engrave Finish312 = V-Carve Finishing400 = 4 Axis Rotary500 = 5 Axis ToolpathsAPI:short MILL_GetOperationType()",
+      "description": "Returns the current operation type.Drilling100 = Center Drill101 = Drill102 = Tap103 = Ream104 = Boring105 = Chamfer Drill106 = Counterbore Drill204 = Chamfer Mill206 = Counterbore MillMilling200 = Profile Rough201 = Profile Finish202 = Pocket203 = Facing204 = Chamfer Mill205 = 2 Axis Plunge Rough206 = Counterbore Mill208 = Tapered Pocket (V-Carve Rough)209 = 2 Axis Engraving210 = Thread Mill212= Drag Knife300 = Z Level Rough301 = Z Level Finish302 = Planar303 = Spiral304 = Radial305 = 3 Axis Plunge Rough306 = Advanced Rough307 = Flatlands308 = Equidistant309 = Pencil310 = 3 Axis Engrave Rough311 = 3 Axis Engrave Finish312 = V-Carve Finishing400 = 4 Axis Rotary500 = 5 Axis ToolpathsAPI:short MILL_GetOperationType()",
       "bobcadAPIs": [
         "MILL_GetOperationType()"
       ]
@@ -8757,7 +8766,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Returns the current drill cycle type.\u00a0This function is used within the drill cycleblocks or the drill point blocks.0 = Standard Drill1 = Peck Drill2 = Fast Peck/Chip Break3 = Tap4 = Bore 15 = Bore 26 = Bore 3/Back Bore7 = Left Hand Tap8 = Fine BoreAPI:short MILL_GetDrillCycleType()",
+      "description": "Returns the current drill cycle type.This function is used within the drill cycleblocks or the drill point blocks.0 = Standard Drill1 = Peck Drill2 = Fast Peck/Chip Break3 = Tap4 = Bore 15 = Bore 26 = Bore 3/Back Bore7 = Left Hand Tap8 = Fine BoreAPI:short MILL_GetDrillCycleType()",
       "bobcadAPIs": [
         "MILL_GetDrillCycleType()"
       ]
@@ -9010,9 +9019,9 @@
       ],
       "description": "Returns the total number of operations in the program that is set to post. This APIwill not consider the operations that were patterned using toolpath pattern.For versions V26 or earlier, there were 2 APIs MILL_GetNumberOfFeatures() & MILL_GetCurrentFeatureNumber()which are deprecated and when used in versions after V26 will return the same valueas the MILL_GetNumberOfOperations() APIAPI:short MILL_GetNumberOfOperations()",
       "bobcadAPIs": [
+        "MILL_GetNumberOfOperations()",
         "MILL_GetNumberOfFeatures()",
-        "MILL_GetCurrentFeatureNumber()",
-        "MILL_GetNumberOfOperations()"
+        "MILL_GetCurrentFeatureNumber()"
       ]
     },
     {
@@ -9043,7 +9052,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Returns the type of the current tool.Drilling1 = Center Drill2 = Drill4 = Spiral Tap5 = Point Tap6 = Hand Tap7 = Rolling Tap8 = Chamfer Tool9 = Counterbore Drill13 = Ream21 = Boring ToolMilling15 = Endmill Rough16 = Endmill Finish19 = Chamfer Mill22 = Thread Mill23 = V-Tool24 = Tapered Endmill26 = T-Cutter30 = Dove Mill31 = Lollipop25 = Corner Round27 = Laser28 = Plasma29 = Waterjet33\u00a0\u00a0= Drag KnifeAPI:short MILL_Get_ToolType()",
+      "description": "Returns the type of the current tool.Drilling1 = Center Drill2 = Drill4 = Spiral Tap5 = Point Tap6 = Hand Tap7 = Rolling Tap8 = Chamfer Tool9 = Counterbore Drill13 = Ream21 = Boring ToolMilling15 = Endmill Rough16 = Endmill Finish19 = Chamfer Mill22 = Thread Mill23 = V-Tool24 = Tapered Endmill26 = T-Cutter30 = Dove Mill31 = Lollipop25 = Corner Round27 = Laser28 = Plasma29 = Waterjet33= Drag KnifeAPI:short MILL_Get_ToolType()",
       "bobcadAPIs": [
         "MILL_Get_ToolType()"
       ]
@@ -9065,7 +9074,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Returns the Lead-In type for the current operation.0 = Circular for all 2 and 3 Axis feature, Except for Thread.\u00a0Thread = Helical.1 = Circular for Thread2 = Right Angle3 = Parallel for 2 Axis features, Tangent for 3 Axis features6 = Vertical/Plunge7 = Horizontal8 = Parallel for all 3 Axis features.API:short MILL_GetLeadinType()",
+      "description": "Returns the Lead-In type for the current operation.0 = Circular for all 2 and 3 Axis feature, Except for Thread.Thread = Helical.1 = Circular for Thread2 = Right Angle3 = Parallel for 2 Axis features, Tangent for 3 Axis features6 = Vertical/Plunge7 = Horizontal8 = Parallel for all 3 Axis features.API:short MILL_GetLeadinType()",
       "bobcadAPIs": [
         "MILL_GetLeadinType()"
       ]
@@ -9076,7 +9085,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Returns the Lead-Out type for the current operation.0 = Circular for all 2 and 3 Axis feature, Except for Thread.\u00a0Thread = Helical.1 = Circular for Thread2 = Right Angle3 = Parallel for 2 Axis features, Tangent for 3 Axis features6 = Vertical/Plunge7 = Horizontal8 = Parallel for all 3 Axis features.API:short MILL_GetLeadoutType()",
+      "description": "Returns the Lead-Out type for the current operation.0 = Circular for all 2 and 3 Axis feature, Except for Thread.Thread = Helical.1 = Circular for Thread2 = Right Angle3 = Parallel for 2 Axis features, Tangent for 3 Axis features6 = Vertical/Plunge7 = Horizontal8 = Parallel for all 3 Axis features.API:short MILL_GetLeadoutType()",
       "bobcadAPIs": [
         "MILL_GetLeadoutType()"
       ]
@@ -9131,7 +9140,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Returns the work offset number (1, 2, 3, etc.). This function returns from a 0 based index,\u00a0\u00a0so choosing Work Offset 1 in the software returns 0 in the API.API:short MILL_GetPatternWorkCoordNumber()",
+      "description": "Returns the work offset number (1, 2, 3, etc.). This function returns from a 0 based index,so choosing Work Offset 1 in the software returns 0 in the API.API:short MILL_GetPatternWorkCoordNumber()",
       "bobcadAPIs": [
         "MILL_GetPatternWorkCoordNumber()"
       ]
@@ -9205,7 +9214,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Returns a string converted from a double value formatted by post blocks414or415depending on the unit.\u00a0The prefix is added to the string from post question:685.API:void MILL_MakeYString(double var)",
+      "description": "Returns a string converted from a double value formatted by post blocks414or415depending on the unit.The prefix is added to the string from post question:685.API:void MILL_MakeYString(double var)",
       "bobcadAPIs": [
         "MILL_MakeYString(double var)"
       ]
@@ -9216,7 +9225,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Returns a string converted from a double value formatted by post blocks414or415depending on the unit.\u00a0The prefix is added to the string from post question:686.API:void MILL_MakeZString(double var)",
+      "description": "Returns a string converted from a double value formatted by post blocks414or415depending on the unit.The prefix is added to the string from post question:686.API:void MILL_MakeZString(double var)",
       "bobcadAPIs": [
         "MILL_MakeZString(double var)"
       ]
@@ -9263,8 +9272,8 @@
       ],
       "description": "Sets the memory location at the specified index to the value specified for SetInteger.Note that both share the same memory locationsAPI:MILL_SetIntMemoryLoc(Index, SetInteger)LATHE_SetIntMemoryLoc(Index, SetInteger)",
       "bobcadAPIs": [
-        "MILL_SetIntMemoryLoc(Index, SetInteger)",
-        "LATHE_SetIntMemoryLoc(Index, SetInteger)"
+        "LATHE_SetIntMemoryLoc(Index, SetInteger)",
+        "MILL_SetIntMemoryLoc(Index, SetInteger)"
       ]
     },
     {
@@ -9287,10 +9296,10 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Sets the memory location at the specified index to the value specified in SetDouble.\u00a0Notethat both share the same memory locationsAPI:void MILL_SetDoubleMemoryLoc(short Index, double SetDouble)void LATHE_SetDoubleMemoryLoc(short Index, double SetDouble)",
+      "description": "Sets the memory location at the specified index to the value specified in SetDouble.Notethat both share the same memory locationsAPI:void MILL_SetDoubleMemoryLoc(short Index, double SetDouble)void LATHE_SetDoubleMemoryLoc(short Index, double SetDouble)",
       "bobcadAPIs": [
-        "MILL_SetDoubleMemoryLoc(short Index, double SetDouble)",
-        "LATHE_SetDoubleMemoryLoc(short Index, double SetDouble)"
+        "LATHE_SetDoubleMemoryLoc(short Index, double SetDouble)",
+        "MILL_SetDoubleMemoryLoc(short Index, double SetDouble)"
       ]
     },
     {
@@ -9315,8 +9324,8 @@
       ],
       "description": "Sets the memory location at the specified index to the value specified in SetString.Note that both share the same memory locationsAPI:void MILL_SetStringMemoryLoc(short Index, string SetString)void Lathe_SetStringMemoryLoc(short Index, string SetString)",
       "bobcadAPIs": [
-        "Lathe_SetStringMemoryLoc(short Index, string SetString)",
-        "MILL_SetStringMemoryLoc(short Index, string SetString)"
+        "MILL_SetStringMemoryLoc(short Index, string SetString)",
+        "Lathe_SetStringMemoryLoc(short Index, string SetString)"
       ]
     },
     {
@@ -9328,8 +9337,8 @@
       ],
       "description": "Returns the string value stored in the specified index. Note that both share thesame memory locationsAPI:variable_name = MILL_GetStringMemoryLoc(short index)variable_name = LATHE_GetStringMemoryLoc(short index)",
       "bobcadAPIs": [
-        "MILL_GetStringMemoryLoc(short index)",
-        "LATHE_GetStringMemoryLoc(short index)"
+        "LATHE_GetStringMemoryLoc(short index)",
+        "MILL_GetStringMemoryLoc(short index)"
       ]
     },
     {
@@ -9338,7 +9347,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Returns a single line of the posted code to a string variable.\u00a0This is used in programblock2102, and block540must be set to \u00e2\u0080\u009cy\u00e2\u0080\u009d.\u00a0This allows the user to modify thecode after it has been processed through the posting engine.API:string MILL_GetOutputLineToNcFile()",
+      "description": "Returns a single line of the posted code to a string variable.This is used in programblock2102, and block540must be set to \u00e2\u0080\u009cy\u00e2\u0080\u009d.This allows the user to modify thecode after it has been processed through the posting engine.API:string MILL_GetOutputLineToNcFile()",
       "bobcadAPIs": [
         "MILL_GetOutputLineToNcFile()"
       ]
@@ -9349,7 +9358,7 @@
         "Mill Job",
         "Mill Turn Job"
       ],
-      "description": "Returns a single line of the posted code to a string variable.\u00a0This is used in programblock2102, and block540must be set to \u00e2\u0080\u009cy\u00e2\u0080\u009d.\u00a0This allows the user to modify thecode after it has been processed through the posting engine.API:string LATHE_GetOutputLineToNcFile()",
+      "description": "Returns a single line of the posted code to a string variable.This is used in programblock2102, and block540must be set to \u00e2\u0080\u009cy\u00e2\u0080\u009d.This allows the user to modify thecode after it has been processed through the posting engine.API:string LATHE_GetOutputLineToNcFile()",
       "bobcadAPIs": [
         "LATHE_GetOutputLineToNcFile()"
       ]
@@ -9383,7 +9392,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Sets the return string to be output by the program block variable.For the case that the block outputs code within an existing posting line, meaningthe program block is being used to output for a single variable.\u00a0(Example: n, rapid_move, program_block_1, xr, yr)API:void MILL_SetReturnString(string var)",
+      "description": "Sets the return string to be output by the program block variable.For the case that the block outputs code within an existing posting line, meaningthe program block is being used to output for a single variable.(Example: n, rapid_move, program_block_1, xr, yr)API:void MILL_SetReturnString(string var)",
       "bobcadAPIs": [
         "MILL_SetReturnString(string var)"
       ]
@@ -9408,8 +9417,8 @@
       ],
       "description": "Outputs a string into the posted program with a line feed character.API:void LATHE_OutputText(string var)void LATHE_OutputText(\u00e2\u0080\u009cSample String\u00e2\u0080\u009d)",
       "bobcadAPIs": [
-        "LATHE_OutputText(Sample String)",
-        "LATHE_OutputText(string var)"
+        "LATHE_OutputText(string var)",
+        "LATHE_OutputText(Sample String)"
       ]
     },
     {
@@ -9419,7 +9428,7 @@
         "Lathe Job",
         "Mill Turn Job"
       ],
-      "description": "Input must be a string formatted exactly as a posting line using system posting variables.\u00a0(Example: \u00e2\u0080\u009cn, rapid_move, xr, yr, \u00e2\u0080\u0098M08\u00e2\u0080\u0099\u00e2\u0080\u009d).The system post processes these variables as it would by using the posting engineand outputs the posted string to the posted NC file.API:void MILL_ProcessPostLine(string var)",
+      "description": "Input must be a string formatted exactly as a posting line using system posting variables.(Example: \u00e2\u0080\u009cn, rapid_move, xr, yr, \u00e2\u0080\u0098M08\u00e2\u0080\u0099\u00e2\u0080\u009d).The system post processes these variables as it would by using the posting engineand outputs the posted string to the posted NC file.API:void MILL_ProcessPostLine(string var)",
       "bobcadAPIs": [
         "MILL_ProcessPostLine(string var)"
       ]

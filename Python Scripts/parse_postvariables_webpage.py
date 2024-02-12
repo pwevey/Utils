@@ -44,13 +44,18 @@ for table in soup.find_all('table'):
             if len(tds) >= 2:
                 # Description found in the second td
                 description = tds[1].get_text(strip=True)
+                
+                # Remove \u00a0 from descriptions
+                description = description.replace('\u00a0', '')
+                
                 post_variable['description'] = description.replace('\u00e2\u0080\u0093', '')
 
                 # Manually set postVariableName if description matches the specified text
                 if description == "Signals the output of the stock definition":
                     post_variable['postVariableName'] = "output_stock_definition"
+                    
 
-                if "API:" in description or "TCPAPI" in description:
+                if "API:" in description or "TCPAPI" in description or re.search(r'\bAPI\b', description):
                     # Extract API calls from the description
                     api_pattern = re.compile(r'\b((MILL|LATHE|TURN|Get)\w*\([^)]*\))', re.IGNORECASE)
 
@@ -59,14 +64,16 @@ for table in soup.find_all('table'):
                         if not any(char.isdigit() for char in api_tuple)
                         for api in api_tuple
                     ]
+                    
+                    # print(api_calls)
 
                     # Remove single-word entries
                     api_calls = [api for api in api_calls if not api.lower() in ["get", "lathe", "mill"]]
 
                     # Remove instances of '\u00e2\u0080\u009c' and '\u00e2\u0080\u009d' from each API call
-                    api_calls = [api.replace('\u00e2\u0080\u009c', '').replace('\u00e2\u0080\u009d', '') for api in api_calls]
+                    api_calls = [api.replace('\u00e2\u0080\u009c', '').replace('\u00e2\u0080\u009d', '') for api in api_calls]            
 
-        print(api_calls)
+        # print(api_calls)
 
         post_variable['bobcadAPIs'] = api_calls
         post_variables.append(post_variable)
