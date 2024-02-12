@@ -252,9 +252,9 @@
       ],
       "description": "Output length offset register with prefix. Prefix defined on post question:688API:short MILL_GetLengthOffsetNumber()short LATHE_GetLengthOffsetNumber()short MILLTURN_GetLengthOffsetNumber()",
       "bobcadAPIs": [
+        "LATHE_GetLengthOffsetNumber()",
         "MILLTURN_GetLengthOffsetNumber()",
-        "MILL_GetLengthOffsetNumber()",
-        "LATHE_GetLengthOffsetNumber()"
+        "MILL_GetLengthOffsetNumber()"
       ]
     },
     {
@@ -289,8 +289,8 @@
       ],
       "description": "Output the part width with NO prefix.API:short MILL_GetPartWidth()short MILLTURN_GetPartWidth()",
       "bobcadAPIs": [
-        "MILL_GetPartWidth()",
-        "MILLTURN_GetPartWidth()"
+        "MILLTURN_GetPartWidth()",
+        "MILL_GetPartWidth()"
       ]
     },
     {
@@ -301,8 +301,8 @@
       ],
       "description": "Outputs the work coordinate string value based on the selected work offset. Maximum work offsets are defined by post question:258. Work offset string values are assigned for each work offset starting at post question:900and go through post question999.API:short MILL_GetWorkCoordNumber()short MILLTURN_GetWorkCoordNumber()",
       "bobcadAPIs": [
-        "MILL_GetWorkCoordNumber()",
-        "MILLTURN_GetWorkCoordNumber()"
+        "MILLTURN_GetWorkCoordNumber()",
+        "MILL_GetWorkCoordNumber()"
       ]
     },
     {
@@ -314,8 +314,8 @@
       "description": "Outputs the work coordinate string value for a specific work coordinate. Work offset string values are assigned for each work offset starting a post question:900and go through post question999.API:short MILL_GetWorkCoordNumberCode(int)short MILLTURN_GetWorkCoordNumberCode(int)int=1 through 99Example:var = MILL_GetWorkCoordNumberCode(1)",
       "bobcadAPIs": [
         "MILL_GetWorkCoordNumberCode(1)",
-        "MILLTURN_GetWorkCoordNumberCode(int)",
-        "MILL_GetWorkCoordNumberCode(int)"
+        "MILL_GetWorkCoordNumberCode(int)",
+        "MILLTURN_GetWorkCoordNumberCode(int)"
       ]
     },
     {
@@ -360,8 +360,8 @@
       ],
       "description": "Returns the X axis rapid location with the prefix defined by post question:684API:double MILL_GetXRapid()double LATHE_GetXRapid()",
       "bobcadAPIs": [
-        "MILL_GetXRapid()",
-        "LATHE_GetXRapid()"
+        "LATHE_GetXRapid()",
+        "MILL_GetXRapid()"
       ]
     },
     {
@@ -735,8 +735,8 @@
       ],
       "description": "Returns the value of the previous X axis feed move. Rapid moves are not included. Prefix comes from the post question:684API:double MILL_GetPreviousXFeed()double LATHE_GetPrefiousXFeed()",
       "bobcadAPIs": [
-        "MILL_GetPreviousXFeed()",
-        "LATHE_GetPrefiousXFeed()"
+        "LATHE_GetPrefiousXFeed()",
+        "MILL_GetPreviousXFeed()"
       ]
     },
     {
@@ -760,8 +760,8 @@
       ],
       "description": "Returns the value of the previous Z axis feed move. Rapid moves are not included. Prefix comes from the post question:686API:double MILL_GetPreviousZFeed()double LATHE_GetPrefiousZFeed()",
       "bobcadAPIs": [
-        "MILL_GetPreviousZFeed()",
-        "LATHE_GetPrefiousZFeed()"
+        "LATHE_GetPrefiousZFeed()",
+        "MILL_GetPreviousZFeed()"
       ]
     },
     {
@@ -1104,6 +1104,61 @@
       ]
     },
     {
+      "postVariableName": "initpos_nocomp_prot",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "This outputs the initial primary rotation axis angle value for rotary and 5 axis motion. The output is formatted with the prefix defined on post question:722API: GetDoubleOfPostVariable(\u00e2\u0080\u009cvariable_name\u00e2\u0080\u009d)",
+      "bobcadAPIs": [
+        "GetDoubleOfPostVariable(variable_name)"
+      ]
+    },
+    {
+      "postVariableName": "initpos_zcomp_prot",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "This outputs the initial primary rotation axis angle value for rotary and 5 axis motion. The output is formatted with the prefix defined on post question:722API: GetDoubleOfPostVariable(\u00e2\u0080\u009cvariable_name\u00e2\u0080\u009d)",
+      "bobcadAPIs": [
+        "GetDoubleOfPostVariable(variable_name)"
+      ]
+    },
+    {
+      "postVariableName": "initpos_hybridcomp_prot",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "This outputs the initial primary rotation axis angle value for rotary and 5 axis motion. The output is formatted with the prefix defined on post question:722API: GetDoubleOfPostVariable(\u00e2\u0080\u009cvariable_name\u00e2\u0080\u009d)",
+      "bobcadAPIs": [
+        "GetDoubleOfPostVariable(variable_name)"
+      ]
+    },
+    {
+      "postVariableName": "initpos_tcp_prot",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "This outputs the initial primary rotation axis angle value for rotary and 5 axis motion. The output is formatted with the prefix defined on post question:722API: GetDoubleOfPostVariable(\u00e2\u0080\u009cvariable_name\u00e2\u0080\u009d)",
+      "bobcadAPIs": [
+        "GetDoubleOfPostVariable(variable_name)"
+      ]
+    },
+    {
+      "postVariableName": "initpos_origintracking_prot",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "This outputs the initial primary rotation axis angle value for rotary and 5 axis motion. The output is formatted with the prefix defined on post question:722API: GetDoubleOfPostVariable(\u00e2\u0080\u009cvariable_name\u00e2\u0080\u009d)",
+      "bobcadAPIs": [
+        "GetDoubleOfPostVariable(variable_name)"
+      ]
+    },
+    {
       "postVariableName": "initpos_srot",
       "jobTypes": [
         "Mill Job",
@@ -1170,7 +1225,117 @@
       ]
     },
     {
+      "postVariableName": "initpos_nocomp_srot",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "This outputs the initial secondary rotation axis angle value for rotary and 5 axis motion. The output is formatted with the prefix defined on post question:723API: GetDoubleOfPostVariable(\u00e2\u0080\u009cvariable_name\u00e2\u0080\u009d)",
+      "bobcadAPIs": [
+        "GetDoubleOfPostVariable(variable_name)"
+      ]
+    },
+    {
+      "postVariableName": "initpos_zcomp_srot",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "This outputs the initial secondary rotation axis angle value for rotary and 5 axis motion. The output is formatted with the prefix defined on post question:723API: GetDoubleOfPostVariable(\u00e2\u0080\u009cvariable_name\u00e2\u0080\u009d)",
+      "bobcadAPIs": [
+        "GetDoubleOfPostVariable(variable_name)"
+      ]
+    },
+    {
+      "postVariableName": "initpos_hybridcomp_srot",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "This outputs the initial secondary rotation axis angle value for rotary and 5 axis motion. The output is formatted with the prefix defined on post question:723API: GetDoubleOfPostVariable(\u00e2\u0080\u009cvariable_name\u00e2\u0080\u009d)",
+      "bobcadAPIs": [
+        "GetDoubleOfPostVariable(variable_name)"
+      ]
+    },
+    {
+      "postVariableName": "initpos_tcp_srot",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "This outputs the initial secondary rotation axis angle value for rotary and 5 axis motion. The output is formatted with the prefix defined on post question:723API: GetDoubleOfPostVariable(\u00e2\u0080\u009cvariable_name\u00e2\u0080\u009d)",
+      "bobcadAPIs": [
+        "GetDoubleOfPostVariable(variable_name)"
+      ]
+    },
+    {
+      "postVariableName": "initpos_origintracking_srot",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "This outputs the initial secondary rotation axis angle value for rotary and 5 axis motion. The output is formatted with the prefix defined on post question:723API: GetDoubleOfPostVariable(\u00e2\u0080\u009cvariable_name\u00e2\u0080\u009d)",
+      "bobcadAPIs": [
+        "GetDoubleOfPostVariable(variable_name)"
+      ]
+    },
+    {
       "postVariableName": "initpos_trot",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "This outputs the initial tertiary rotation axis angle value for rotary and 5 axis motion. The output is formatted with the prefix defined on post question:724API: GetDoubleOfPostVariable(\u00e2\u0080\u009cvariable_name\u00e2\u0080\u009d)",
+      "bobcadAPIs": [
+        "GetDoubleOfPostVariable(variable_name)"
+      ]
+    },
+    {
+      "postVariableName": "initpos_nocomp_trot",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "This outputs the initial tertiary rotation axis angle value for rotary and 5 axis motion. The output is formatted with the prefix defined on post question:724API: GetDoubleOfPostVariable(\u00e2\u0080\u009cvariable_name\u00e2\u0080\u009d)",
+      "bobcadAPIs": [
+        "GetDoubleOfPostVariable(variable_name)"
+      ]
+    },
+    {
+      "postVariableName": "initpos_zcomp_trot",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "This outputs the initial tertiary rotation axis angle value for rotary and 5 axis motion. The output is formatted with the prefix defined on post question:724API: GetDoubleOfPostVariable(\u00e2\u0080\u009cvariable_name\u00e2\u0080\u009d)",
+      "bobcadAPIs": [
+        "GetDoubleOfPostVariable(variable_name)"
+      ]
+    },
+    {
+      "postVariableName": "initpos_hybridcomp_trot",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "This outputs the initial tertiary rotation axis angle value for rotary and 5 axis motion. The output is formatted with the prefix defined on post question:724API: GetDoubleOfPostVariable(\u00e2\u0080\u009cvariable_name\u00e2\u0080\u009d)",
+      "bobcadAPIs": [
+        "GetDoubleOfPostVariable(variable_name)"
+      ]
+    },
+    {
+      "postVariableName": "initpos_tcp_trot",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "This outputs the initial tertiary rotation axis angle value for rotary and 5 axis motion. The output is formatted with the prefix defined on post question:724API: GetDoubleOfPostVariable(\u00e2\u0080\u009cvariable_name\u00e2\u0080\u009d)",
+      "bobcadAPIs": [
+        "GetDoubleOfPostVariable(variable_name)"
+      ]
+    },
+    {
+      "postVariableName": "initpos_origintracking_trot",
       "jobTypes": [
         "Mill Job",
         "Mill Turn Job"
@@ -1680,8 +1845,8 @@
       ],
       "description": "Outputs the line number at the end of the profile that is used to define the cannedfinish cycle.The prefix is defined on post question:1791API:string LATHE_GetLineNumberLastFinish()string LATHE GetLastFinishLineNumberPrefix()",
       "bobcadAPIs": [
-        "GetLastFinishLineNumberPrefix()",
-        "LATHE_GetLineNumberLastFinish()"
+        "LATHE_GetLineNumberLastFinish()",
+        "GetLastFinishLineNumberPrefix()"
       ]
     },
     {
@@ -1844,7 +2009,43 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "euler_angle_zxz_intrinsic_2",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Euler angle definition by intrinsic rotation aroundmachine setup Z axis first, then around X axis of the rotated coordinate system resultedfrom first rotation & finally around Z axis of the rotated coordinate system resultedfrom the second rotation respectively for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "euler_angle_zxz_intrinsic_3",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Euler angle definition by intrinsic rotation aroundmachine setup Z axis first, then around X axis of the rotated coordinate system resultedfrom first rotation & finally around Z axis of the rotated coordinate system resultedfrom the second rotation respectively for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "euler_angle_zxz_extrinsic_1",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Euler angle definition by extrinsic rotation aroundthe machine setup Z axis first, X axis & Z axis again for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "euler_angle_zxz_extrinsic_2",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Euler angle definition by extrinsic rotation aroundthe machine setup Z axis first, X axis & Z axis again for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "euler_angle_zxz_extrinsic_3",
       "jobTypes": [
         "Mill Job",
         "Mill Turn Job"
@@ -1862,7 +2063,61 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "euler_angle_xyx_intrinsic_2",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Euler angle definition by intrinsic rotation aroundmachine setup X axis first, then around Y axis of the rotated coordinate system resultedfrom first rotation & finally around X axis of the rotated coordinate system resultedfrom the second rotation respectively for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "euler_angle_xyx_intrinsic_3",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Euler angle definition by intrinsic rotation aroundmachine setup X axis first, then around Y axis of the rotated coordinate system resultedfrom first rotation & finally around X axis of the rotated coordinate system resultedfrom the second rotation respectively for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "euler_angle_xyx_extrinsic_2",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Euler angle definition by intrinsic rotation aroundmachine setup X axis first, then around Y axis of the rotated coordinate system resultedfrom first rotation & finally around X axis of the rotated coordinate system resultedfrom the second rotation respectively for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "euler_angle_xyx_extrinsic_3",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Euler angle definition by intrinsic rotation aroundmachine setup X axis first, then around Y axis of the rotated coordinate system resultedfrom first rotation & finally around X axis of the rotated coordinate system resultedfrom the second rotation respectively for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "euler_angle_xyx_extrinsic_1",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Euler angle definition by intrinsic rotation aroundmachine setup Y axis first, then around Z axis of the rotated coordinate system resultedfrom first rotation & finally around Y axis of the rotated coordinate system resultedfrom the second rotation respectively for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "euler_angle_yzy_intrinsic_2",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Euler angle definition by intrinsic rotation aroundmachine setup Y axis first, then around Z axis of the rotated coordinate system resultedfrom first rotation & finally around Y axis of the rotated coordinate system resultedfrom the second rotation respectively for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "euler_angle_yzy_intrinsic_3",
       "jobTypes": [
         "Mill Job",
         "Mill Turn Job"
@@ -1880,7 +2135,43 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "euler_angle_yzy_extrinsic_2",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Euler angle definition by extrinsic rotation aroundY axis, Z axis, Y axis respectively of the machine setup for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "euler_angle_yzy_extrinsic_3",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Euler angle definition by extrinsic rotation aroundY axis, Z axis, Y axis respectively of the machine setup for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "euler_angle_zyz_intrinsic_1",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Euler angle definition by intrinsic rotation around machine setup Z axis first, then around Y axis of the rotated coordinate system resulted from first rotation & finally around Z axis of the rotated coordinate system resulted from the second rotation respectively for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "euler_angle_zyz_intrinsic_2",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Euler angle definition by intrinsic rotation around machine setup Z axis first, then around Y axis of the rotated coordinate system resulted from first rotation & finally around Z axis of the rotated coordinate system resulted from the second rotation respectively for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "euler_angle_zyz_intrinsic_3",
       "jobTypes": [
         "Mill Job",
         "Mill Turn Job"
@@ -1898,7 +2189,43 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "euler_angle_zyz_extrinsic_2",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Euler angle definition by extrinsic rotation aroundZ axis, Y axis, Z axis respectively of the machine setup for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "euler_angle_zyz_extrinsic_3",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Euler angle definition by extrinsic rotation aroundZ axis, Y axis, Z axis respectively of the machine setup for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "euler_angle_xzx_intrinsic_1",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Euler angle definition by intrinsic rotation aroundmachine setup X axis first, then around Z axis of the rotated coordinate system resultedfrom first rotation & finally around X axis of the rotated coordinate system resultedfrom the second rotation respectively for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "euler_angle_xzx_intrinsic_2",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Euler angle definition by intrinsic rotation aroundmachine setup X axis first, then around Z axis of the rotated coordinate system resultedfrom first rotation & finally around X axis of the rotated coordinate system resultedfrom the second rotation respectively for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "euler_angle_xzx_intrinsic_3",
       "jobTypes": [
         "Mill Job",
         "Mill Turn Job"
@@ -1916,7 +2243,43 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "euler_angle_xzx_extrinsic_2",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Euler angle definition by extrinsic rotation aroundX axis, Z axis, X axis respectively of the machine setup for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "euler_angle_xzx_extrinsic_3",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Euler angle definition by extrinsic rotation aroundX axis, Z axis, X axis respectively of the machine setup for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "euler_angle_yxy_intrinsic_1",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Euler angle definition by intrinsic rotation aroundmachine setup Y axis first, then around X axis of the rotated coordinate system resultedfrom first rotation & finally around Y axis of the rotated coordinate system resultedfrom the second rotation respectively for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "euler_angle_yxy_intrinsic_2",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Euler angle definition by intrinsic rotation aroundmachine setup Y axis first, then around X axis of the rotated coordinate system resultedfrom first rotation & finally around Y axis of the rotated coordinate system resultedfrom the second rotation respectively for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "euler_angle_yxy_intrinsic_3",
       "jobTypes": [
         "Mill Job",
         "Mill Turn Job"
@@ -1934,7 +2297,43 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "euler_angle_yxy_extrinsic_2",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Euler angle definition by extrinsic rotation aroundY axis, X axis, Y axis respectively of the machine setup for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "euler_angle_yxy_extrinsic_3",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Euler angle definition by extrinsic rotation aroundY axis, X axis, Y axis respectively of the machine setup for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "rpy_angle_xyz_intrinsic_1",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Roll Pitch Yaw angle definition by intrinsic rotationaround machine setup X axis first, then around Y axis of the rotated coordinate systemresulted from first rotation & finally around Z axis of the rotated coordinate systemresulted from the second rotation respectively for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "rpy_angle_xyz_intrinsic_2",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Roll Pitch Yaw angle definition by intrinsic rotationaround machine setup X axis first, then around Y axis of the rotated coordinate systemresulted from first rotation & finally around Z axis of the rotated coordinate systemresulted from the second rotation respectively for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "rpy_angle_xyz_intrinsic_3",
       "jobTypes": [
         "Mill Job",
         "Mill Turn Job"
@@ -1952,7 +2351,43 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "rpy_angle_xyz_extrinsic_2",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Roll Pitch Yaw angle definition by extrinsic rotationaround X axis, Y axis, Z axis respectively of the machine setup for the transformedplane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "rpy_angle_xyz_extrinsic_3",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Roll Pitch Yaw angle definition by extrinsic rotationaround X axis, Y axis, Z axis respectively of the machine setup for the transformedplane",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "rpy_angle_yzx_intrinsic_1",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Roll Pitch Yaw angle definition by intrinsic rotationaround machine setup Y axis first, then around Z axis of the rotated coordinate systemresulted from first rotation & finally around X axis of the rotated coordinate systemresulted from the second rotation respectively for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "rpy_angle_yzx_intrinsic_2",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Roll Pitch Yaw angle definition by intrinsic rotationaround machine setup Y axis first, then around Z axis of the rotated coordinate systemresulted from first rotation & finally around X axis of the rotated coordinate systemresulted from the second rotation respectively for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "rpy_angle_yzx_intrinsic_3",
       "jobTypes": [
         "Mill Job",
         "Mill Turn Job"
@@ -1970,7 +2405,43 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "rpy_angle_yzx_extrinsic_2",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Roll Pitch Yaw angle definition by extrinsic rotationaround Y axis, Z axis, X axis respectively of the machine setup for the transformedplane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "rpy_angle_yzx_extrinsic_3",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Roll Pitch Yaw angle definition by extrinsic rotationaround Y axis, Z axis, X axis respectively of the machine setup for the transformedplane",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "rpy_angle_zxy_intrinsic_1",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Roll Pitch Yaw angle definition by intrinsic rotationaround machine setup Z axis first, then around X axis of the rotated coordinate systemresulted from first rotation & finally around Y axis of the rotated coordinate systemresulted from the second rotation respectively for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "rpy_angle_zxy_intrinsic_2",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Roll Pitch Yaw angle definition by intrinsic rotationaround machine setup Z axis first, then around X axis of the rotated coordinate systemresulted from first rotation & finally around Y axis of the rotated coordinate systemresulted from the second rotation respectively for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "rpy_angle_zxy_intrinsic_3",
       "jobTypes": [
         "Mill Job",
         "Mill Turn Job"
@@ -1988,7 +2459,43 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "rpy_angle_zxy_extrinsic_2",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Roll Pitch Yaw angle definition by extrinsic rotationaround Z axis, X axis, Y axis respectively of the machine setup for the transformedplane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "rpy_angle_zxy_extrinsic_3",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Roll Pitch Yaw angle definition by extrinsic rotationaround Z axis, X axis, Y axis respectively of the machine setup for the transformedplane",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "rpy_angle_xzy_intrinsic_1",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Roll Pitch Yaw angle definition by intrinsic rotationaround machine setup X axis first, then around Z axis of the rotated coordinate systemresulted from first rotation & finally around Y axis of the rotated coordinate systemresulted from the second rotation respectively for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "rpy_angle_xzy_intrinsic_2",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Roll Pitch Yaw angle definition by intrinsic rotationaround machine setup X axis first, then around Z axis of the rotated coordinate systemresulted from first rotation & finally around Y axis of the rotated coordinate systemresulted from the second rotation respectively for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "rpy_angle_xzy_intrinsic_3",
       "jobTypes": [
         "Mill Job",
         "Mill Turn Job"
@@ -2006,7 +2513,43 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "rpy_angle_xzy_extrinsic_2",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Roll Pitch Yaw angle definition by extrinsic rotationaround X axis, Z axis, Y axis respectively of the machine setup for the transformedplane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "rpy_angle_xzy_extrinsic_3",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Roll Pitch Yaw angle definition by extrinsic rotationaround X axis, Z axis, Y axis respectively of the machine setup for the transformedplane",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "rpy_angle_zyx_intrinsic_1",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Roll Pitch Yaw angle definition by intrinsic rotationaround machine setup Z axis first, then around Y axis of the rotated coordinate systemresulted from first rotation & finally around X axis of the rotated coordinate systemresulted from the second rotation respectively for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "rpy_angle_zyx_intrinsic_2",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Roll Pitch Yaw angle definition by intrinsic rotationaround machine setup Z axis first, then around Y axis of the rotated coordinate systemresulted from first rotation & finally around X axis of the rotated coordinate systemresulted from the second rotation respectively for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "rpy_angle_zyx_intrinsic_3",
       "jobTypes": [
         "Mill Job",
         "Mill Turn Job"
@@ -2024,7 +2567,43 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "rpy_angle_zyx_extrinsic_2",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Roll Pitch Yaw angle definition by extrinsic rotationaround Z axis, Y axis, X axis respectively of the machine setup for the transformedplane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "rpy_angle_zyx_extrinsic_3",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Roll Pitch Yaw angle definition by extrinsic rotationaround Z axis, Y axis, X axis respectively of the machine setup for the transformedplane",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "rpy_angle_yxz_intrinsic_1",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Roll Pitch Yaw angle definition by intrinsic rotationaround machine setup Y axis first, then around X axis of the rotated coordinate systemresulted from first rotation & finally around Z axis of the rotated coordinate systemresulted from the second rotation respectively for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "rpy_angle_yxz_intrinsic_2",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Roll Pitch Yaw angle definition by intrinsic rotationaround machine setup Y axis first, then around X axis of the rotated coordinate systemresulted from first rotation & finally around Z axis of the rotated coordinate systemresulted from the second rotation respectively for the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "rpy_angle_yxz_intrinsic_3",
       "jobTypes": [
         "Mill Job",
         "Mill Turn Job"
@@ -2042,7 +2621,43 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "rpy_angle_yxz_extrinsic_2",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Roll Pitch Yaw angle definition by extrinsic rotationaround Y axis, X axis, Z axis respectively of the machine setup for the transformedplane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "rpy_angle_yxz_extrinsic_3",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the rotation angles for Roll Pitch Yaw angle definition by extrinsic rotationaround Y axis, X axis, Z axis respectively of the machine setup for the transformedplane",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "transform_plane_dir_x_1",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the first vector I,J,K for the transform plane when using 2 vectors definitionfor transform planes",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "transform_plane_dir_x_2",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the first vector I,J,K for the transform plane when using 2 vectors definitionfor transform planes",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "transform_plane_dir_x_3",
       "jobTypes": [
         "Mill Job",
         "Mill Turn Job"
@@ -2060,7 +2675,43 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "transform_plane_dir_z_2",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the second vector I,J,K for the transform plane when using 2 vectors definitionfor transform planes",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "transform_plane_dir_z_3",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the second vector I,J,K for the transform plane when using 2 vectors definitionfor transform planes",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "transform_plane_pnt_2_1",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs X,Y,Z coordinates along the X axis of the transformed plane relative to theorigin of the machine setup. Note: The transform_plane_origin_# variables are typically used for the first point of the 3 point transform plane output.",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "transform_plane_pnt_2_2",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs X,Y,Z coordinates along the X axis of the transformed plane relative to theorigin of the machine setup. Note: The transform_plane_origin_# variables are typically used for the first point of the 3 point transform plane output.",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "transform_plane_pnt_2_3",
       "jobTypes": [
         "Mill Job",
         "Mill Turn Job"
@@ -2078,7 +2729,43 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "transform_plane_pnt_3_2",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs X,Y,Z coordinates along the Y axis of the transformed plane relative to theorigin of the machine setup",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "transform_plane_pnt_3_3",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs X,Y,Z coordinates along the Y axis of the transformed plane relative to theorigin of the machine setup",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "transform_plane_projection_angle_x_along_y",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the angle of rotation for X axis of transformed plane along machine setupY-axis, Y axis of transformed plane along X axis of the machine setup and angle ofrotation about the Z axis of the rotated coordinate system",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "transform_plane_projection_angle_y_along_x",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the angle of rotation for X axis of transformed plane along machine setupY-axis, Y axis of transformed plane along X axis of the machine setup and angle ofrotation about the Z axis of the rotated coordinate system",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "transform_plane_projection_angle_along_new_z",
       "jobTypes": [
         "Mill Job",
         "Mill Turn Job"
@@ -2096,6 +2783,24 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "transform_plane_orientation_y",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the I,J,K values for the Z axis of the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "transform_plane_orientation_z",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the I,J,K values for the Z axis of the transformed plane",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "GetDoubleOfPostVariable",
       "jobTypes": [
         "Mill Job",
@@ -2103,8 +2808,8 @@
       ],
       "description": "Used to return the value of the transform plane related variables only.API: GetDoubleOfPostVariable(\u00e2\u0080\u009cvariable_name\u00e2\u0080\u009d)Example : GetDoubleOfPostVariable(\u00e2\u0080\u009ceuler_angle_intrinsic_zxz_1\u00e2\u0080\u009d)Note: For a list of all variables which work with this API, see theGetDoubleOfPostVariabletopic.",
       "bobcadAPIs": [
-        "GetDoubleOfPostVariable(euler_angle_intrinsic_zxz_1)",
-        "GetDoubleOfPostVariable(variable_name)"
+        "GetDoubleOfPostVariable(variable_name)",
+        "GetDoubleOfPostVariable(euler_angle_intrinsic_zxz_1)"
       ]
     },
     {
@@ -2400,6 +3105,16 @@
     },
     {
       "postVariableName": "user_comment_1",
+      "jobTypes": [
+        "Mill Job",
+        "Lathe Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the user comments defined in the Current Settings for the job.",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "user_comment_15",
       "jobTypes": [
         "Mill Job",
         "Lathe Job",
@@ -3668,6 +4383,18 @@
       ]
     },
     {
+      "postVariableName": "(deprecated \u00e2\u0080\u0093 used in v28 or previous)",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the roughing canned cycle X axis allowance value with prefix.API:double LATHE_GetRoughXAllowance()",
+      "bobcadAPIs": [
+        "LATHE_GetRoughXAllowance()",
+        "MILLTURN_GetRoughXAllowance()"
+      ]
+    },
+    {
       "postVariableName": "rough_cycle_rough_x_allowance",
       "jobTypes": [
         "Lathe Job",
@@ -3691,6 +4418,18 @@
     },
     {
       "postVariableName": "rough_z_allowance",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the roughing canned cycle Z axis allowance value with prefix.API:double LATHE_GetRoughZAllowance()",
+      "bobcadAPIs": [
+        "LATHE_GetRoughZAllowance()",
+        "MILLTURN_GetRoughZAllowance()"
+      ]
+    },
+    {
+      "postVariableName": "(deprecated \u00e2\u0080\u0093 used in v28 or previous)",
       "jobTypes": [
         "Mill Job",
         "Mill Turn Job"
@@ -3857,7 +4596,31 @@
       ]
     },
     {
+      "postVariableName": "(deprecated \u00e2\u0080\u0093 used in v28 or previous)",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the value of the X axis allowance as diameter value with prefix.The prefixis defined on post question:1808API:double LATHE_GetXFinishAllowance()",
+      "bobcadAPIs": [
+        "LATHE_GetXFinishAllowance()",
+        "MILLTURN_GetXFinishAllowance()"
+      ]
+    },
+    {
       "postVariableName": "finish_z_allowance",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the value of the Z axis allowance with prefix.The prefix is defined onpost question:1809API:double LATHE_GetZFinishAllowance()",
+      "bobcadAPIs": [
+        "LATHE_GetZFinishAllowance()",
+        "MILLTURN_GetZFinishAllowance()"
+      ]
+    },
+    {
+      "postVariableName": "(deprecated \u00e2\u0080\u0093 used in v28 or previous)",
       "jobTypes": [
         "Mill Job",
         "Mill Turn Job"
@@ -3968,8 +4731,8 @@
       ],
       "description": "Outputs the X axis value for the bottom of the groove with prefix.The prefix isdefined on post question:1813API:double LATHE_GetGrooveXBottom()double MILLTURN_GetGrooveXBottom()",
       "bobcadAPIs": [
-        "LATHE_GetGrooveXBottom()",
-        "MILLTURN_GetGrooveXBottom()"
+        "MILLTURN_GetGrooveXBottom()",
+        "LATHE_GetGrooveXBottom()"
       ]
     },
     {
@@ -3992,8 +4755,8 @@
       ],
       "description": "Outputs the peck increment for the groove with prefix. The prefix is defined on postquestion:1816API:double LATHE_GetGroovePeckIncrement()double MILLTURN_GetGroovePeckIncrement()",
       "bobcadAPIs": [
-        "LATHE_GetGroovePeckIncrement()",
-        "MILLTURN_GetGroovePeckIncrement()"
+        "MILLTURN_GetGroovePeckIncrement()",
+        "LATHE_GetGroovePeckIncrement()"
       ]
     },
     {
@@ -4004,8 +4767,8 @@
       ],
       "description": "Outputs the depth of cut value for the groove with prefix. The prefix is definedon post question:1815API:double LATHE_GetGrooveDepthOfCut()double MILLTURN_GetGrooveDepthOfCut()",
       "bobcadAPIs": [
-        "MILLTURN_GetGrooveDepthOfCut()",
-        "LATHE_GetGrooveDepthOfCut()"
+        "LATHE_GetGrooveDepthOfCut()",
+        "MILLTURN_GetGrooveDepthOfCut()"
       ]
     },
     {
@@ -4061,8 +4824,8 @@
       ],
       "description": "Outputs the peck clearance value with the prefix defined on post question:1826.API:double LATHE_GetPeckClearance()double MILLTURN_GetPeckClearance()",
       "bobcadAPIs": [
-        "LATHE_GetPeckClearance()",
-        "MILLTURN_GetPeckClearance()"
+        "MILLTURN_GetPeckClearance()",
+        "LATHE_GetPeckClearance()"
       ]
     },
     {
@@ -4073,8 +4836,8 @@
       ],
       "description": "Outputs the peck retract value with prefix.The prefix is defined on post question:1827.API:double LATHE_GetPeckRetract()double MILLTURN_GetPeckRetract()",
       "bobcadAPIs": [
-        "LATHE_GetPeckRetract()",
-        "MILLTURN_GetPeckRetract()"
+        "MILLTURN_GetPeckRetract()",
+        "LATHE_GetPeckRetract()"
       ]
     },
     {
@@ -4460,8 +5223,8 @@
       ],
       "description": "Outputs the thread machine allowance value with prefix.The prefix is defined onpost question:1796. The allowance value is defined on post question:1413.API:double LATHE_GetThreadMachineAllowance()double MILLTURN_GetThreadMachineAllowance()",
       "bobcadAPIs": [
-        "MILLTURN_GetThreadMachineAllowance()",
-        "LATHE_GetThreadMachineAllowance()"
+        "LATHE_GetThreadMachineAllowance()",
+        "MILLTURN_GetThreadMachineAllowance()"
       ]
     },
     {
@@ -4564,8 +5327,8 @@
       ],
       "description": "Outputs the depth value for the Heidenhain machines with prefix.The prefix is setto \u00e2\u0080\u009cP02\u00e2\u0080\u009dAPI:double MILL_GetHeidenDepth()double MILLTURN_GetHeidenDepth()",
       "bobcadAPIs": [
-        "MILL_GetHeidenDepth()",
-        "MILLTURN_GetHeidenDepth()"
+        "MILLTURN_GetHeidenDepth()",
+        "MILL_GetHeidenDepth()"
       ]
     },
     {
@@ -4600,8 +5363,8 @@
       ],
       "description": "Outputs the plunge feedrate with prefix.The prefix is set to \u00e2\u0080\u009cP05\u00e2\u0080\u009dAPI:double MILL_GetHeidenPlungeRate()double MILLTURN_GetHeidenPlungeRate()",
       "bobcadAPIs": [
-        "MILL_GetHeidenPlungeRate()",
-        "MILLTURN_GetHeidenPlungeRate()"
+        "MILLTURN_GetHeidenPlungeRate()",
+        "MILL_GetHeidenPlungeRate()"
       ]
     },
     {
@@ -4855,9 +5618,9 @@
       ],
       "description": "Outputs the first tool number with NO prefix.API:double MILL_GetFirstToolNumber()double LATHE_GetFirstToolNumber()double MILLTURN_GetFirstToolNumber()",
       "bobcadAPIs": [
-        "MILLTURN_GetFirstToolNumber()",
         "MILL_GetFirstToolNumber()",
-        "LATHE_GetFirstToolNumber()"
+        "LATHE_GetFirstToolNumber()",
+        "MILLTURN_GetFirstToolNumber()"
       ]
     },
     {
@@ -4878,9 +5641,9 @@
       ],
       "description": "Outputs the next tool number with NO prefix.API:double MILL_GetNextToolNumber()double LATHE_GetNextToolNumber()double MILLTURN_GetNextToolNumber()",
       "bobcadAPIs": [
-        "MILLTURN_GetNextToolNumber()",
+        "MILL_GetNextToolNumber()",
         "LATHE_GetNextToolNumber()",
-        "MILL_GetNextToolNumber()"
+        "MILLTURN_GetNextToolNumber()"
       ]
     },
     {
@@ -4992,8 +5755,8 @@
       ],
       "description": "Returns the tool number formatted with the offset canceled (T0100) The prefix isdefined on post question:1781API:string LATHE_GetFinishSpecialToolNumber()string MILLTURN_GetFinishSpecialToolNumber()",
       "bobcadAPIs": [
-        "LATHE_GetFinishSpecialToolNumber()",
-        "MILLTURN_GetFinishSpecialToolNumber()"
+        "MILLTURN_GetFinishSpecialToolNumber()",
+        "LATHE_GetFinishSpecialToolNumber()"
       ]
     },
     {
@@ -5058,8 +5821,8 @@
       ],
       "description": "Outputs the value of the diameter of the milling tool with NO prefix.API:double MILL_GetToolDiameter()double MILLTURN_GetToolDiameter()",
       "bobcadAPIs": [
-        "MILLTURN_GetToolDiameter()",
-        "MILL_GetToolDiameter()"
+        "MILL_GetToolDiameter()",
+        "MILLTURN_GetToolDiameter()"
       ]
     },
     {
@@ -5094,8 +5857,8 @@
       ],
       "description": "Outputs the protrusion length of the tool with NO prefix.API:double MILL_GetToolProtrusionLength()double MILLTURN_GetToolProtrusionLength()",
       "bobcadAPIs": [
-        "MILL_GetToolProtrusionLength()",
-        "MILLTURN_GetToolProtrusionLength()"
+        "MILLTURN_GetToolProtrusionLength()",
+        "MILL_GetToolProtrusionLength()"
       ]
     },
     {
@@ -6025,7 +6788,27 @@
       ]
     },
     {
+      "postVariableName": "tailstock_advance_code_10",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the code used to make the tailstock advance on the machine. The output stringis defined for each specific tailstock device\u00e2\u0080\u0099s post question:30x01.The last numberin the variable name defines the tailstock device that should be output.API:string MILLTURN_GetTailstockAdvanceCodeOfDevice(int)",
+      "bobcadAPIs": [
+        "MILLTURN_GetTailstockAdvanceCodeOfDevice(int)"
+      ]
+    },
+    {
       "postVariableName": "tailstock_retract_code_1",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the code used to make the tailstock retract on the machine. The output stringis defined for each specific tailstock device\u00e2\u0080\u0099s post question:30x01.The last numberin the variable name defines the tailstock device that should be output.API:string MILLTURN_GetTailstockRetractCodeOfDevice(int)",
+      "bobcadAPIs": [
+        "MILLTURN_GetTailstockRetractCodeOfDevice(int)"
+      ]
+    },
+    {
+      "postVariableName": "tailstock_retract_code_10",
       "jobTypes": [
         "Mill Turn Job"
       ],
@@ -6043,7 +6826,23 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "through tailstock_device_command_block_1_10",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined tailstock device\u00e2\u0080\u0099sCommand Block 1 postblock. The last number in the variable name specifies the specific tailstock device to be called.",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "tailstock_device_command_block_2_1",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined tailstock device\u00e2\u0080\u0099sCommand Block 2 postblock. The last number in the variable name specifies the specific tailstock device to be called.",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "through tailstock_device_command_block_2_10",
       "jobTypes": [
         "Mill Turn Job"
       ],
@@ -6059,6 +6858,14 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "through tailstock_device_command_block_3_10",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined tailstock device\u00e2\u0080\u0099sCommand Block 3 postblock. The last number in the variable name specifies the specific tailstock device to be called.",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "tailstock_device_command_block_4_1",
       "jobTypes": [
         "Mill Turn Job"
@@ -6067,7 +6874,23 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "through tailstock_device_command_block_4_10",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined tailstock device\u00e2\u0080\u0099sCommand Block 4 postblock. The last number in the variable name specifies the specific tailstock device to be called.",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "tailstock_device_command_block_5_1",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined tailstock device\u00e2\u0080\u0099sCommand Block 5 postblock. The last number in the variable name specifies the specific tailstock device to be called.",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "tailstock_device_command_block_5_10",
       "jobTypes": [
         "Mill Turn Job"
       ],
@@ -6101,12 +6924,34 @@
       ],
       "description": "Outputs the code used to open the stead rest on the machine for a specific steadrest device.The output string is defined on the defined stead rest\u00e2\u0080\u0099s post question:40x01API:string MILLTURN_GetSteadRestOpenCode1()throughstring MILLTURN_GetSteadyRestOpenCode10()",
       "bobcadAPIs": [
-        "MILLTURN_GetSteadRestOpenCode1()",
-        "MILLTURN_GetSteadyRestOpenCode10()"
+        "MILLTURN_GetSteadyRestOpenCode10()",
+        "MILLTURN_GetSteadRestOpenCode1()"
+      ]
+    },
+    {
+      "postVariableName": "steady_rest_open_code_10",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the code used to open the stead rest on the machine for a specific steadrest device.The output string is defined on the defined stead rest\u00e2\u0080\u0099s post question:40x01API:string MILLTURN_GetSteadRestOpenCode1()throughstring MILLTURN_GetSteadyRestOpenCode10()",
+      "bobcadAPIs": [
+        "MILLTURN_GetSteadyRestOpenCode10()",
+        "MILLTURN_GetSteadRestOpenCode1()"
       ]
     },
     {
       "postVariableName": "steady_rest_close_code_1",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the code used to close the stead rest on the machine for a specific steadrest device.The output string is defined on the defined stead rest\u00e2\u0080\u0099s post question:40x02API:string MILLTURN_GetSteadRestCloseCode1()throughstring MILLTURN_GetSteadyRestCloseCode10()",
+      "bobcadAPIs": [
+        "MILLTURN_GetSteadyRestCloseCode10()",
+        "MILLTURN_GetSteadRestCloseCode1()"
+      ]
+    },
+    {
+      "postVariableName": "steady_rest_close_code_10",
       "jobTypes": [
         "Mill Turn Job"
       ],
@@ -6125,7 +6970,23 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "steady_rest_device_command_block_1_10",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined steady rest device\u00e2\u0080\u0099sCommand Block 1 postblock. The last number in the variable name specifies the specific steady rest device to be called.",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "steady_rest_device_command_block_2_1",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined steady rest device\u00e2\u0080\u0099sCommand Block 2 postblock. The last number in the variable name specifies the specific steady rest device to be called.",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "steady_rest_device_command_block_2_10",
       "jobTypes": [
         "Mill Turn Job"
       ],
@@ -6141,6 +7002,14 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "steady_rest_device_command_block_3_10",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined steady rest device\u00e2\u0080\u0099sCommand Block 3 postblock. The last number in the variable name specifies the specific steady rest device to be called.",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "steady_rest_device_command_block_4_1",
       "jobTypes": [
         "Mill Turn Job"
@@ -6149,7 +7018,23 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "steady_rest_device_command_block_4_10",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined steady rest device\u00e2\u0080\u0099sCommand Block 4 postblock. The last number in the variable name specifies the specific steady rest device to be called.",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "steady_rest_device_command_block_5_1",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined steady rest device\u00e2\u0080\u0099sCommand Block 5 postblock. The last number in the variable name specifies the specific steady rest device to be called.",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "steady_rest_device_command_block_5_10",
       "jobTypes": [
         "Mill Turn Job"
       ],
@@ -6188,18 +7073,48 @@
       ]
     },
     {
+      "postVariableName": "parts_catcher_advance_code_10",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the command from the define parts catcher device to advance the parts catcher on the machine. The output string is defined on each parts catcher device\u00e2\u0080\u0099s post question:50x01API:string MILLTURN_GetPartsCatcherAdvanceCode_1()throughstring MILLTURN_GetPartsCatcherAdvanceCode_10()",
+      "bobcadAPIs": [
+        "MILLTURN_GetPartsCatcherAdvanceCode_1()",
+        "MILLTURN_GetPartsCatcherAdvanceCode_10()"
+      ]
+    },
+    {
       "postVariableName": "parts_catcher_retract_code_1",
       "jobTypes": [
         "Mill Turn Job"
       ],
       "description": "Outputs the command from the define parts catcher device to retract the parts catcheron the machine. The output string is defined on each parts catcher device\u00e2\u0080\u0099s postquestion:50x02API:string MILLTURN_GetPartsCatcherRetractCode_1()throughstring MILLTURN_GetPartsCatcherRetractCode_10()",
       "bobcadAPIs": [
-        "MILLTURN_GetPartsCatcherRetractCode_1()",
-        "MILLTURN_GetPartsCatcherRetractCode_10()"
+        "MILLTURN_GetPartsCatcherRetractCode_10()",
+        "MILLTURN_GetPartsCatcherRetractCode_1()"
+      ]
+    },
+    {
+      "postVariableName": "parts_catcher_retract_code_10",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the command from the define parts catcher device to retract the parts catcheron the machine. The output string is defined on each parts catcher device\u00e2\u0080\u0099s postquestion:50x02API:string MILLTURN_GetPartsCatcherRetractCode_1()throughstring MILLTURN_GetPartsCatcherRetractCode_10()",
+      "bobcadAPIs": [
+        "MILLTURN_GetPartsCatcherRetractCode_10()",
+        "MILLTURN_GetPartsCatcherRetractCode_1()"
       ]
     },
     {
       "postVariableName": "parts_catcher_device_command_block_1_1",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined parts catcherdevice\u00e2\u0080\u0099sCommand Block 1 postblock. The last number in the variable name specifiesthe specific parts catcher device to be called.",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "parts_catcher_device_command_block_1_10",
       "jobTypes": [
         "Mill Turn Job"
       ],
@@ -6215,7 +7130,23 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "parts_catcher_device_command_block_2_10",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined parts catcherdevice\u00e2\u0080\u0099sCommand Block 2 postblock. The last number in the variable name specifiesthe specific parts catcher device to be called.",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "parts_catcher_device_command_block_3_1",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined parts catcherdevice\u00e2\u0080\u0099sCommand Block 3 postblock. The last number in the variable name specifiesthe specific parts catcher device to be called.",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "parts_catcher_device_command_block_3_10",
       "jobTypes": [
         "Mill Turn Job"
       ],
@@ -6231,7 +7162,23 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "parts_catcher_device_command_block_4_10",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined parts catcherdevice\u00e2\u0080\u0099sCommand Block 4 postblock. The last number in the variable name specifiesthe specific parts catcher device to be called.",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "parts_catcher_device_command_block_5_1",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined parts catcherdevice\u00e2\u0080\u0099sCommand Block 5 postblock. The last number in the variable name specifiesthe specific parts catcher device to be called.",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "parts_catcher_device_command_block_5_10",
       "jobTypes": [
         "Mill Turn Job"
       ],
@@ -6319,7 +7266,23 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "workpiece_device_command_block_1_10",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined workpiece device\u00e2\u0080\u0099sCommand Block 1 postblock. The last number in the variable name specifies the specific workpiece to be called.",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "workpiece_device_command_block_2_1",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined workpiece device\u00e2\u0080\u0099sCommand Block 2 postblock. The last number in the variable name specifies the specific workpiece to be called.",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "workpiece_device_command_block_2_10",
       "jobTypes": [
         "Mill Turn Job"
       ],
@@ -6335,7 +7298,23 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "workpiece_device_command_block_3_10",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined workpiece device\u00e2\u0080\u0099sCommand Block 3 postblock. The last number in the variable name specifies the specific workpiece to be called.",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "workpiece_device_command_block_4_1",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined workpiece device\u00e2\u0080\u0099sCommand Block 4 postblock. The last number in the variable name specifies the specific workpiece to be called.",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "workpiece_device_command_block_4_10",
       "jobTypes": [
         "Mill Turn Job"
       ],
@@ -6351,7 +7330,23 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "workpiece_device_command_block_5_10",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined workpiece device\u00e2\u0080\u0099sCommand Block 5 postblock. The last number in the variable name specifies the specific workpiece to be called.",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "workpiece_device_command_block_6_1",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined workpiece device\u00e2\u0080\u0099sCommand Block 6 postblock. The last number in the variable name specifies the specific workpiece to be called.",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "workpiece_device_command_block_6_10",
       "jobTypes": [
         "Mill Turn Job"
       ],
@@ -6367,6 +7362,14 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "workpiece_device_command_block_7_10",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined workpiece device\u00e2\u0080\u0099sCommand Block 7 postblock. The last number in the variable name specifies the specific workpiece to be called.",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "workpiece_device_command_block_8_1",
       "jobTypes": [
         "Mill Turn Job"
@@ -6375,7 +7378,23 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "workpiece_device_command_block_8_10",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined workpiece device\u00e2\u0080\u0099sCommand Block 8 postblock. The last number in the variable name specifies the specific workpiece to be called.",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "workpiece_device_command_block_9_1",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined workpiece device\u00e2\u0080\u0099sCommand Block 9 postblock. The last number in the variable name specifies the specific workpiece to be called.",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "workpiece_device_command_block_9_10",
       "jobTypes": [
         "Mill Turn Job"
       ],
@@ -6573,7 +7592,23 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "tool_device_command_block_1_10",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined tool device\u00e2\u0080\u0099sCommand Block 1 postblock. The last number in the variable name specifies the specific tool device to be called.",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "tool_device_command_block_2_1",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined tool device\u00e2\u0080\u0099sCommand Block 2 postblock. The last number in the variable name specifies the specific tool device to be called.",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "tool_device_command_block_2_10",
       "jobTypes": [
         "Mill Turn Job"
       ],
@@ -6589,7 +7624,23 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "tool_device_command_block_3_10",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined tool device\u00e2\u0080\u0099sCommand Block 3 postblock. The last number in the variable name specifies the specific tool device to be called.",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "tool_device_command_block_4_1",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined tool device\u00e2\u0080\u0099sCommand Block 4 postblock. The last number in the variable name specifies the specific tool device to be called.",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "tool_device_command_block_4_10",
       "jobTypes": [
         "Mill Turn Job"
       ],
@@ -6605,7 +7656,23 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "tool_device_command_block_5_10",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined tool device\u00e2\u0080\u0099sCommand Block 5 postblock. The last number in the variable name specifies the specific tool device to be called.",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "tool_device_command_block_6_1",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined tool device\u00e2\u0080\u0099sCommand Block 6 postblock. The last number in the variable name specifies the specific tool device to be called.",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "tool_device_command_block_6_10",
       "jobTypes": [
         "Mill Turn Job"
       ],
@@ -6621,6 +7688,14 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "tool_device_command_block_7_10",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined tool device\u00e2\u0080\u0099sCommand Block 7 postblock. The last number in the variable name specifies the specific tool device to be called.",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "tool_device_command_block_8_1",
       "jobTypes": [
         "Mill Turn Job"
@@ -6629,7 +7704,23 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "tool_device_command_block_8_10",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined tool device\u00e2\u0080\u0099sCommand Block 8 postblock. The last number in the variable name specifies the specific tool device to be called.",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "tool_device_command_block_9_1",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined tool device\u00e2\u0080\u0099sCommand Block 9 postblock. The last number in the variable name specifies the specific tool device to be called.",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "tool_device_command_block_9_10",
       "jobTypes": [
         "Mill Turn Job"
       ],
@@ -6745,7 +7836,27 @@
       ]
     },
     {
+      "postVariableName": "zone_device_enable_100",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the command to enable a specific workzone on the machine.The output string is defined for each zone post block and the specified zone determines the output.The zone 1 enable block is defined on post question:6011. The number at the end of the variable name defines the specific zone to output.API:string MILLTURN_GetZoneDeviceEnableOfDevice(int)",
+      "bobcadAPIs": [
+        "MILLTURN_GetZoneDeviceEnableOfDevice(int)"
+      ]
+    },
+    {
       "postVariableName": "zone_device_disable_1",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "Outputs the command to disable a specific workzone on the machine.The output string is defined for each zone post block and the specified zone determines the output.The zone 1 disable block is defined on post question:6012. The number at the end of the variable name defines the specific zone to output.API:string MILLTURN_GetZoneDeviceDisableOfDevice(int)",
+      "bobcadAPIs": [
+        "MILLTURN_GetZoneDeviceDisableOfDevice(int)"
+      ]
+    },
+    {
+      "postVariableName": "zone_device_disable_100",
       "jobTypes": [
         "Mill Turn Job"
       ],
@@ -6803,7 +7914,23 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "zone_command_block_1_99",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined Zone\u00e2\u0080\u0099s CommandBlock 1 postblock. The last number in the variable name specifies the specific zoneto be called.",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "zone_command_block_2_1",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined Zone\u00e2\u0080\u0099s CommandBlock 2 postblock. The last number in the variable name specifies the specific zoneto be called.",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "zone_command_block_2_99",
       "jobTypes": [
         "Mill Turn Job"
       ],
@@ -6819,6 +7946,14 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "zone_command_block_3_99",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined Zone\u00e2\u0080\u0099s CommandBlock 3 postblock. The last number in the variable name specifies the specific zoneto be called.",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "zone_command_block_4_1",
       "jobTypes": [
         "Mill Turn Job"
@@ -6827,7 +7962,23 @@
       "bobcadAPIs": []
     },
     {
+      "postVariableName": "zone_command_block_4_99",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined Zone\u00e2\u0080\u0099s CommandBlock 4 postblock. The last number in the variable name specifies the specific zoneto be called.",
+      "bobcadAPIs": []
+    },
+    {
       "postVariableName": "zone_command_block_5_1",
+      "jobTypes": [
+        "Mill Turn Job"
+      ],
+      "description": "This variable will call and process the code that is in the defined Zone\u00e2\u0080\u0099s CommandBlock 5 postblock. The last number in the variable name specifies the specific zoneto be called.",
+      "bobcadAPIs": []
+    },
+    {
+      "postVariableName": "zone_command_block_5_99",
       "jobTypes": [
         "Mill Turn Job"
       ],
@@ -8274,8 +9425,8 @@
       ],
       "description": "Used to determine if current operation is on an index system.API:boolean MILL_IsOperationOnIndex()boolean MILLTURN_IsOperationOnIndex()",
       "bobcadAPIs": [
-        "MILLTURN_IsOperationOnIndex()",
-        "MILL_IsOperationOnIndex()"
+        "MILL_IsOperationOnIndex()",
+        "MILLTURN_IsOperationOnIndex()"
       ]
     },
     {
@@ -8856,6 +10007,28 @@
       ]
     },
     {
+      "postVariableName": "(Deprecated \u00e2\u0080\u0093 currently returns total number of operations set to post in a job.",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Returns the number for the current feature, based on the order in the CAM tree.API:short MILL_GetCurrentFeatureNumber()",
+      "bobcadAPIs": [
+        "MILL_GetCurrentFeatureNumber()"
+      ]
+    },
+    {
+      "postVariableName": "This was typically used before V26 or previous versions before DMS was introduced)",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Returns the number for the current feature, based on the order in the CAM tree.API:short MILL_GetCurrentFeatureNumber()",
+      "bobcadAPIs": [
+        "MILL_GetCurrentFeatureNumber()"
+      ]
+    },
+    {
       "postVariableName": null,
       "jobTypes": [
         "Mill Job",
@@ -8955,6 +10128,17 @@
     },
     {
       "postVariableName": null,
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Returns the current feature type.1 = Center Hole2 = Hole3 = Tap4 = Ream5 = Counterbore Hole6 = Counterbore Tap7 = Counterbore Ream15 = Roll Tap16 = Counterbore Roll Tap18 = Facing19 = Pocketing, 2D Plunge Rough20 = Profile21 = Chamfer Mill22 = 2D Engrave23 = Boring24 = Thread Milling26 = 2D and 3D Engraving29 = Planar, 3D Plunge Roughing30 = Radial31 = Spiral32 = Z Level Rough, Advanced Rough33 = Z Level Finish34 = Equidistant37 = Flatlands, Pencil, 4 Axis Rotary, Multiaxis40 = V-CarveAPI:short MILL_GetFeatureType()",
+      "bobcadAPIs": [
+        "MILL_GetFeatureType()"
+      ]
+    },
+    {
+      "postVariableName": "Deprecated \u00e2\u0080\u0093 use Operation type API",
       "jobTypes": [
         "Mill Job",
         "Mill Turn Job"
@@ -9085,6 +10269,17 @@
       ]
     },
     {
+      "postVariableName": "Deprecated \u00e2\u0080\u0093 currently returns the total number of operations set to post in a job. This was typically used before V26 or previous versions before DMS was introduced",
+      "jobTypes": [
+        "Mill Job",
+        "Mill Turn Job"
+      ],
+      "description": "Returns the total number of features in the program.API:short MILL_GetNumberOfFeatures()",
+      "bobcadAPIs": [
+        "MILL_GetNumberOfFeatures()"
+      ]
+    },
+    {
       "postVariableName": null,
       "jobTypes": [
         "Mill Job",
@@ -9092,9 +10287,9 @@
       ],
       "description": "Returns the total number of operations in the program that is set to post. This APIwill not consider the operations that were patterned using toolpath pattern.For versions V26 or earlier, there were 2 APIs MILL_GetNumberOfFeatures() & MILL_GetCurrentFeatureNumber()which are deprecated and when used in versions after V26 will return the same valueas the MILL_GetNumberOfOperations() APIAPI:short MILL_GetNumberOfOperations()",
       "bobcadAPIs": [
-        "MILL_GetNumberOfFeatures()",
         "MILL_GetNumberOfOperations()",
-        "MILL_GetCurrentFeatureNumber()"
+        "MILL_GetCurrentFeatureNumber()",
+        "MILL_GetNumberOfFeatures()"
       ]
     },
     {
@@ -9350,6 +10545,19 @@
       ]
     },
     {
+      "postVariableName": "LATHE_SetIntMemoryLoc(short Index, short SetInteger) \u00e2\u0080\u0093 API Only",
+      "jobTypes": [
+        "Mill Job",
+        "Lathe Job",
+        "Mill Turn Job"
+      ],
+      "description": "Sets the memory location at the specified index to the value specified for SetInteger.Note that both share the same memory locationsAPI:MILL_SetIntMemoryLoc(Index, SetInteger)LATHE_SetIntMemoryLoc(Index, SetInteger)",
+      "bobcadAPIs": [
+        "LATHE_SetIntMemoryLoc(Index, SetInteger)",
+        "MILL_SetIntMemoryLoc(Index, SetInteger)"
+      ]
+    },
+    {
       "postVariableName": null,
       "jobTypes": [
         "Mill Job",
@@ -9358,12 +10566,38 @@
       ],
       "description": "Returns the integer value stored in the specified index. Note that both share thesame memory locationsAPI:variable_name = MILL_GetIntMemoryLoc(short index)variable_name = LATHE_GetIntMemoryLoc(short index)",
       "bobcadAPIs": [
-        "MILL_GetIntMemoryLoc(short index)",
-        "LATHE_GetIntMemoryLoc(short index)"
+        "LATHE_GetIntMemoryLoc(short index)",
+        "MILL_GetIntMemoryLoc(short index)"
+      ]
+    },
+    {
+      "postVariableName": "LATHE_GetIntMemoryLoc(short index) \u00e2\u0080\u0093 API Only",
+      "jobTypes": [
+        "Mill Job",
+        "Lathe Job",
+        "Mill Turn Job"
+      ],
+      "description": "Returns the integer value stored in the specified index. Note that both share thesame memory locationsAPI:variable_name = MILL_GetIntMemoryLoc(short index)variable_name = LATHE_GetIntMemoryLoc(short index)",
+      "bobcadAPIs": [
+        "LATHE_GetIntMemoryLoc(short index)",
+        "MILL_GetIntMemoryLoc(short index)"
       ]
     },
     {
       "postVariableName": null,
+      "jobTypes": [
+        "Mill Job",
+        "Lathe Job",
+        "Mill Turn Job"
+      ],
+      "description": "Sets the memory location at the specified index to the value specified in SetDouble.Notethat both share the same memory locationsAPI:void MILL_SetDoubleMemoryLoc(short Index, double SetDouble)void LATHE_SetDoubleMemoryLoc(short Index, double SetDouble)",
+      "bobcadAPIs": [
+        "LATHE_SetDoubleMemoryLoc(short Index, double SetDouble)",
+        "MILL_SetDoubleMemoryLoc(short Index, double SetDouble)"
+      ]
+    },
+    {
+      "postVariableName": "LATHE_SetDoubleMemoryLoc(short Index, double SetDouble) \u00e2\u0080\u0093 API Only",
       "jobTypes": [
         "Mill Job",
         "Lathe Job",
@@ -9389,7 +10623,33 @@
       ]
     },
     {
+      "postVariableName": "LATHE_GetDoubleMemoryLoc(short index) \u00e2\u0080\u0093 API Only",
+      "jobTypes": [
+        "Mill Job",
+        "Lathe Job",
+        "Mill Turn Job"
+      ],
+      "description": "Returns the double value stored in the specified index. Note that both share thesame memory locationsAPI:variable_name = MILL_GetDoubleMemoryLoc(short index)variable_name = LATHE_GetDoubleMemoryLoc(short index)",
+      "bobcadAPIs": [
+        "LATHE_GetDoubleMemoryLoc(short index)",
+        "MILL_GetDoubleMemoryLoc(short index)"
+      ]
+    },
+    {
       "postVariableName": null,
+      "jobTypes": [
+        "Mill Job",
+        "Lathe Job",
+        "Mill Turn Job"
+      ],
+      "description": "Sets the memory location at the specified index to the value specified in SetString.Note that both share the same memory locationsAPI:void MILL_SetStringMemoryLoc(short Index, string SetString)void Lathe_SetStringMemoryLoc(short Index, string SetString)",
+      "bobcadAPIs": [
+        "Lathe_SetStringMemoryLoc(short Index, string SetString)",
+        "MILL_SetStringMemoryLoc(short Index, string SetString)"
+      ]
+    },
+    {
+      "postVariableName": "LATHE_SetStringMemoryLoc(short Index, string SetString) \u00e2\u0080\u0093 API Only",
       "jobTypes": [
         "Mill Job",
         "Lathe Job",
@@ -9410,8 +10670,21 @@
       ],
       "description": "Returns the string value stored in the specified index. Note that both share thesame memory locationsAPI:variable_name = MILL_GetStringMemoryLoc(short index)variable_name = LATHE_GetStringMemoryLoc(short index)",
       "bobcadAPIs": [
-        "LATHE_GetStringMemoryLoc(short index)",
-        "MILL_GetStringMemoryLoc(short index)"
+        "MILL_GetStringMemoryLoc(short index)",
+        "LATHE_GetStringMemoryLoc(short index)"
+      ]
+    },
+    {
+      "postVariableName": "LATHE_GetStringMemoryLoc(short index) \u00e2\u0080\u0093 API Only",
+      "jobTypes": [
+        "Mill Job",
+        "Lathe Job",
+        "Mill Turn Job"
+      ],
+      "description": "Returns the string value stored in the specified index. Note that both share thesame memory locationsAPI:variable_name = MILL_GetStringMemoryLoc(short index)variable_name = LATHE_GetStringMemoryLoc(short index)",
+      "bobcadAPIs": [
+        "MILL_GetStringMemoryLoc(short index)",
+        "LATHE_GetStringMemoryLoc(short index)"
       ]
     },
     {
@@ -9472,6 +10745,19 @@
       ]
     },
     {
+      "postVariableName": "LATHE_SetReturnString(string var) \u00e2\u0080\u0093 API Only",
+      "jobTypes": [
+        "Mill Job",
+        "Lathe Job",
+        "Mill Turn Job"
+      ],
+      "description": "Sets the return string to be output by the program block variable.For the case that the block outputs code within an existing posting line, meaningthe program block is being used to output for a single variable.(Example: n, rapid_move, program_block_1, xr, yr)API:void MILL_SetReturnString(string var)",
+      "bobcadAPIs": [
+        "MILL_SetReturnString(string var)",
+        "LATHE_SetReturnString(variable_name)"
+      ]
+    },
+    {
       "postVariableName": null,
       "jobTypes": [
         "Mill Job",
@@ -9479,8 +10765,8 @@
       ],
       "description": "Outputs a string into the posted program with a line feed character.API:void MILL_OutputText(string var)void MILL_OutputText(\u00e2\u0080\u009cSample String\u00e2\u0080\u009d)",
       "bobcadAPIs": [
-        "MILL_OutputText(string var)",
-        "MILL_OutputText(Sample String)"
+        "MILL_OutputText(Sample String)",
+        "MILL_OutputText(string var)"
       ]
     },
     {
@@ -9491,12 +10777,25 @@
       ],
       "description": "Outputs a string into the posted program with a line feed character.API:void LATHE_OutputText(string var)void LATHE_OutputText(\u00e2\u0080\u009cSample String\u00e2\u0080\u009d)",
       "bobcadAPIs": [
-        "LATHE_OutputText(Sample String)",
-        "LATHE_OutputText(string var)"
+        "LATHE_OutputText(string var)",
+        "LATHE_OutputText(Sample String)"
       ]
     },
     {
       "postVariableName": null,
+      "jobTypes": [
+        "Mill Job",
+        "Lathe Job",
+        "Mill Turn Job"
+      ],
+      "description": "Input must be a string formatted exactly as a posting line using system posting variables.(Example: \u00e2\u0080\u009cn, rapid_move, xr, yr, \u00e2\u0080\u0098M08\u00e2\u0080\u0099\u00e2\u0080\u009d).The system post processes these variables as it would by using the posting engineand outputs the posted string to the posted NC file.API:void MILL_ProcessPostLine(string var)",
+      "bobcadAPIs": [
+        "MILL_ProcessPostLine(string var)",
+        "LATHE_ProcessPostLine(string var)"
+      ]
+    },
+    {
+      "postVariableName": "LATHE_ProcessPostLine(string var) \u00e2\u0080\u0093 API Only",
       "jobTypes": [
         "Mill Job",
         "Lathe Job",
@@ -9522,7 +10821,33 @@
       ]
     },
     {
+      "postVariableName": "LATHE_GetUserCheckBoxVariable(short index) \u00e2\u0080\u0093 API Only",
+      "jobTypes": [
+        "Mill Job",
+        "Lathe Job",
+        "Mill Turn Job"
+      ],
+      "description": "Returns the state of the check box at the specified index from the Advanced Postingpage inside of a machining feature.0 = Not Selected1 = SelectedAPI:variable_name = MILL_GetUserCheckBoxVariable(short index)",
+      "bobcadAPIs": [
+        "MILL_GetUserCheckBoxVariable(short index)",
+        "LATHE_GetUserCheckBoxVariable(short Index)"
+      ]
+    },
+    {
       "postVariableName": null,
+      "jobTypes": [
+        "Mill Job",
+        "Lathe Job",
+        "Mill Turn Job"
+      ],
+      "description": "Returns the selected index of the specified combo box in the Advanced Posting pageinside of a machining feature.API:variable_name = MILL_GetUserSelectComboVariable(short index)",
+      "bobcadAPIs": [
+        "MILL_GetUserSelectComboVariable(short index)",
+        "LATHE_GetUserSelectComboVariable(short index)"
+      ]
+    },
+    {
+      "postVariableName": "LATHE_GetUserSelectComboVariable(short index) \u00e2\u0080\u0093 API Only",
       "jobTypes": [
         "Mill Job",
         "Lathe Job",
@@ -9548,7 +10873,33 @@
       ]
     },
     {
+      "postVariableName": "LATHE_GetUserEditIntegerVariable(short index) \u00e2\u0080\u0093 API Only",
+      "jobTypes": [
+        "Mill Job",
+        "Lathe Job",
+        "Mill Turn Job"
+      ],
+      "description": "Returns the value entered in the edit box at the specified index from the AdvancedPosting page inside of a machining feature.API:variable_name = MILL_GetUserEditIntegerVariable(short index)",
+      "bobcadAPIs": [
+        "MILL_GetUserEditIntegerVariable(short index)",
+        "LATHE_GetUserEditIntegerVariable(short index)"
+      ]
+    },
+    {
       "postVariableName": null,
+      "jobTypes": [
+        "Mill Job",
+        "Lathe Job",
+        "Mill Turn Job"
+      ],
+      "description": "Returns the value entered in the edit box at the specified index from the AdvancedPosting page inside of a machining feature.API:variable_name = MILL_GetUserEditRealVariable(short index)",
+      "bobcadAPIs": [
+        "MILL_GetUserEditRealVariable(short index)",
+        "LATHE_GetUserEditRealVariable(short index)"
+      ]
+    },
+    {
+      "postVariableName": "LATHE_GetUserEditRealVariable(short index) \u00e2\u0080\u0093 API Only",
       "jobTypes": [
         "Mill Job",
         "Lathe Job",
@@ -9574,7 +10925,33 @@
       ]
     },
     {
+      "postVariableName": "LATHE_GetUserEditStringVariable(short index) \u00e2\u0080\u0093 API Only",
+      "jobTypes": [
+        "Mill Job",
+        "Lathe Job",
+        "Mill Turn Job"
+      ],
+      "description": "Returns the value entered in the edit box at the specified index from the AdvancedPosting page inside of a machining feature.API:variable_name = MILL_GetUserEditStringVariable(short index)",
+      "bobcadAPIs": [
+        "MILL_GetUserEditStringVariable(short index)",
+        "LATHE_GetUserEditStringVariable(short index)"
+      ]
+    },
+    {
       "postVariableName": null,
+      "jobTypes": [
+        "Mill Job",
+        "Lathe Job",
+        "Mill Turn Job"
+      ],
+      "description": "Returns the state of the check box at the specified index in the Advanced Postingpageof the Current Settings dialog box.0 = Not Selected1 = SelectedAPI:variable_name = MILL_GetUserCheckBoxSettingsVariable(short index)",
+      "bobcadAPIs": [
+        "MILL_GetUserCheckBoxSettingsVariable(short index)",
+        "LATHE_GetUserCheckBoxSettingsVariable(short index)"
+      ]
+    },
+    {
+      "postVariableName": "LATHE_GetUserCheckBoxSettingsVariable(short index) \u00e2\u0080\u0093 API Only",
       "jobTypes": [
         "Mill Job",
         "Lathe Job",
@@ -9600,7 +10977,33 @@
       ]
     },
     {
+      "postVariableName": "LATHE_GetUserSelectComboSettingsVariable(short index) \u00e2\u0080\u0093 API Only",
+      "jobTypes": [
+        "Mill Job",
+        "Lathe Job",
+        "Mill Turn Job"
+      ],
+      "description": "Returns the selected index of the specified combo box in the Advanced Posting pageof the Current Settings dialog box.API:variable_name = MILL_GetUserSelectComboSettingsVariable(short index)",
+      "bobcadAPIs": [
+        "MILL_GetUserSelectComboSettingsVariable(short index)",
+        "LATHE_GetUserSelectComboSettingsVariable(short index)"
+      ]
+    },
+    {
       "postVariableName": null,
+      "jobTypes": [
+        "Mill Job",
+        "Lathe Job",
+        "Mill Turn Job"
+      ],
+      "description": "Returns the value entered in the edit box at the specified index in the AdvancedPosting page of the Current Settings dialog box.API:variable_name = MILL_GetUserEditIntegerSettingsVariable(short index)",
+      "bobcadAPIs": [
+        "MILL_GetUserEditIntegerSettingsVariable(short index)",
+        "LATHE_GetUserEditIntegerSettingsVariable(short index)"
+      ]
+    },
+    {
+      "postVariableName": "LATHE_GetUserEditIntegerSettingsVariable(short index) \u00e2\u0080\u0093 API Only",
       "jobTypes": [
         "Mill Job",
         "Lathe Job",
@@ -9626,7 +11029,33 @@
       ]
     },
     {
+      "postVariableName": "LATHE_GetUserEditRealSettingsVariable(short index) \u00e2\u0080\u0093 API Only",
+      "jobTypes": [
+        "Mill Job",
+        "Lathe Job",
+        "Mill Turn Job"
+      ],
+      "description": "Returns the value entered in the edit box at the specified index in the AdvancedPosting page of the Current Settings dialog box.API:variable_name = MILL_GetUserEditRealSettingsVariable(short index)",
+      "bobcadAPIs": [
+        "MILL_GetUserEditRealSettingsVariable(short index)",
+        "LATHE_GetUserEditRealSettingsVariable(short index)"
+      ]
+    },
+    {
       "postVariableName": null,
+      "jobTypes": [
+        "Mill Job",
+        "Lathe Job",
+        "Mill Turn Job"
+      ],
+      "description": "Returns the value entered in the edit box at the specified index in the AdvancedPosting page of the Current Settings dialog box.API:variable_name = MILL_GetUserEditStringSettingsVariable(short index)",
+      "bobcadAPIs": [
+        "MILL_GetUserEditStringSettingsVariable(short index)",
+        "LATHE_GetUserEditStringSettingsVariable(short index)"
+      ]
+    },
+    {
+      "postVariableName": "LATHE_GetUserEditStringSettingsVariable(short index) \u00e2\u0080\u0093 API Only",
       "jobTypes": [
         "Mill Job",
         "Lathe Job",
