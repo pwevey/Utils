@@ -4,6 +4,11 @@ from bs4 import BeautifulSoup
 import json
 import re
 
+# Post Manual Edits:
+# TODO: Had to get rid of 3 extra instances of MDI_AfterOperation
+# TODO: Had to fix MDI_WithToolChange to MDI_AfterToolChange
+# TODO: Make sure to add back in the Common list of post variables at the end of the file
+
 
 url = "https://bobcad.com/components/webhelp/PostProcessorHelpSystemFiles/Topics/Post%20Variables%20and%20API%20Reference.html"
 response = requests.get(url)
