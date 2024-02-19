@@ -7,8 +7,8 @@ def extract_text_from_docx(file_path):
     current_variable_type = None
     for para in doc.paragraphs:
         line = para.text.strip()
-        if line.startswith('('):
-            current_variable_type = line.strip('()')  # Remove parentheses
+        if line.startswith('(') and line.endswith(')'):
+            current_variable_type = line[1:-1]  # Remove parentheses only from the start and end
         elif line.startswith('-'):
             # Continuation of the previous description
             post_variables[-1]['description'] += ' ' + line[1:].strip()

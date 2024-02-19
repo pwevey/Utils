@@ -1130,469 +1130,469 @@
   {
     "postVariableName": "drill_sub_calls",
     "description": "Output drillsubroutine call for making start hole.",
-    "variableType": "Start Hole (Start Hole Drilling",
+    "variableType": "Start Hole (Start Hole Drilling)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "drill_end_of_file",
     "description": "Output drill end of file for making start holes.",
-    "variableType": "Start Hole (Start Hole Drilling",
+    "variableType": "Start Hole (Start Hole Drilling)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "drill_subprogram",
     "description": "Output drillsub program with hole positions.",
-    "variableType": "Start Hole (Start Hole Drilling",
+    "variableType": "Start Hole (Start Hole Drilling)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "drill_program",
     "description": "Output drill positions without sub programs.",
-    "variableType": "Start Hole (Start Hole Drilling",
+    "variableType": "Start Hole (Start Hole Drilling)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "z_drill",
     "description": "Output Z value for drilled hole.",
-    "variableType": "Start Hole (Start Hole Drilling",
+    "variableType": "Start Hole (Start Hole Drilling)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "z_clearance",
     "description": "Output Z clearance for positioning between drilled holes.",
-    "variableType": "Start Hole (Start Hole Drilling",
+    "variableType": "Start Hole (Start Hole Drilling)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "agie_123_job_xr",
     "description": "Output X rapid block for agie 123 with jobs.",
-    "variableType": "Script File (Agie 123 with Jobs",
+    "variableType": "Script File (Agie 123 with Jobs)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "agie_123_job_yr",
     "description": "Output Y rapid block for agie 123 with jobs.",
-    "variableType": "Script File (Agie 123 with Jobs",
+    "variableType": "Script File (Agie 123 with Jobs)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "iso_file_path",
     "description": "Output the NC sub folder for the ISO file if user has selected NC files to create sub -folder.",
-    "variableType": "Script File (Agie 123 with Jobs",
+    "variableType": "Script File (Agie 123 with Jobs)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "tech_file_name",
     "description": "Output the Technology file name.",
-    "variableType": "Script File (Agie 123 with Jobs",
+    "variableType": "Script File (Agie 123 with Jobs)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "tech_file_path",
     "description": "Output the Technology file path.",
-    "variableType": "Script File (Agie 123 with Jobs",
+    "variableType": "Script File (Agie 123 with Jobs)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "contour_direction",
     "description": "Output the contour chain direction (CCW or CW).",
-    "variableType": "Script File (Agie 123 with Jobs",
+    "variableType": "Script File (Agie 123 with Jobs)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "rough_pass_direction",
     "description": "Output the Rough pass contour direction (CCW or CW). agie_123_pass_direction Output the contour direction (CCW or CW) using logic based on which -pass is being cut.",
-    "variableType": "Script File (Agie 123 with Jobs",
+    "variableType": "Script File (Agie 123 with Jobs)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "file_path",
     "description": "File path for all files when using script format.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "open_script_file",
     "description": "Open the script file.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "close_script_file",
     "description": "Close the script file.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "open_iso_file",
     "description": "Open Iso file.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "close_iso_file",
     "description": "Close Iso file.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "iso_file_name",
     "description": "Iso file name.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "set_to_nc_file",
     "description": "Set all writing functions to the nc file.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "set_to_iso_file",
     "description": "Set all writing functions to the iso file.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "set_to_script_file",
     "description": "Set all writing functions to the script file.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "set_to_sbr_file",
     "description": "Set all writing functions to the sbr file.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "iso_file",
     "description": "Iso file name.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "script_file",
     "description": "Script file name.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "material_name",
     "description": "Material name.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "wire_name",
     "description": "Wire name",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "punch_die_open",
     "description": "Output feature type (punch, die, open contour) for Agie Vision.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "entry_mode",
     "description": "Output leadin/leadout mode for Agie Vision.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "exit_mode",
     "description": "Output exit mode for Agie Vision.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "stp_number",
     "description": "Start point number.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "number_of_skims",
     "description": "Output number ofskim passes.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "tab_width",
     "description": "Output tab width.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "reverse_tabs",
     "description": "Output setting for reverse tab cuts.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "output_sub_calls",
     "description": "Output subprogram call line (\" camw1\");",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "output_sub_def",
     "description": "Output subprogram define line (\"sub camw1\");",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "output_sub_number",
     "description": "Output the subprogram number (\"1\").",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "zero_position_x",
     "description": "Work piece zero X value (ID_POSX).",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "zero_position_y",
     "description": "Work piece zero Y value (ID_POSY).",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "zero_position_z",
     "description": "Work piece zero Z value.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "return_plane_distance",
     "description": "Work piece machining return Plane (ID_VALRETP). security_plane_distance Work piece machining security Plane (ID_VALSECP).",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "part_length",
     "description": "Work piece length (ID_DIML).",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "part_width",
     "description": "Work piece length (ID_DIMB).",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "priority_number",
     "description": "Machining order priority number (ID_PRIORITY).",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "quality_name1",
     "description": "Output quality name for Normal cut and land cut for agie vision.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "quality_name2",
     "description": "Output quality name for Taper cut of land and taper for agie vision. work_condition1 Output work condition for Normal cut and land cut for agie vision. work_condition2 Output work condition for Taper cut of land and taper for agie vision.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "ra_value1",
     "description": "Output Ra value for Normal cut and land cut for agie vision.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "ra_value2",
     "description": "Output Ra value for Taper cut of land and taper for agie vision.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "te_value1",
     "description": "Output Te value for Normal cut and land cut for agie vision.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "te_value2",
     "description": "Output Te value for Taper cut of land and taper for agie vision.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "tkm_value1",
     "description": "Output Tkm value for Normal cut and land cut for agie vision.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "tkm_value2",
     "description": "Output Tkm value for Taper cut of land and taper for agie vision.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "high_speed1",
     "description": "Output high speed machining for Normal cut and land cut for agie vision. high_speed2 Output high speed machining for Taper cut of land and taper for agie vision. smooth_finish1 Output smooth finish setting for Normal cut and land cut for agie vision. smooth_finish2 Output smooth finish setting for Taper cut of land and taper for agie vision. commutation_entry_distance (ID_COMMPOINTENTRY)",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "commutation_exit_distance",
     "description": "(ID_COMMPOINTEXIT)",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "four_axis_z_lower",
     "description": "Four axis cutting z lower section value (ID_POSZ).",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "start_hole_diameter",
     "description": "Start hole diameter value (ID_DIAMETER)",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "set_collar_cutting_land",
     "description": "Output the collar setting for land.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "set_collar_cutting_taper",
     "description": "Output the collar setting for taper.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "collar_position",
     "description": "Z value for collar/land (ID_POSZ).",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "collar_taper_angle",
     "description": "Taper value for collar/land & taper (ID_TAPER).",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "collar_taper_height",
     "description": "Output the collar taper height.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "collar_group_name",
     "description": "Output the collar group name.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "end_point_x",
     "description": "End point X (ID_POSX).",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "end_point_y",
     "description": "End point Y (ID_POSY).",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "taper_collar_type",
     "description": "Collar/Land type (on top, on bottom).",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "die_clearance",
     "description": "Die clearance (ID_CLEARANCE).",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "prev_iso_file_name",
     "description": "Previous Iso file name.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "collar_type",
     "description": "Output collar type for land and taper.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "collar_land_height",
     "description": "Land height.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "agie_work_name",
     "description": "Work piece name for taper in land and taper (LC1,LC2,LC3). agie_group_name Group name.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "output_agie_taper_z",
     "description": "Output the taper Z value.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "punch_die",
     "description": "Output the PUN / HOL value for punches and dies.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "output_quality_one",
     "description": "Output that quality one is either quality is user defined or predefined. output_quality_two Output that quality two is either quality is user defined or predefined. output_quality_one_coreless Output that quality one for coreless is either quality is user defined -or predefined.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "output_quality_one_land_and_taper",
     "description": "Output that quality one for land and taper is either quality is -user defined or predefined.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "output_quality_two_land_and_taper",
     "description": "Output that quality two for land and taper is either quality is -user defined or predefined.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "output_die_clearance",
     "description": "Output die clearance in Agievision.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "output_agie_taper",
     "description": "Output lines for taper in Agievision.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
     "postVariableName": "output_agie_leadout",
     "description": "Output lines for leadout in Agievision.",
-    "variableType": "Script File (AgieVision",
+    "variableType": "Script File (AgieVision)",
     "jobTypes": "Wire EDM Job"
   },
   {
