@@ -21,7 +21,7 @@ def extract_text_from_docx(file_path):
                 'postVariableName': post_variable_name,
                 'description': description,
                 'variableType': current_variable_type,
-                'jobTypes': 'Wire EDM Job'  # Add the new key here
+                'jobTypes': 'Wire EDM Job'
             })
 
     # Write the postVariables array to a JSON file
